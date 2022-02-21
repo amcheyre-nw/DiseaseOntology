@@ -67,6 +67,102 @@
   <rdfs:subClassOf rdf:resource="#vegetarian_pizza"/>
 </owl:Class>
 
+<owl:Class rdf:about="#thin_crust">
+  <rdfs:subClassOf rdf:resource="#pizza_base"/>
+</owl:Class>
+
+<owl:Class rdf:about="#thick_crust">
+  <rdfs:subClassOf rdf:resource="#pizza_base"/>
+</owl:Class>
+
+<owl:Class rdf:about="#meat_topping">
+  <rdfs:subClassOf rdf:resource="#pizza_topping"/>
+</owl:Class>
+
+<owl:Class rdf:about="#ham_topping">
+  <rdfs:subClassOf rdf:resource="#meat_topping"/>
+</owl:Class>
+
+<owl:Class rdf:about="#seafood_topping">
+  <rdfs:subClassOf rdf:resource="#pizza_topping"/>
+</owl:Class>
+
+<owl:Class rdf:about="#shrimp_topping">
+  <rdfs:subClassOf rdf:resource="#seafood_topping"/>
+</owl:Class>
+
+<owl:Class rdf:about="#cheese_topping">
+  <rdfs:subClassOf rdf:resource="#pizza_topping"/>
+</owl:Class>
+
+<owl:Class rdf:about="#mozzarella_topping">
+  <rdfs:subClassOf rdf:resource="#cheese_topping"/>
+</owl:Class>
+
+<owl:Class rdf:about="#parmesan_topping">
+  <rdfs:subClassOf rdf:resource="#cheese_topping"/>
+</owl:Class>
+
+<owl:Class rdf:about="#gorgonzola_topping">
+  <rdfs:subClassOf rdf:resource="#cheese_topping"/>
+</owl:Class>
+
+<owl:Class rdf:about="#fontina_topping">
+  <rdfs:subClassOf rdf:resource="#cheese_topping"/>
+</owl:Class>
+
+<owl:Class rdf:about="#vegetable_topping">
+  <rdfs:subClassOf rdf:resource="#pizza_topping"/>
+</owl:Class>
+
+<owl:Class rdf:about="#tomato_topping">
+  <rdfs:subClassOf rdf:resource="#vegetable_topping"/>
+</owl:Class>
+
+<owl:Class rdf:about="#pepperoni_topping">
+  <rdfs:subClassOf rdf:resource="#vegetable_topping"/>
+</owl:Class>
+
+<owl:Class rdf:about="#olive_topping">
+  <rdfs:subClassOf rdf:resource="#vegetable_topping"/>
+</owl:Class>
+
+<owl:Class rdf:about="#mushroom_topping">
+  <rdfs:subClassOf rdf:resource="#vegetable_topping"/>
+</owl:Class>
+
+<owl:Class rdf:about="#basil_topping">
+  <rdfs:subClassOf rdf:resource="#vegetable_topping"/>
+</owl:Class>
+
+<owl:Class rdf:about="#artichoke_topping">
+  <rdfs:subClassOf rdf:resource="#vegetable_topping"/>
+</owl:Class>
+
+<owl:Class rdf:about="#cheesy_pizza">
+  <rdfs:subClassOf rdf:resource="#pizza"/>
+</owl:Class>
+
+<owl:Class rdf:about="#meaty_pizza">
+  <rdfs:subClassOf rdf:resource="#pizza"/>
+</owl:Class>
+
+<owl:Class rdf:about="#seafood_pizza">
+  <rdfs:subClassOf rdf:resource="#pizza"/>
+</owl:Class>
+
+<owl:Class rdf:about="#quattro_stagioni">
+  <rdfs:subClassOf rdf:resource="#pizza"/>
+</owl:Class>
+
+<owl:Class rdf:about="#quattro_formaggi">
+  <rdfs:subClassOf rdf:resource="#vegetarian_pizza"/>
+</owl:Class>
+
+<owl:Class rdf:about="#pizza_pane">
+  <rdfs:subClassOf rdf:resource="#vegetarian_pizza"/>
+</owl:Class>
+
 <vegetarian rdf:about="#John">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <likes rdf:resource="#His_pizza"/>
