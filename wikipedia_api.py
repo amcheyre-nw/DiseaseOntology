@@ -29,7 +29,6 @@ def getData_from_wikiInfoBox(url, infobox_item):
 
 def getLabels_from_wikiInfoBox(url):
     '''
-
     Returns list of the labels presented in the InfoBox on wikipedia's page specified by URL
     :param url: URL of wikipedia page
     :return: list of the labels present in the wikipedia InfoBox
@@ -45,7 +44,6 @@ def getLabels_from_wikiInfoBox(url):
 
 def get_wikiURL_from_title(title):
     '''
-
     :param title: title of wikipedia page (string)
     :return: URL of wiki page
     '''
@@ -56,8 +54,7 @@ def get_wikiURL_from_title(title):
 
 def retrieveFacts(disease, label):
     '''
-
-    wrapper of above functions for ease of use. Returns the data associated with a disease/label.
+    Wrapper of above functions for ease of use. Returns the data associated with a disease/label.
     Eg: disease = "Arthritis", label = "Symptoms" will return a list of symptoms associated with Arthritis
     :param disease: disease name (string)
     :param label: descriptor of what we want to retrieve about the disease (ie: Symptoms)
@@ -70,8 +67,7 @@ def retrieveFacts(disease, label):
 
 def retrieveLabels(disease):
     '''
-
-    wrapper of above functions for ease of use. Gives list of possible labels we can scrape from Wikipedia, for
+    Wrapper of above functions for ease of use. Gives list of possible labels we can scrape from Wikipedia, for
     a given disease.
     :param disease: Name of disease
     :return: list of available labels
