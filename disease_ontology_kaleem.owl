@@ -82,10 +82,72 @@
 
 <owl:Class rdf:about="#lab_tests">
   <rdfs:subClassOf rdf:resource="#Cardiac_disease"/>
+  <rdfs:subClassOf rdf:resource="#Schizophrenia"/>
+  <rdfs:subClassOf rdf:resource="#Schizophreniform Disorder"/>
+  <rdfs:subClassOf rdf:resource="#Brief Psychotic Disorder"/>
+  <rdfs:subClassOf rdf:resource="#Schizoaffective Disorder"/>
+  <rdfs:subClassOf rdf:resource="#Delusional Disorder"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Schizophrenia">
+  <rdfs:subClassOf rdf:resource="#Psychotic Disorders"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Schizophreniform Disorder">
+  <rdfs:subClassOf rdf:resource="#Psychotic Disorders"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Brief Psychotic Disorder">
+  <rdfs:subClassOf rdf:resource="#Psychotic Disorders"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Schizoaffective Disorder">
+  <rdfs:subClassOf rdf:resource="#Psychotic Disorders"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Delusional Disorder">
+  <rdfs:subClassOf rdf:resource="#Psychotic Disorders"/>
 </owl:Class>
 
 <owl:Class rdf:about="#physical_exam">
   <rdfs:subClassOf rdf:resource="#Cardiac_disease"/>
+  <rdfs:subClassOf rdf:resource="#Schizophrenia"/>
+  <rdfs:subClassOf rdf:resource="#Schizophreniform Disorder"/>
+  <rdfs:subClassOf rdf:resource="#Brief Psychotic Disorder"/>
+  <rdfs:subClassOf rdf:resource="#Schizoaffective Disorder"/>
+  <rdfs:subClassOf rdf:resource="#Delusional Disorder"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Psychiactric Disroders">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Psychotic Disorders">
+  <rdfs:subClassOf rdf:resource="#Psychiactric Disroders"/>
+</owl:Class>
+
+<owl:Class rdf:about="#symptoms or signs">
+  <rdfs:subClassOf rdf:resource="#Schizophrenia"/>
+  <rdfs:subClassOf rdf:resource="#Schizophreniform Disorder"/>
+  <rdfs:subClassOf rdf:resource="#Brief Psychotic Disorder"/>
+  <rdfs:subClassOf rdf:resource="#Schizoaffective Disorder"/>
+  <rdfs:subClassOf rdf:resource="#Delusional Disorder"/>
+</owl:Class>
+
+<owl:Class rdf:about="#pharmacologic treatment">
+  <rdfs:subClassOf rdf:resource="#Schizophrenia"/>
+  <rdfs:subClassOf rdf:resource="#Schizophreniform Disorder"/>
+  <rdfs:subClassOf rdf:resource="#Brief Psychotic Disorder"/>
+  <rdfs:subClassOf rdf:resource="#Schizoaffective Disorder"/>
+  <rdfs:subClassOf rdf:resource="#Delusional Disorder"/>
+</owl:Class>
+
+<owl:Class rdf:about="#non-phamacologic treatment">
+  <rdfs:subClassOf rdf:resource="#Schizophrenia"/>
+  <rdfs:subClassOf rdf:resource="#Schizophreniform Disorder"/>
+  <rdfs:subClassOf rdf:resource="#Brief Psychotic Disorder"/>
+  <rdfs:subClassOf rdf:resource="#Schizoaffective Disorder"/>
+  <rdfs:subClassOf rdf:resource="#Delusional Disorder"/>
 </owl:Class>
 
 <vegetarian rdf:about="#John">

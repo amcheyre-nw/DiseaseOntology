@@ -5,6 +5,7 @@ def create_ontology():
     # https://{hostdomain}/{ontologiesRoot}/{authority}/{resourceIdentifier}.owl
     iri = "http://example.org/disease_ontology_kaleem.owl"
     fname = "./disease_ontology_kaleem.owl"
+    path = os.getcwd()
     ontor1 = ontor.OntoEditor(iri, fname)
     classes = [["Psychiactric Disroders", None], \
                ["Psychotic Disorders", "Psychiactric Disroders"], \
@@ -73,7 +74,7 @@ def create_ontology():
     ontor1.add_axioms(axs)
     ontor1.add_instances(ins)
 
-    ontor1.save_as(path + "/disease_ontology.owl")
+    ontor1.save_as(path + "/disease_ontology_kaleem.owl")
 
     # Visualize a graph
     # ontor1.visualize(classes=["human", "pizza"], properties=["likes", "diameter_in_cm"], focusnode="John", radius=2)
