@@ -2,21 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce504fd7-7858-4d50-bcf1-b827400a863b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/DiseaseOntology.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-02-20_12-20-38_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-02-20_12-44-40_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-02-20_12-44-54_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-02-20_12-48-16_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-02-20_12-51-58_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/disease_ontology_kaleem.owl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ontology_kaleem.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/disease_ontology.owl" beforeDir="false" afterPath="$PROJECT_DIR$/disease_ontology.owl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ontology_kaleem.py" beforeDir="false" afterPath="$PROJECT_DIR$/ontology_kaleem.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +64,9 @@
       <module name="DiseaseOntology" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -108,6 +98,7 @@
       <option name="presentableId" value="Default" />
       <updated>1645380879596</updated>
       <workItem from="1645380882961" duration="4091000" />
+      <workItem from="1645498272800" duration="816000" />
     </task>
     <servers />
   </component>
@@ -124,6 +115,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
