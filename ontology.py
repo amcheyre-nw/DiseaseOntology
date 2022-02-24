@@ -1,6 +1,6 @@
 from owlready2 import *
 import ontor
-import wikipedia_api
+# import wikipedia_api
 
 def create_ontology():
     # https://{hostdomain}/{ontologiesRoot}/{authority}/{resourceIdentifier}.owl

@@ -7,59 +7,45 @@ def create_ontology():
     fname = "./disease_ontology_kaleem.owl"
     path = os.getcwd()
     ontor1 = ontor.OntoEditor(iri, fname)
-    classes = [["Psychiactric Disroders", None], \
-               ["Psychotic Disorders", "Psychiactric Disroders"], \
-               ["Schizophrenia", "Psychotic Disorders"], \
-               ["Schizophreniform Disorder", "Psychotic Disorders"], \
-               ["Brief Psychotic Disorder", "Psychotic Disorders"], \
-               ["Schizoaffective Disorder", "Psychotic Disorders"], \
-               ["Delusional Disorder", "Psychotic Disorders"], \
-               ["symptoms or signs", "Schizophrenia"], \
-               ["lab_tests", "Schizophrenia"], \
-               ["physical_exam", "Schizophrenia"], \
-               ["pharmacologic treatment", "Schizophrenia"], \
-               ["non-phamacologic treatment", "Schizophrenia"], \
-               ["symptoms or signs", "Schizophreniform Disorder"], \
-               ["lab_tests", "Schizophreniform Disorder"], \
-               ["physical_exam", "Schizophreniform Disorder"], \
-               ["pharmacologic treatment", "Schizophreniform Disorder"], \
-               ["non-phamacologic treatment", "Schizophreniform Disorder"], \
-               ["symptoms or signs", "Brief Psychotic Disorder"], \
-               ["lab_tests", "Brief Psychotic Disorder"], \
-               ["physical_exam", "Brief Psychotic Disorder"], \
-               ["pharmacologic treatment", "Brief Psychotic Disorder"], \
-               ["non-phamacologic treatment", "Brief Psychotic Disorder"], \
-               ["symptoms or signs", "Schizoaffective Disorder"], \
-               ["lab_tests", "Schizoaffective Disorder"], \
-               ["physical_exam", "Schizoaffective Disorder"], \
-               ["pharmacologic treatment", "Schizoaffective Disorder"], \
-               ["non-phamacologic treatment", "Schizoaffective Disorder"], \
-               ["symptoms or signs", "Delusional Disorder"], \
-               ["lab_tests", "Delusional Disorder"], \
-               ["physical_exam", "Delusional Disorder"], \
-               ["pharmacologic treatment", "Delusional Disorder"], \
-               ["non-phamacologic treatment", "Delusional Disorder"]]
+    classes = [["Psychiactric_Disroders", None], \
+               ["Psychotic_Disorders", "Psychiactric_Disorders"], \
+               ["Schizophrenia", "Psychotic_Disorders"], \
+               ["Schizophreniform_Disorder", "Psychotic_Disorders"], \
+               ["Brief_Psychotic_Disorder", "Psychotic_Disorders"], \
+               ["Schizoaffective_Disorder", "Psychotic_Disorders"], \
+               ["Delusional_Disorder", "Psychotic_Disorders"], \
+               ["Mood_Disorders", None],\
+               ["Mood_Episodes", "Mood_Disorders"], \
+               ["Depressive_Disorders", "Mood_Disorders"], \
+               ["Bipolar_Disorders", "Mood_Disorders"], \
+               ["Anxiety_Disorders", None], \
+               ["Panic_Disorder", "Anxiety_Disorders"], \
+               ["Agoraphobia", "Anxiety_Disorders"], \
+               ["Generalized_Anxiety_Disorder", "Anxiety_Disorders"], \
+               ["Phobic_Disorders", "Anxiety_Disorders"], \
+               ["Symptoms_or_Signs", None], \
+               ["Physical_Exam", None], \
+               ["Lab_or_Test_Result", None], \
+               ["Treatment", None], \
+               ["Pharmacological_Intervention", "Treatment"],\
+               ["Non_Pharmacological_Intervention", "Treatment"]]
 
     # Properties of objects including their axioms
     # [object_property (op), super-op, domain, range,functional, inverse functional, transitive, symmetric,
     # asymmetric, reflexive, irreflexive, inverse_prop]
-    ops = [["likes", None, "human", None, False, False, False, False, False, False, False, None]]
+    ops = [[]]
 
     # Datatype properties including their axioms
     # [data_property (dp), super-dp, functional, domain, range, minex, minin, exact, maxin, maxex]
-    dps = [["diameter_in_cm", None, True, "pizza", "integer", None, None, None, None, None],
-           ["weight_in_grams", None, True, "pizza", "float", None, None, None, None, None],
-           ["description", None, False, "food", "string", None, None, None, None, None]]
+    dps = [[]]
 
     # Axioms: [class, superclass, property, inverted(bool), cardinality type, cardinality, op-object, dp-range,
     #         dp-min-ex, dp-min-in, dp-exact, dp-max-in, dp-max-ex, negated(bool), equivalence(bool)]
-    axs = [["human", None, "likes", None, "some", None, "food", None, None, None, None, None, None, None, False]]
+    axs = [[]]
 
     # Instances and their relations
     # [instance, class, property, range, range-type]
-    ins = [["John", "vegetarian", None, None, None], \
-           ["His_pizza", "margherita", None, None, None], \
-           ["John", "vegetarian", "likes", "His_pizza", None]]
+    ins = [[]]
 
     # Import information from CSV and JSON files (not working yet)
     # ontor1.add_taxo(ontor.load_csv(path+"/taxo.csv"))

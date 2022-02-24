@@ -3,6 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="ce504fd7-7858-4d50-bcf1-b827400a863b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2022-02-20_12-20-38_ontor.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2022-02-20_12-44-40_ontor.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2022-02-20_12-44-54_ontor.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2022-02-20_12-48-16_ontor.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2022-02-20_12-51-58_ontor.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2022-02-21_21-08-06_ontor.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2022-02-21_21-09-00_ontor.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ontology.py" beforeDir="false" afterPath="$PROJECT_DIR$/ontology.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ontology_kaleem.py" beforeDir="false" afterPath="$PROJECT_DIR$/ontology_kaleem.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -98,7 +106,7 @@
       <option name="presentableId" value="Default" />
       <updated>1645380879596</updated>
       <workItem from="1645380882961" duration="4091000" />
-      <workItem from="1645498272800" duration="816000" />
+      <workItem from="1645498272800" duration="3311000" />
     </task>
     <servers />
   </component>
@@ -121,7 +129,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/DiseaseOntology$ontology_kaleem.coverage" NAME="ontology_kaleem Coverage Results" MODIFIED="1645383117234" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/DiseaseOntology$ontology.coverage" NAME="ontology Coverage Results" MODIFIED="1645381228506" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/DiseaseOntology$ontology_kaleem.coverage" NAME="ontology_kaleem Coverage Results" MODIFIED="1645745557539" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/DiseaseOntology$ontology.coverage" NAME="ontology Coverage Results" MODIFIED="1645745440173" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
