@@ -6,9 +6,10 @@ import pandas as pd
 import csv
 import argparse
 
+
 def read_csv(filename):
     data = []
-    columns = [3,4,5,6,8,9,10]
+    columns = [3, 4, 5, 6, 8, 9, 10]
 
     # import shutil
     # with gzip.open('file.txt.gz', 'rb') as f_in:
@@ -26,7 +27,7 @@ def read_csv(filename):
         records = csv.reader(f)
         n = 1
         for record in records:
-            if n%230000 == 0:
+            if n % 230000 == 0:
                 break
             row = []
             n += 1
@@ -36,8 +37,10 @@ def read_csv(filename):
                 data.append(row)
     # print(data)
     df = pd.DataFrame(data)
-    df.columns = ['Predicate', 'Subject_CUI', 'Subject_Name', 'Subject_Semtype', 'Object_CUI', 'Object_Name', 'Object_Semtype']
-    df = df[['Subject_Name','Predicate', 'Object_Name', 'Subject_CUI', 'Subject_Semtype', 'Object_CUI', 'Object_Semtype' ]]
+    df.columns = ['Predicate', 'Subject_CUI', 'Subject_Name', 'Subject_Semtype', 'Object_CUI', 'Object_Name',
+                  'Object_Semtype']
+    df = df[
+        ['Subject_Name', 'Predicate', 'Object_Name', 'Subject_CUI', 'Subject_Semtype', 'Object_CUI', 'Object_Semtype']]
     print(df)
     return df
 
@@ -48,6 +51,5 @@ args = parser.parse_args()
 df = read_csv(args.path)
 print('Finished parsing the database')
 path = os.path.split(args.path)
-df.to_csv(os.path.join(path[0], 'ExtractedPredications.csv'), header = True, index = None)
+df.to_csv(os.path.join(path[0], 'ExtractedPredications.csv'), header=True, index=None)
 print('Finished saving the extracted predications')
-

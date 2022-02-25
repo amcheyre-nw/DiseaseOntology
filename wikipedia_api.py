@@ -49,7 +49,10 @@ def get_wikiURL_from_title(title):
     '''
     wiki_wiki = wikipediaapi.Wikipedia('en') # english
     page_py = wiki_wiki.page(title)
-    return page_py.fullurl
+    try:
+        return page_py.fullurl
+    except:
+        return None
 
 
 def retrieveFacts(disease, label):
@@ -62,7 +65,10 @@ def retrieveFacts(disease, label):
     '''
     url = get_wikiURL_from_title(disease)
     label = '{}{}'.format(label[0].upper(), label[1:].lower()) # ensure correct formatting
-    return getData_from_wikiInfoBox(url, label)
+    try:
+        return getData_from_wikiInfoBox(url, label)
+    except:
+        return None
 
 
 def retrieveLabels(disease):
@@ -73,9 +79,12 @@ def retrieveLabels(disease):
     :return: list of available labels
     '''
     url = get_wikiURL_from_title(disease)
-    return getLabels_from_wikiInfoBox(url)
+    if url:
+        return getLabels_from_wikiInfoBox(url)
+    else:
+        return None
 
-
-print("Possible labels for type 2 diabetes: ", retrieveLabels("Type II Diabetes"))
-# notice it doesn't matter whether I put II or 2... both point to the same place
-print("\nSymptoms for type 2 diabetes: ", retrieveFacts("Type 2 Diabetes", "Symptoms"))
+if __name__ == '__main__':
+    print("Possible labels for type 2 diabetes: ", retrieveLabels("Schizophrenia"))
+    # notice it doesn't matter whether I put II or 2... both point to the same place
+    print("\nSymptoms for type 2 diabetes: ", retrieveFacts("Schizophrenia", "Symptoms"))
