@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ce504fd7-7858-4d50-bcf1-b827400a863b" name="Changes" comment="cleaning repo">
-      <change afterPath="$PROJECT_DIR$/__pycache__/ULMS_api.cpython-39.pyc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/__pycache__/wikipedia_api.cpython-39.pyc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build_ontology_james.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="ce504fd7-7858-4d50-bcf1-b827400a863b" name="Changes" comment="_james.py to build disease tree w object props. &#10;&#10;Edited apis to fix basic bugs">
       <change beforePath="$PROJECT_DIR$/ULMS_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/ULMS_api.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -171,7 +166,7 @@
       <workItem from="1645498272800" duration="816000" />
       <workItem from="1645807073966" duration="232000" />
       <workItem from="1645813112369" duration="9317000" />
-      <workItem from="1646079011316" duration="7959000" />
+      <workItem from="1646079011316" duration="8402000" />
     </task>
     <task id="LOCAL-00001" summary="ULMS_api.py up and running">
       <created>1645817294474</created>
@@ -194,7 +189,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646086140370</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="_james.py to build disease tree w object props. &#10;&#10;Edited apis to fix basic bugs">
+      <created>1646088671075</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1646088671075</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,7 +217,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="ULMS_api.py up and running" />
     <MESSAGE value="cleaning repo" />
-    <option name="LAST_COMMIT_MESSAGE" value="cleaning repo" />
+    <MESSAGE value="_james.py to build disease tree w object props. &#10;&#10;Edited apis to fix basic bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="_james.py to build disease tree w object props. &#10;&#10;Edited apis to fix basic bugs" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/DiseaseOntology$ULMS_api.coverage" NAME="ULMS_api Coverage Results" MODIFIED="1646083711862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

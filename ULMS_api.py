@@ -93,14 +93,3 @@ def build_tree(rootUI, _API):
             if child['children'] == "NONE":
                 leafs.append([childname, child['ui']])
     return tree, leafs
-
-
-if __name__ == '__main__':
-    api_key = '66bc8361-7450-4750-861c-52ed6ae1dd18'
-    api = API(api_key=api_key)
-
-    ui = 'D001523'
-    tree, leafs = build_tree(ui, api)
-
-    tree.to_csv('disease_classes.csv')
-    leafs.to_csv('leafs.csv')
