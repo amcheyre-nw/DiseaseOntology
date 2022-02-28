@@ -14,11 +14,11 @@ def create_ontology():
                ["Brief_Psychotic_Disorder", "Psychotic_Disorders"], \
                ["Schizoaffective_Disorder", "Psychotic_Disorders"], \
                ["Delusional_Disorder", "Psychotic_Disorders"], \
-               ["Mood_Disorders", None],\
+               ["Mood_Disorders", "Psychiactric_Disorders"],\
                ["Mood_Episodes", "Mood_Disorders"], \
                ["Depressive_Disorders", "Mood_Disorders"], \
                ["Bipolar_Disorders", "Mood_Disorders"], \
-               ["Anxiety_Disorders", None], \
+               ["Anxiety_Disorders", "Psychiactric_Disorders"], \
                ["Panic_Disorder", "Anxiety_Disorders"], \
                ["Agoraphobia", "Anxiety_Disorders"], \
                ["Generalized_Anxiety_Disorder", "Anxiety_Disorders"], \
