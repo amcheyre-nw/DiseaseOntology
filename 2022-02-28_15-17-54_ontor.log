@@ -1,0 +1,7 @@
+INFO:disease_ontology:successfully loaded ontology specified
+WARNING:disease_ontology:unexpected instance info: ['evaDisease', None, 'isFeelingSad', None, None]
+WARNING:disease_ontology:unexpected triple: ['evaDisease', None, 'isFeelingSad', None, None]
+WARNING:disease_ontology:unexpected instance info: ['williamDisease', None, 'hasMoodSwings', None, None]
+WARNING:disease_ontology:unexpected triple: ['williamDisease', None, 'hasMoodSwings', None, None]
+WARNING:disease_ontology:unexpected instance info: ['johnDisease', None, 'hasNotSocialInteraction', None, None]
+WARNING:disease_ontology:unexpected triple: ['johnDisease', None, 'hasNotSocialInteraction', None, None]
