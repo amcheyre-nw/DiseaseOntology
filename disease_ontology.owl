@@ -28,6 +28,26 @@
   <rdfs:domain rdf:resource="#Disease"/>
 </owl:ObjectProperty>
 
+<owl:ObjectProperty rdf:about="#isFeelingSad">
+  <rdfs:domain rdf:resource="#mentalDisease"/>
+  <rdfs:range rdf:resource="#mentalDisease"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#hasMoodSwings">
+  <rdfs:domain rdf:resource="#mentalDisease"/>
+  <rdfs:range rdf:resource="#bipolar"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#hasWeightLoss">
+  <rdfs:domain rdf:resource="#mentalDisease"/>
+  <rdfs:range rdf:resource="#anorexia"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#hasNotSocialInteraction">
+  <rdfs:domain rdf:resource="#mentalDisease"/>
+  <rdfs:range rdf:resource="#autism"/>
+</owl:ObjectProperty>
+
 <owl:Class rdf:about="#Disease">
   <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 </owl:Class>
@@ -46,6 +66,34 @@
 
 <owl:Class rdf:about="#Treatment">
   <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#disease">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#mentalDisease">
+  <rdfs:subClassOf rdf:resource="#disease"/>
+</owl:Class>
+
+<owl:Class rdf:about="#bipolar">
+  <rdfs:subClassOf rdf:resource="#mentalDisease"/>
+</owl:Class>
+
+<owl:Class rdf:about="#dementia">
+  <rdfs:subClassOf rdf:resource="#mentalDisease"/>
+</owl:Class>
+
+<owl:Class rdf:about="#schizophrenia">
+  <rdfs:subClassOf rdf:resource="#mentalDisease"/>
+</owl:Class>
+
+<owl:Class rdf:about="#anorexia">
+  <rdfs:subClassOf rdf:resource="#mentalDisease"/>
+</owl:Class>
+
+<owl:Class rdf:about="#autism">
+  <rdfs:subClassOf rdf:resource="#mentalDisease"/>
 </owl:Class>
 
 
