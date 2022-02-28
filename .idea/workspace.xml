@@ -1,25 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ce504fd7-7858-4d50-bcf1-b827400a863b" name="Changes" comment="ULMS_api.py up and running">
+    <list default="true" id="ce504fd7-7858-4d50-bcf1-b827400a863b" name="Changes" comment="cleaning repo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pizza_Protege.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2022-02-28_15-17-54_ontor.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ULMS_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/ULMS_api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/__pycache__/wikipedia_api.cpython-39.pyc" beforeDir="false" afterPath="$PROJECT_DIR$/__pycache__/wikipedia_api.cpython-39.pyc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/class_axioms.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_ontology.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/disease_list.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/disease_ontology.owl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/disease_ontology_kaleem.owl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/disease_ontology_old.owl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ontology_kaleem.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pizza_ontology.owl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/props.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/read_diseaselist.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/semMed_scraper.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/taxo.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__pycache__/wikipedia_api.cpython-39.pyc" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,7 +152,7 @@
       <workItem from="1645498272800" duration="816000" />
       <workItem from="1645807073966" duration="232000" />
       <workItem from="1645813112369" duration="9317000" />
-      <workItem from="1646079011316" duration="5296000" />
+      <workItem from="1646079011316" duration="6011000" />
     </task>
     <task id="LOCAL-00001" summary="ULMS_api.py up and running">
       <created>1645817294474</created>
@@ -175,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645817294474</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="cleaning repo">
+      <created>1646085453218</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1646085453218</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,18 +188,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="ULMS_api.py up and running" />
-    <option name="LAST_COMMIT_MESSAGE" value="ULMS_api.py up and running" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/ULMS_api.py</url>
-          <line>75</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="cleaning repo" />
+    <option name="LAST_COMMIT_MESSAGE" value="cleaning repo" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/DiseaseOntology$ULMS_api.coverage" NAME="ULMS_api Coverage Results" MODIFIED="1646083711862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

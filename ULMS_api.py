@@ -52,7 +52,8 @@ class API:
 
     def get_ui(self, ui):
         self._auth = Auth(api_key=api_key)  # need to call this multiple times? painful
-        url = f'{self.BASE_URL}/content/{self._version}/source/MSH/{ui}' return self._get(url=url)
+        url = f'{self.BASE_URL}/content/{self._version}/source/MSH/{ui}'
+        return self._get(url=url)
 
     def get_children(self, ui):
         self._auth = Auth(api_key=api_key) # need to call this multiple times? painful
