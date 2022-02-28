@@ -39,6 +39,7 @@ class API:
     def __init__(self, *, api_key, version='current'):
         self._auth = Auth(api_key=api_key)
         self._version = version
+        self.api_key = api_key
 
     def get_cui(self, cui):
         self._auth = Auth(api_key=api_key) # need to call this multiple times? painful
@@ -46,17 +47,17 @@ class API:
         return self._get(url=url)
 
     def get_tui(self, tui):
-        self._auth = Auth(api_key=api_key) # need to call this multiple times? painful
+        self._auth = Auth(api_key=self.api_key) # need to call this multiple times? painful
         url = (f'{self.BASE_URL}/semantic-network/{self._version}/TUI/{tui}')
         return self._get(url=url)
 
     def get_ui(self, ui):
-        self._auth = Auth(api_key=api_key)  # need to call this multiple times? painful
+        self._auth = Auth(api_key=self.api_key)  # need to call this multiple times? painful
         url = f'{self.BASE_URL}/content/{self._version}/source/MSH/{ui}'
         return self._get(url=url)
 
     def get_children(self, ui):
-        self._auth = Auth(api_key=api_key) # need to call this multiple times? painful
+        self._auth = Auth(api_key=self.api_key) # need to call this multiple times? painful
         url = f'{self.BASE_URL}/content/{self._version}/source/MSH/{ui}/children'
         return self._get(url=url)
 
@@ -71,9 +72,14 @@ def build_tree(rootUI, _API):
     tree = ['class', 'superclass']
     leafs = []
     stack = [rootUI]
+    root_str = ''
     while len(stack) > 0:
+        print("building tree... stack size: {} | completed: {}".format(len(stack), len(tree)), flush=True, end='\r')
         ui = stack.pop(0)
         req = _API.get_ui(ui)
+        if len(tree) == 1: # if we've just started add the top of the tree in
+            tree.append([req['result']['name'], None])
+
         child_req = _API.get_children(ui)
         children = [x for x in child_req['result']]
         #tree = tree + [[req['result']['name'], child['name']] for child in children]
