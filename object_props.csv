@@ -1,4 +1,3 @@
-object_property (op),super-op,domain,range,functional,inverse functional,transitive,symmetric,asymmetric,reflexive,irreflexive,inverse_prop
 UI/class_UI,,Psychiatry and Psychology (MeSH Category),class,False,False,False,False,False,False,False,
 UI/U000014,,Psychiatry and Psychology (MeSH Category),Psychiatry and Psychology (MeSH Category),False,False,False,False,False,False,False,
 UI/D001520,,Psychiatry and Psychology (MeSH Category),Behavior and Behavior Mechanisms,False,False,False,False,False,False,False,

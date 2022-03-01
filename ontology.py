@@ -26,6 +26,7 @@ def create_ontology():
                 word = None
             aux.append(word)
         new_classes.append(aux)
+    #print(new_classes)
 
     # Properties of objects including their axioms
     # [object_property (op), super-op, domain, range, functional, inverse functional, transitive, symmetric,
@@ -34,7 +35,20 @@ def create_ontology():
         reader1 = csv.reader(op)
         ops = list(reader1)
 
-    #print(ops)
+    new_ops = []
+    for line in ops:
+        aux = []
+        for word in line:
+            if " " in word:
+                word = word.replace(" ","")
+            if "False" in word:
+                word = False
+            if word == '':
+                word = None
+            aux.append(word)
+        new_ops.append(aux)
+
+    print(new_ops)
 
     # Datatype properties including their axioms
     # [data_property (dp), super-dp, functional, domain, range, minex, minin, exact, maxin, maxex]
@@ -63,7 +77,7 @@ def create_ontology():
 
     # Add the information as lists
     ontor1.add_taxo(new_classes)
-    #ontor1.add_ops(ops)
+    ontor1.add_ops(ops)
     #ontor1.add_dps(dps)
     #ontor1.add_axioms(axs)
     #ontor1.add_instances(ins)
