@@ -9,18 +9,16 @@ api_key = '66bc8361-7450-4750-861c-52ed6ae1dd18'
 api = ulms.API(api_key=api_key)
 
 superparent_ui = 'U000014'
-#superparent_ui = 'D001523'
-#superparent_ui = 'D013001'
-#superparent_ui = 'D000068079'
+snomed_ui = '74732009' # mental disorder
 
-tree, leafs = ulms.build_tree(superparent_ui, api)
+tree, leafs = ulms.build_tree_inverse_isa(snomed_ui, api, sourcename='SNOMEDCT_US')
 
 treeDF = pd.DataFrame(index=None, columns=['class', 'superclass'])
 treeDF['class'] = [t[0] for t in tree[1:]]
 treeDF['superclass'] = [t[1] for t in tree[1:]]
 
 # cache
-pd.DataFrame(treeDF).to_csv('disease_classes.csv', index=False)
+pd.DataFrame(treeDF).to_csv('disease_classes_SMED.csv', index=False)
 
 # generate object properties
 oprops = pd.DataFrame(index=None, columns=['object_property (op)', 'super-op', 'domain', 'range', 'functional',
@@ -40,10 +38,10 @@ oprops = oprops.drop_duplicates(ignore_index=True)
 
 # generate ALL the labels from wiki (not just symptoms but EVERYTHING)
 print('\nBuilding Wiki Properties')
-for d in tqdm(leafs[1:]):
+for d in tqdm(treeDF.iloc[1:0].unique()):
     disease_str = d[0]
     labels = wiki.retrieveLabels(disease_str)
-
+    #labels = ['Symptoms'] # just stick to these right now
     if isinstance(labels, list):
 
         if '' in labels: # found a weird edge case where '' was a label
@@ -74,4 +72,4 @@ for d in tqdm(leafs[1:]):
                     oprops.loc[len(oprops)] = ['has/{}/{}'.format(label, p.replace(' ', '_')), None, disease_domain, disease_str,
                                                False, False, False, False, False, False, False, None]
 
-oprops.to_csv('object_props.csv', index=False)
+oprops.to_csv('object_props_SMED.csv', index=False)
