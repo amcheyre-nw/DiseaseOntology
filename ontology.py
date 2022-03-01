@@ -77,7 +77,7 @@ def create_ontology():
 
     # Add the information as lists
     ontor1.add_taxo(new_classes)
-    ontor1.add_ops(ops)
+    ontor1.add_ops(new_ops)
     #ontor1.add_dps(dps)
     #ontor1.add_axioms(axs)
     #ontor1.add_instances(ins)
