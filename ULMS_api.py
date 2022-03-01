@@ -69,7 +69,7 @@ class API:
 
 
 def build_tree(rootUI, _API):
-    tree = ['class', 'superclass']
+    tree = [['class', 'superclass']]
     leafs = []
     stack = [rootUI]
     root_str = ''

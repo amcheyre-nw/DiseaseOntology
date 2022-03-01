@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ce504fd7-7858-4d50-bcf1-b827400a863b" name="Changes" comment="_james.py to build disease tree w object props. &#10;&#10;Edited apis to fix basic bugs">
+    <list default="true" id="ce504fd7-7858-4d50-bcf1-b827400a863b" name="Changes" comment="removed auto-run code from ULMS&#10;&#10;prior push included requirements.txt">
+      <change afterPath="$PROJECT_DIR$/disease_classes.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ULMS_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/ULMS_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/__pycache__/ULMS_api.cpython-39.pyc" beforeDir="false" afterPath="$PROJECT_DIR$/__pycache__/ULMS_api.cpython-39.pyc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build_ontology_james.py" beforeDir="false" afterPath="$PROJECT_DIR$/build_ontology_james.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +43,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Python.ULMS_api">
+  <component name="RunManager" selected="Python.build_ontology_james">
     <configuration name="ULMS_api" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DiseaseOntology" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -146,8 +150,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.ULMS_api" />
         <item itemvalue="Python.build_ontology_james" />
+        <item itemvalue="Python.ULMS_api" />
         <item itemvalue="Python.create_ontology" />
         <item itemvalue="Python.ontology_kaleem" />
         <item itemvalue="Python.ontology" />
@@ -166,7 +170,7 @@
       <workItem from="1645498272800" duration="816000" />
       <workItem from="1645807073966" duration="232000" />
       <workItem from="1645813112369" duration="9317000" />
-      <workItem from="1646079011316" duration="8402000" />
+      <workItem from="1646079011316" duration="10520000" />
     </task>
     <task id="LOCAL-00001" summary="ULMS_api.py up and running">
       <created>1645817294474</created>
@@ -196,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646088671075</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="removed auto-run code from ULMS&#10;&#10;prior push included requirements.txt">
+      <created>1646089389830</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1646089389830</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,12 +229,24 @@
     <MESSAGE value="ULMS_api.py up and running" />
     <MESSAGE value="cleaning repo" />
     <MESSAGE value="_james.py to build disease tree w object props. &#10;&#10;Edited apis to fix basic bugs" />
-    <option name="LAST_COMMIT_MESSAGE" value="_james.py to build disease tree w object props. &#10;&#10;Edited apis to fix basic bugs" />
+    <MESSAGE value="removed auto-run code from ULMS&#10;&#10;prior push included requirements.txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed auto-run code from ULMS&#10;&#10;prior push included requirements.txt" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/build_ontology_james.py</url>
+          <line>26</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/DiseaseOntology$ULMS_api.coverage" NAME="ULMS_api Coverage Results" MODIFIED="1646083711862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DiseaseOntology$ontology_kaleem.coverage" NAME="ontology_kaleem Coverage Results" MODIFIED="1645383117234" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/DiseaseOntology$build_ontology_james.coverage" NAME="build_ontology_james Coverage Results" MODIFIED="1646088534198" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/DiseaseOntology$build_ontology_james.coverage" NAME="build_ontology_james Coverage Results" MODIFIED="1646092173076" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DiseaseOntology$ontology.coverage" NAME="ontology Coverage Results" MODIFIED="1645381228506" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

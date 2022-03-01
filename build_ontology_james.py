@@ -12,6 +12,10 @@ api = ulms.API(api_key=api_key)
 superparent_ui = 'D001523'
 tree, leafs = ulms.build_tree(superparent_ui, api)
 
+treeDF = pd.DataFrame(index=None, columns=['class', 'superclass'])
+treeDF['class'] = [t[0] for t in tree[1:]]
+treeDF['superclass'] = [t[1] for t in tree[1:]]
+
 # cache
 pd.DataFrame(tree).to_csv('disease_classes.csv')
 
@@ -26,8 +30,9 @@ print('\nBuilding object properties')
 for d in tqdm(leafs):
     disease_str = d[0]
     props = wiki.retrieveFacts(disease_str, "Symptoms")
-    for p in props:
-        oprops.loc[len[oprops]] = ['hasSymptom{}'.format(p), None, disease_domain, d,
-                                   False, False, False, False, False, False, False, None]
+    if props is not None:
+        for p in props:
+            oprops.loc[len[oprops]] = ['hasSymptom{}'.format(p), None, disease_domain, d,
+                                       False, False, False, False, False, False, False, None]
 
 oprops.to_csv('object_props.csv')
