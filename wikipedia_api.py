@@ -93,4 +93,4 @@ def retrieveLabels(disease):
 if __name__ == '__main__':
     print("Possible labels for type 2 diabetes: ", retrieveLabels("Schizophrenia"))
     # notice it doesn't matter whether I put II or 2... both point to the same place
-    print("\nSymptoms for type 2 diabetes: ", retrieveFacts("Latent schizophrenia", "Symptoms"))
+    print("\nSymptoms for type 2 diabetes: ", retrieveFacts("Eating disorders", "Symptoms"))
