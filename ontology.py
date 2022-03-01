@@ -31,7 +31,7 @@ def create_ontology():
     # Properties of objects including their axioms
     # [object_property (op), super-op, domain, range, functional, inverse functional, transitive, symmetric,
     # asymmetric, reflexive, irreflexive, inverse_prop]
-    with open('object_props.csv', newline='') as op:
+    with open('object_props_2.csv', newline='') as op:
         reader1 = csv.reader(op)
         ops = list(reader1)
 
@@ -48,7 +48,7 @@ def create_ontology():
             aux.append(word)
         new_ops.append(aux)
 
-    print(new_ops)
+
 
     # Datatype properties including their axioms
     # [data_property (dp), super-dp, functional, domain, range, minex, minin, exact, maxin, maxex]
@@ -69,11 +69,6 @@ def create_ontology():
            ["williamDisease", None, "hasMoodSwings", None, None],
            ["johnDisease", None, "hasNotSocialInteraction", None, None]]
 
-    # Import information from CSV and JSON files (not working yet)
-    #ontor1.add_taxo(ontor.load_csv(path+"/taxo.csv"))
-    #ontor1.add_ops(ontor.load_json(path+"/props.json")["op"])
-    #ontor1.add_dps(ontor.load_json(path+"/props.json")["dp"])
-    #ontor1.add_axioms(ontor.load_csv(path+"/class_axioms.csv"))
 
     # Add the information as lists
     ontor1.add_taxo(new_classes)
@@ -81,11 +76,24 @@ def create_ontology():
     #ontor1.add_dps(dps)
     #ontor1.add_axioms(axs)
     #ontor1.add_instances(ins)
-
     ontor1.save_as(path+"/disease_ontology.owl")
 
-    # Visualize a graph
-    #ontor1.visualize(classes=["human", "pizza"], properties=["likes", "diameter_in_cm"], focusnode="John", radius=2)
+def add_rules():
+    onto = get_ontology('disease_ontology.owl')
+
+    with onto:
+        rule = Imp()
+
+        class Depression(FunctionalProperty): pass
+        class Anxiety(FunctionalProperty): pass
+        class Irritability(FunctionalProperty): pass
+        class NeuroticDisorders(EntityClass): pass
+
+        rule.set_as_rule("Depression(?x, ?y), Anxiety(?x, ?y), "
+                         "Irritability(?x, ?y) -> NeuroticDisorders(?x)")
+    path = os.getcwd()
+    onto.save_as(path + "/disease_ontology.owl")
 
 if __name__ == "__main__":
     create_ontology()
+    add_rules()

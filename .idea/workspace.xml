@@ -1,21 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ce504fd7-7858-4d50-bcf1-b827400a863b" name="Changes" comment="trying to add ops">
-      <change afterPath="$PROJECT_DIR$/2022-03-01_08-10-26_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-01_08-12-51_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-01_08-13-10_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-01_08-13-31_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-01_08-14-23_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-01_08-15-30_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-01_08-15-57_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-01_08-16-17_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-01_08-16-40_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-01_08-17-31_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/object_props_2.csv" afterDir="false" />
+    <list default="true" id="ce504fd7-7858-4d50-bcf1-b827400a863b" name="Changes" comment="ops added to Protege">
+      <change afterPath="$PROJECT_DIR$/2022-03-01_10-58-27_ontor.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2022-03-01_11-00-04_ontor.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2022-03-01_11-01-12_ontor.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2022-03-01_11-02-59_ontor.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2022-03-01_11-03-34_ontor.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2022-03-01_11-04-00_ontor.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/disease_ontology.owl" beforeDir="false" afterPath="$PROJECT_DIR$/disease_ontology.owl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/object_props.csv" beforeDir="false" afterPath="$PROJECT_DIR$/object_props.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/object_props_2.csv" beforeDir="false" afterPath="$PROJECT_DIR$/object_props_2.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ontology.py" beforeDir="false" afterPath="$PROJECT_DIR$/ontology.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -168,7 +163,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646143496628</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="ops added to Protege">
+      <created>1646144358679</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1646144358679</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,7 +192,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="reading csv classes" />
     <MESSAGE value="trying to add ops" />
-    <option name="LAST_COMMIT_MESSAGE" value="trying to add ops" />
+    <MESSAGE value="ops added to Protege" />
+    <option name="LAST_COMMIT_MESSAGE" value="ops added to Protege" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -204,7 +207,7 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/DiseaseOntology$ontology.coverage" NAME="ontology Coverage Results" MODIFIED="1646144249287" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/DiseaseOntology$ontology.coverage" NAME="ontology Coverage Results" MODIFIED="1646154239366" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DiseaseOntology$ULMS_api.coverage" NAME="ULMS_api Coverage Results" MODIFIED="1645816972641" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DiseaseOntology$ontology_kaleem.coverage" NAME="ontology_kaleem Coverage Results" MODIFIED="1645383117234" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
