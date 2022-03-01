@@ -11,6 +11,12 @@ def getData_from_wikiInfoBox(url, infobox_item):
     :param infobox_item: the label within the InfoBox that we're scraping the value of (eg: "Symptoms")
     :return: list of the InfoBox data (formatted nicely)
     '''
+
+    url_name = url.split('/')[-1].replace('_', ' ')
+
+    if infobox_item == 'wiki_name':
+        return [url_name]
+
     req = requests.get(url)
     soup = BeautifulSoup(req.text, 'html.parser')
 
@@ -38,7 +44,8 @@ def getLabels_from_wikiInfoBox(url):
     soup = BeautifulSoup(req.text, 'html.parser')
 
     lhs = soup.find_all('th', {"class":"infobox-label"}) # get lhs of the InfoBox
-    labels = [l.text for l in lhs]
+    labels = [l.text for l in lhs] + ['wiki_name'] # always add our own "wiki_name" label in... represents the name
+                                                    # of the condition given in the URL
     return labels
 
 
@@ -69,7 +76,6 @@ def retrieveFacts(disease, label):
         return getData_from_wikiInfoBox(url, label)
     except:
         return None
-
 
 def retrieveLabels(disease):
     '''

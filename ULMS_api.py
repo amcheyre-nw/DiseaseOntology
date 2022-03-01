@@ -69,7 +69,7 @@ class API:
 
 
 def build_tree(rootUI, _API):
-    tree = [['class', 'superclass']]
+    tree = [['class', 'superclass', 'class_UI']]
     leafs = []
     stack = [rootUI]
     root_str = ''
@@ -78,7 +78,7 @@ def build_tree(rootUI, _API):
         ui = stack.pop(0)
         req = _API.get_ui(ui)
         if len(tree) == 1: # if we've just started add the top of the tree in
-            tree.append([req['result']['name'], None])
+            tree.append([req['result']['name'], None, req['result']['ui']])
 
         child_req = _API.get_children(ui)
         children = [x for x in child_req['result']]
@@ -88,7 +88,7 @@ def build_tree(rootUI, _API):
         for child in children: # add the spo statements
             childname = child['name']
             parentname = req['result']['name']
-            tree.append([childname, parentname])
+            tree.append([childname, parentname, child['ui']])
 
             if child['children'] == "NONE":
                 leafs.append([childname, child['ui']])
