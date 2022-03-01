@@ -84,13 +84,13 @@ def add_rules():
     with onto:
         rule = Imp()
 
-        class Depression(FunctionalProperty): pass
-        class Anxiety(FunctionalProperty): pass
-        class Irritability(FunctionalProperty): pass
+        class Depression(ObjectProperty): pass
+        class Anxiety(ObjectProperty): pass
+        class Irritability(ObjectProperty): pass
         class NeuroticDisorders(EntityClass): pass
 
-        rule.set_as_rule("Depression(?x, ?y), Anxiety(?x, ?y), "
-                         "Irritability(?x, ?y) -> NeuroticDisorders(?x)")
+        rule.set_as_rule("Depression(?x, ?y), Anxiety(?x, ?y), Irritability(?x, ?y) -> NeuroticDisorders(?x)")
+
     path = os.getcwd()
     onto.save_as(path + "/disease_ontology.owl")
 
