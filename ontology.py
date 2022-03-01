@@ -1,6 +1,6 @@
 from owlready2 import *
 import ontor
-
+import csv
 
 def create_ontology():
     # https://{hostdomain}/{ontologiesRoot}/{authority}/{resourceIdentifier}.owl
@@ -12,21 +12,30 @@ def create_ontology():
     # Taxonomy: List of all [Class, Superclass], create the hierarchy of classes
     # For diseases could be: [lab_test, disease], [symptoms, disease], [physical exam, disease],
     #                       [disease, generic disease]
-    classes = [["disease", None],\
-               ["mentalDisease", "disease"],\
-               ["bipolar", "mentalDisease"],\
-               ["dementia", "mentalDisease"],\
-               ["schizophrenia", "mentalDisease"],\
-               ["anorexia", "mentalDisease"],\
-               ["autism", "mentalDisease"]]
+    with open('disease_classes.csv', newline='') as c:
+        reader2 = csv.reader(c)
+        classes = list(reader2)
+
+    new_classes = []
+    for line in classes:
+        aux = []
+        for word in line:
+            if word == '':
+                word = None
+            aux.append(word)
+        new_classes.append(aux)
+
+
+    print(new_classes)
 
     # Properties of objects including their axioms
     # [object_property (op), super-op, domain, range, functional, inverse functional, transitive, symmetric,
     # asymmetric, reflexive, irreflexive, inverse_prop]
-    ops = [["isFeelingSad", None, "mentalDisease", "mentalDisease", False, False, False, False, False, False, False, None],
-           ["hasMoodSwings", None, "mentalDisease", "bipolar", False, False, False, False, False, False, False, None],
-           ["hasWeightLoss", None, "mentalDisease", "anorexia", False, False, False, False, False, False, False, None],
-           ["hasNotSocialInteraction", None, "mentalDisease", "autism", False, False, False, False, False, False, False, None]]
+    with open('object_props.csv', newline='') as op:
+        reader1 = csv.reader(op)
+        ops = list(reader1)
+
+    #print(ops)
 
     # Datatype properties including their axioms
     # [data_property (dp), super-dp, functional, domain, range, minex, minin, exact, maxin, maxex]
@@ -54,11 +63,11 @@ def create_ontology():
     #ontor1.add_axioms(ontor.load_csv(path+"/class_axioms.csv"))
 
     # Add the information as lists
-    ontor1.add_taxo(classes)
-    ontor1.add_ops(ops)
+    ontor1.add_taxo(new_classes)
+    #ontor1.add_ops(ops)
     #ontor1.add_dps(dps)
     #ontor1.add_axioms(axs)
-    ontor1.add_instances(ins)
+    #ontor1.add_instances(ins)
 
     ontor1.save_as(path+"/disease_ontology.owl")
 

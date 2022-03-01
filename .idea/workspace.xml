@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ce504fd7-7858-4d50-bcf1-b827400a863b" name="Changes" comment="build_ontology_james.py complete. Builds csv files required to build .owl">
-      <change afterPath="$PROJECT_DIR$/disease_classes_SMED.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/object_props_SMED.csv" afterDir="false" />
+    <list default="true" id="ce504fd7-7858-4d50-bcf1-b827400a863b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/2022-03-01_07-39-17_ontor.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/disease_ontology.owl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/DiseaseOntology.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DiseaseOntology.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ULMS_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/ULMS_api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/__pycache__/ULMS_api.cpython-39.pyc" beforeDir="false" afterPath="$PROJECT_DIR$/__pycache__/ULMS_api.cpython-39.pyc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/__pycache__/wikipedia_api.cpython-39.pyc" beforeDir="false" afterPath="$PROJECT_DIR$/__pycache__/wikipedia_api.cpython-39.pyc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build_ontology_james.py" beforeDir="false" afterPath="$PROJECT_DIR$/build_ontology_james.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/object_props.csv" beforeDir="false" afterPath="$PROJECT_DIR$/object_props.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wikipedia_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/wikipedia_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/disease_classes.csv" beforeDir="false" afterPath="$PROJECT_DIR$/disease_classes.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ontology.py" beforeDir="false" afterPath="$PROJECT_DIR$/ontology.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,11 +45,14 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Python.build_ontology_james">
+  <component name="RunManager" selected="Python.ontology">
     <configuration name="ULMS_api" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DiseaseOntology" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -67,39 +68,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="build_ontology_james" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="DiseaseOntology" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/build_ontology_james.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="create_ontology" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="ontology" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DiseaseOntology" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="$USER_HOME$/.conda/envs/MSAI-349-Fall-2021-HW3/bin/python" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/create_ontology.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ontology.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -130,31 +112,10 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="wikipedia_api" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="DiseaseOntology" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/wikipedia_api.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.build_ontology_james" />
+        <item itemvalue="Python.ontology" />
         <item itemvalue="Python.ULMS_api" />
-        <item itemvalue="Python.wikipedia_api" />
-        <item itemvalue="Python.create_ontology" />
         <item itemvalue="Python.ontology_kaleem" />
       </list>
     </recent_temporary>
@@ -170,59 +131,9 @@
       <workItem from="1645380882961" duration="4091000" />
       <workItem from="1645498272800" duration="816000" />
       <workItem from="1645807073966" duration="232000" />
-      <workItem from="1645813112369" duration="9317000" />
-      <workItem from="1646079011316" duration="27350000" />
+      <workItem from="1645813112369" duration="4000000" />
+      <workItem from="1646083014091" duration="59000" />
     </task>
-    <task id="LOCAL-00001" summary="ULMS_api.py up and running">
-      <created>1645817294474</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1645817294474</updated>
-    </task>
-    <task id="LOCAL-00002" summary="cleaning repo">
-      <created>1646085453218</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1646085453218</updated>
-    </task>
-    <task id="LOCAL-00003" summary="cleaning repo">
-      <created>1646086140370</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1646086140370</updated>
-    </task>
-    <task id="LOCAL-00004" summary="_james.py to build disease tree w object props. &#10;&#10;Edited apis to fix basic bugs">
-      <created>1646088671075</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1646088671075</updated>
-    </task>
-    <task id="LOCAL-00005" summary="removed auto-run code from ULMS&#10;&#10;prior push included requirements.txt">
-      <created>1646089389830</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1646089389830</updated>
-    </task>
-    <task id="LOCAL-00006" summary="added class/superclass titles to build_tree in ULMS_api.py">
-      <created>1646093100764</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1646093100764</updated>
-    </task>
-    <task id="LOCAL-00007" summary="build_ontology_james.py complete. Builds csv files required to build .owl">
-      <created>1646106376643</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1646106376643</updated>
-    </task>
-    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,48 +149,25 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="ULMS_api.py up and running" />
-    <MESSAGE value="cleaning repo" />
-    <MESSAGE value="_james.py to build disease tree w object props. &#10;&#10;Edited apis to fix basic bugs" />
-    <MESSAGE value="removed auto-run code from ULMS&#10;&#10;prior push included requirements.txt" />
-    <MESSAGE value="added class/superclass titles to build_tree in ULMS_api.py" />
-    <MESSAGE value="build_ontology_james.py complete. Builds csv files required to build .owl" />
-    <option name="LAST_COMMIT_MESSAGE" value="build_ontology_james.py complete. Builds csv files required to build .owl" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/build_ontology_james.py</url>
-          <line>61</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/wikipedia_api.py</url>
-          <line>73</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/wikipedia_api.py</url>
-          <line>58</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/ULMS_api.py</url>
-          <line>136</line>
-          <option name="timeStamp" value="14" />
+          <line>89</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/DiseaseOntology$wikipedia_api.coverage" NAME="wikipedia_api Coverage Results" MODIFIED="1646121441541" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/DiseaseOntology$ULMS_api.coverage" NAME="ULMS_api Coverage Results" MODIFIED="1646123426089" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/DiseaseOntology$ontology.coverage" NAME="ontology Coverage Results" MODIFIED="1646141956381" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/DiseaseOntology$ULMS_api.coverage" NAME="ULMS_api Coverage Results" MODIFIED="1645816972641" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DiseaseOntology$ontology_kaleem.coverage" NAME="ontology_kaleem Coverage Results" MODIFIED="1645383117234" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/DiseaseOntology$build_ontology_james.coverage" NAME="build_ontology_james Coverage Results" MODIFIED="1646123567691" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/DiseaseOntology$ontology.coverage" NAME="ontology Coverage Results" MODIFIED="1645381228506" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
