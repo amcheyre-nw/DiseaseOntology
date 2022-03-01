@@ -87,12 +87,12 @@ def add_rules():
         class Depression(ObjectProperty): pass
         class Anxiety(ObjectProperty): pass
         class Irritability(ObjectProperty): pass
-        class NeuroticDisorders(EntityClass): pass
+        class NeuroticDisorders(Thing): pass
 
-        rule.set_as_rule("Depression(?x, ?y), Anxiety(?x, ?y), Irritability(?x, ?y) -> NeuroticDisorders(?x)")
+        rule.set_as_rule("Depression(?x, ?y) ^ Anxiety(?x, ?y) ^ Irritability(?x, ?y) -> NeuroticDisorders(?x)")
 
     path = os.getcwd()
-    onto.save_as(path + "/disease_ontology.owl")
+    onto.save(path+"/disease_ontology.owl")
 
 if __name__ == "__main__":
     create_ontology()

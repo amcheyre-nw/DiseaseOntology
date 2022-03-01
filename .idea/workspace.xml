@@ -2,7 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce504fd7-7858-4d50-bcf1-b827400a863b" name="Changes" comment="working on adding rules">
-      <change afterPath="$PROJECT_DIR$/2022-03-01_11-16-11_ontor.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2022-03-01_11-32-05_ontor.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2022-03-01_11-32-22_ontor.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2022-03-01_11-32-54_ontor.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2022-03-01_11-33-17_ontor.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2022-03-01_11-33-30_ontor.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2022-03-01_11-34-27_ontor.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2022-03-01_11-34-40_ontor.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2022-03-01_11-16-11_ontor.log" beforeDir="false" afterPath="$PROJECT_DIR$/2022-03-01_11-31-56_ontor.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/disease_ontology.owl" beforeDir="false" afterPath="$PROJECT_DIR$/disease_ontology.owl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/object_props_2.csv" beforeDir="false" afterPath="$PROJECT_DIR$/object_props_2.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ontology.py" beforeDir="false" afterPath="$PROJECT_DIR$/ontology.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -169,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646154786710</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="working on adding rules">
+      <created>1646155047920</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1646155047920</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,7 +224,7 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/DiseaseOntology$ontology.coverage" NAME="ontology Coverage Results" MODIFIED="1646154970470" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/DiseaseOntology$ontology.coverage" NAME="ontology Coverage Results" MODIFIED="1646156079570" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DiseaseOntology$ULMS_api.coverage" NAME="ULMS_api Coverage Results" MODIFIED="1645816972641" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DiseaseOntology$ontology_kaleem.coverage" NAME="ontology_kaleem Coverage Results" MODIFIED="1645383117234" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
