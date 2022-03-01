@@ -1,6 +1,6 @@
 from owlready2 import *
 import ontor
-
+import csv
 
 def create_ontology():
     # https://{hostdomain}/{ontologiesRoot}/{authority}/{resourceIdentifier}.owl
@@ -12,21 +12,43 @@ def create_ontology():
     # Taxonomy: List of all [Class, Superclass], create the hierarchy of classes
     # For diseases could be: [lab_test, disease], [symptoms, disease], [physical exam, disease],
     #                       [disease, generic disease]
-    classes = [["disease", None],\
-               ["mentalDisease", "disease"],\
-               ["bipolar", "mentalDisease"],\
-               ["dementia", "mentalDisease"],\
-               ["schizophrenia", "mentalDisease"],\
-               ["anorexia", "mentalDisease"],\
-               ["autism", "mentalDisease"]]
+    with open('disease_classes.csv', newline='') as c:
+        reader2 = csv.reader(c)
+        classes = list(reader2)
+
+    new_classes = []
+    for line in classes:
+        aux = []
+        for word in line:
+            if " " in word:
+                word = word.replace(" ","")
+            if word == '':
+                word = None
+            aux.append(word)
+        new_classes.append(aux)
+    #print(new_classes)
 
     # Properties of objects including their axioms
     # [object_property (op), super-op, domain, range, functional, inverse functional, transitive, symmetric,
     # asymmetric, reflexive, irreflexive, inverse_prop]
-    ops = [["isFeelingSad", None, "mentalDisease", "mentalDisease", False, False, False, False, False, False, False, None],
-           ["hasMoodSwings", None, "mentalDisease", "bipolar", False, False, False, False, False, False, False, None],
-           ["hasWeightLoss", None, "mentalDisease", "anorexia", False, False, False, False, False, False, False, None],
-           ["hasNotSocialInteraction", None, "mentalDisease", "autism", False, False, False, False, False, False, False, None]]
+    with open('object_props_2.csv', newline='') as op:
+        reader1 = csv.reader(op)
+        ops = list(reader1)
+
+    new_ops = []
+    for line in ops:
+        aux = []
+        for word in line:
+            if " " in word:
+                word = word.replace(" ","")
+            if "False" in word:
+                word = False
+            if word == '':
+                word = None
+            aux.append(word)
+        new_ops.append(aux)
+
+
 
     # Datatype properties including their axioms
     # [data_property (dp), super-dp, functional, domain, range, minex, minin, exact, maxin, maxex]
@@ -47,23 +69,31 @@ def create_ontology():
            ["williamDisease", None, "hasMoodSwings", None, None],
            ["johnDisease", None, "hasNotSocialInteraction", None, None]]
 
-    # Import information from CSV and JSON files (not working yet)
-    #ontor1.add_taxo(ontor.load_csv(path+"/taxo.csv"))
-    #ontor1.add_ops(ontor.load_json(path+"/props.json")["op"])
-    #ontor1.add_dps(ontor.load_json(path+"/props.json")["dp"])
-    #ontor1.add_axioms(ontor.load_csv(path+"/class_axioms.csv"))
 
     # Add the information as lists
-    ontor1.add_taxo(classes)
-    ontor1.add_ops(ops)
+    ontor1.add_taxo(new_classes)
+    ontor1.add_ops(new_ops)
     #ontor1.add_dps(dps)
     #ontor1.add_axioms(axs)
-    ontor1.add_instances(ins)
-
+    #ontor1.add_instances(ins)
     ontor1.save_as(path+"/disease_ontology.owl")
 
-    # Visualize a graph
-    #ontor1.visualize(classes=["human", "pizza"], properties=["likes", "diameter_in_cm"], focusnode="John", radius=2)
+def add_rules():
+    onto = get_ontology('disease_ontology.owl')
+
+    with onto:
+        rule = Imp()
+
+        class Depression(ObjectProperty): pass
+        class Anxiety(ObjectProperty): pass
+        class Irritability(ObjectProperty): pass
+        class NeuroticDisorders(Thing): pass
+
+        rule.set_as_rule("Depression(?x, ?y) ^ Anxiety(?x, ?y) ^ Irritability(?x, ?y) -> NeuroticDisorders(?x)")
+
+    path = os.getcwd()
+    onto.save(path+"/disease_ontology.owl")
 
 if __name__ == "__main__":
     create_ontology()
+    add_rules()
