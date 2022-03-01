@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ce504fd7-7858-4d50-bcf1-b827400a863b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/2022-03-01_07-39-17_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/disease_ontology.owl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/DiseaseOntology.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DiseaseOntology.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="ce504fd7-7858-4d50-bcf1-b827400a863b" name="Changes" comment="reading csv classes">
+      <change afterPath="$PROJECT_DIR$/2022-03-01_07-47-36_ontor.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2022-03-01_07-47-55_ontor.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2022-03-01_07-48-13_ontor.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2022-03-01_07-48-45_ontor.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2022-03-01_07-49-14_ontor.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2022-03-01_07-49-55_ontor.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2022-03-01_07-50-22_ontor.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/disease_classes.csv" beforeDir="false" afterPath="$PROJECT_DIR$/disease_classes.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/disease_ontology.owl" beforeDir="false" afterPath="$PROJECT_DIR$/disease_ontology.owl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ontology.py" beforeDir="false" afterPath="$PROJECT_DIR$/ontology.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -134,6 +137,14 @@
       <workItem from="1645813112369" duration="4000000" />
       <workItem from="1646083014091" duration="59000" />
     </task>
+    <task id="LOCAL-00001" summary="reading csv classes">
+      <created>1646142215781</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1646142215781</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,6 +164,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="reading csv classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="reading csv classes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -166,7 +179,7 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/DiseaseOntology$ontology.coverage" NAME="ontology Coverage Results" MODIFIED="1646141956381" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/DiseaseOntology$ontology.coverage" NAME="ontology Coverage Results" MODIFIED="1646142621051" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DiseaseOntology$ULMS_api.coverage" NAME="ULMS_api Coverage Results" MODIFIED="1645816972641" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DiseaseOntology$ontology_kaleem.coverage" NAME="ontology_kaleem Coverage Results" MODIFIED="1645383117234" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>

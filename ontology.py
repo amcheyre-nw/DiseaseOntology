@@ -20,13 +20,12 @@ def create_ontology():
     for line in classes:
         aux = []
         for word in line:
+            if " " in word:
+                word = word.replace(" ","")
             if word == '':
                 word = None
             aux.append(word)
         new_classes.append(aux)
-
-
-    print(new_classes)
 
     # Properties of objects including their axioms
     # [object_property (op), super-op, domain, range, functional, inverse functional, transitive, symmetric,
