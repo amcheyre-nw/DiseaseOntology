@@ -43,7 +43,7 @@ def create_ontology_and_rules():
         new_ops.append(aux)
 
     with onto:
-        rule = Imp()
+
         for line in new_classes:
             class1 = line[0]
             superclass1 = line[1]
@@ -80,7 +80,6 @@ def create_ontology_and_rules():
             if j != []:
                 count = 0
                 for s in j:
-
                     if count < len(j)-1:
                         symptom = s + "(?x, ?y) ^"
                         rule_str = rule_str + symptom
@@ -91,12 +90,8 @@ def create_ontology_and_rules():
                         count += 1
                 disease = "->" + i + "(?x)"
                 rule_str = rule_str + disease
-                print(rule_str)
-                rule.set_as_rule("has/Symptoms/Depression(?x, ?y) ^has/Symptoms/Irritability(?x, ?y) ^has/Symptoms/Anxiety(?x, ?y) ->NeuroticDisorders(?x)")
-                rule.set_as_rule("has/Symptoms/Depression(?x, ?y)->PhobicDisorders(?x)")
+                rule = Imp()
                 rule.set_as_rule(rule_str)
-
-
 
     path = os.getcwd()
     onto.save(path+"/disease_ontology_rules.owl")

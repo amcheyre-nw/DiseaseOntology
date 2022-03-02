@@ -9,21 +9,15 @@
 
 <owl:Ontology rdf:about="disease_ontology.owl"/>
 
-<owl:ObjectProperty rdf:about="#has/Symptoms/Thc"/>
+<owl:ObjectProperty rdf:about="#Thc"/>
 
-<owl:ObjectProperty rdf:about="#has/Symptoms/Signs"/>
+<owl:ObjectProperty rdf:about="#Signs"/>
 
-<owl:ObjectProperty rdf:about="#has/Symptoms/Dysphoria"/>
+<owl:ObjectProperty rdf:about="#Dysphoria"/>
 
-<owl:ObjectProperty rdf:about="#has/Symptoms/Anxiety"/>
+<owl:ObjectProperty rdf:about="#Irritability"/>
 
-<owl:ObjectProperty rdf:about="#has/Symptoms/Irritability"/>
-
-<owl:ObjectProperty rdf:about="#has/Symptoms/Depression"/>
-
-<owl:ObjectProperty rdf:about="#has/Symptoms/Depersonalization"/>
-
-<owl:ObjectProperty rdf:about="#has/Symptoms/Gastrointestinal"/>
+<owl:ObjectProperty rdf:about="#Gastrointestinal"/>
 
 <owl:Class rdf:about="#PsychiatryandPsychology(MeSHCategory)">
   <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
@@ -8771,193 +8765,12 @@
 
 <swrl:Variable rdf:about="urn:swrl#y"/>
 
-<swrl:ClassAtom>
-  <swrl:classPredicate rdf:resource="#PhobicDisorders"/>
-  <swrl:argument1 rdf:resource="urn:swrl#x"/>
-</swrl:ClassAtom>
-
-<swrl:IndividualPropertyAtom>
-  <swrl:propertyPredicate rdf:resource="#has/Symptoms/Depression"/>
-  <swrl:argument1 rdf:resource="urn:swrl#x"/>
-  <swrl:argument2 rdf:resource="urn:swrl#y"/>
-</swrl:IndividualPropertyAtom>
-
-<swrl:ClassAtom>
-  <swrl:classPredicate rdf:resource="#NeuroticDisorders"/>
-  <swrl:argument1 rdf:resource="urn:swrl#x"/>
-</swrl:ClassAtom>
-
-<swrl:IndividualPropertyAtom>
-  <swrl:propertyPredicate rdf:resource="#has/Symptoms/Anxiety"/>
-  <swrl:argument1 rdf:resource="urn:swrl#x"/>
-  <swrl:argument2 rdf:resource="urn:swrl#y"/>
-</swrl:IndividualPropertyAtom>
-
-<swrl:IndividualPropertyAtom>
-  <swrl:propertyPredicate rdf:resource="#has/Symptoms/Irritability"/>
-  <swrl:argument1 rdf:resource="urn:swrl#x"/>
-  <swrl:argument2 rdf:resource="urn:swrl#y"/>
-</swrl:IndividualPropertyAtom>
-
-<swrl:IndividualPropertyAtom>
-  <swrl:propertyPredicate rdf:resource="#has/Symptoms/Depression"/>
-  <swrl:argument1 rdf:resource="urn:swrl#x"/>
-  <swrl:argument2 rdf:resource="urn:swrl#y"/>
-</swrl:IndividualPropertyAtom>
-
-<swrl:ClassAtom>
-  <swrl:classPredicate rdf:resource="#PanicDisorder"/>
-  <swrl:argument1 rdf:resource="urn:swrl#x"/>
-</swrl:ClassAtom>
-
-<swrl:IndividualPropertyAtom>
-  <swrl:propertyPredicate rdf:resource="#has/Symptoms/Depression"/>
-  <swrl:argument1 rdf:resource="urn:swrl#x"/>
-  <swrl:argument2 rdf:resource="urn:swrl#y"/>
-</swrl:IndividualPropertyAtom>
-
-<swrl:ClassAtom>
-  <swrl:classPredicate rdf:resource="#PhobicDisorders"/>
-  <swrl:argument1 rdf:resource="urn:swrl#x"/>
-</swrl:ClassAtom>
-
-<swrl:IndividualPropertyAtom>
-  <swrl:propertyPredicate rdf:resource="#has/Symptoms/Depression"/>
-  <swrl:argument1 rdf:resource="urn:swrl#x"/>
-  <swrl:argument2 rdf:resource="urn:swrl#y"/>
-</swrl:IndividualPropertyAtom>
-
-<swrl:ClassAtom>
-  <swrl:classPredicate rdf:resource="#NeuroticDisorders"/>
-  <swrl:argument1 rdf:resource="urn:swrl#x"/>
-</swrl:ClassAtom>
-
-<swrl:IndividualPropertyAtom>
-  <swrl:propertyPredicate rdf:resource="#has/Symptoms/Anxiety"/>
-  <swrl:argument1 rdf:resource="urn:swrl#x"/>
-  <swrl:argument2 rdf:resource="urn:swrl#y"/>
-</swrl:IndividualPropertyAtom>
-
-<swrl:IndividualPropertyAtom>
-  <swrl:propertyPredicate rdf:resource="#has/Symptoms/Irritability"/>
-  <swrl:argument1 rdf:resource="urn:swrl#x"/>
-  <swrl:argument2 rdf:resource="urn:swrl#y"/>
-</swrl:IndividualPropertyAtom>
-
-<swrl:IndividualPropertyAtom>
-  <swrl:propertyPredicate rdf:resource="#has/Symptoms/Depression"/>
-  <swrl:argument1 rdf:resource="urn:swrl#x"/>
-  <swrl:argument2 rdf:resource="urn:swrl#y"/>
-</swrl:IndividualPropertyAtom>
-
-<swrl:ClassAtom>
-  <swrl:classPredicate rdf:resource="#PhobicDisorders"/>
-  <swrl:argument1 rdf:resource="urn:swrl#x"/>
-</swrl:ClassAtom>
-
-<swrl:IndividualPropertyAtom>
-  <swrl:propertyPredicate rdf:resource="#has/Symptoms/Depression"/>
-  <swrl:argument1 rdf:resource="urn:swrl#x"/>
-  <swrl:argument2 rdf:resource="urn:swrl#y"/>
-</swrl:IndividualPropertyAtom>
-
-<swrl:ClassAtom>
-  <swrl:classPredicate rdf:resource="#PhobicDisorders"/>
-  <swrl:argument1 rdf:resource="urn:swrl#x"/>
-</swrl:ClassAtom>
-
-<swrl:IndividualPropertyAtom>
-  <swrl:propertyPredicate rdf:resource="#has/Symptoms/Depression"/>
-  <swrl:argument1 rdf:resource="urn:swrl#x"/>
-  <swrl:argument2 rdf:resource="urn:swrl#y"/>
-</swrl:IndividualPropertyAtom>
-
-<swrl:ClassAtom>
-  <swrl:classPredicate rdf:resource="#NeuroticDisorders"/>
-  <swrl:argument1 rdf:resource="urn:swrl#x"/>
-</swrl:ClassAtom>
-
-<swrl:IndividualPropertyAtom>
-  <swrl:propertyPredicate rdf:resource="#has/Symptoms/Anxiety"/>
-  <swrl:argument1 rdf:resource="urn:swrl#x"/>
-  <swrl:argument2 rdf:resource="urn:swrl#y"/>
-</swrl:IndividualPropertyAtom>
-
-<swrl:IndividualPropertyAtom>
-  <swrl:propertyPredicate rdf:resource="#has/Symptoms/Irritability"/>
-  <swrl:argument1 rdf:resource="urn:swrl#x"/>
-  <swrl:argument2 rdf:resource="urn:swrl#y"/>
-</swrl:IndividualPropertyAtom>
-
-<swrl:IndividualPropertyAtom>
-  <swrl:propertyPredicate rdf:resource="#has/Symptoms/Depression"/>
-  <swrl:argument1 rdf:resource="urn:swrl#x"/>
-  <swrl:argument2 rdf:resource="urn:swrl#y"/>
-</swrl:IndividualPropertyAtom>
-
-<swrl:ClassAtom>
-  <swrl:classPredicate rdf:resource="#NeuroticDisorders"/>
-  <swrl:argument1 rdf:resource="urn:swrl#x"/>
-</swrl:ClassAtom>
-
-<swrl:IndividualPropertyAtom>
-  <swrl:propertyPredicate rdf:resource="#has/Symptoms/Anxiety"/>
-  <swrl:argument1 rdf:resource="urn:swrl#x"/>
-  <swrl:argument2 rdf:resource="urn:swrl#y"/>
-</swrl:IndividualPropertyAtom>
-
-<swrl:IndividualPropertyAtom>
-  <swrl:propertyPredicate rdf:resource="#has/Symptoms/Irritability"/>
-  <swrl:argument1 rdf:resource="urn:swrl#x"/>
-  <swrl:argument2 rdf:resource="urn:swrl#y"/>
-</swrl:IndividualPropertyAtom>
-
-<swrl:IndividualPropertyAtom>
-  <swrl:propertyPredicate rdf:resource="#has/Symptoms/Depression"/>
-  <swrl:argument1 rdf:resource="urn:swrl#x"/>
-  <swrl:argument2 rdf:resource="urn:swrl#y"/>
-</swrl:IndividualPropertyAtom>
-
-<swrl:ClassAtom>
-  <swrl:classPredicate rdf:resource="#PhobicDisorders"/>
-  <swrl:argument1 rdf:resource="urn:swrl#x"/>
-</swrl:ClassAtom>
-
-<swrl:IndividualPropertyAtom>
-  <swrl:propertyPredicate rdf:resource="#has/Symptoms/Depression"/>
-  <swrl:argument1 rdf:resource="urn:swrl#x"/>
-  <swrl:argument2 rdf:resource="urn:swrl#y"/>
-</swrl:IndividualPropertyAtom>
-
-<swrl:ClassAtom>
-  <swrl:classPredicate rdf:resource="#NeuroticDisorders"/>
-  <swrl:argument1 rdf:resource="urn:swrl#x"/>
-</swrl:ClassAtom>
-
-<swrl:IndividualPropertyAtom>
-  <swrl:propertyPredicate rdf:resource="#has/Symptoms/Anxiety"/>
-  <swrl:argument1 rdf:resource="urn:swrl#x"/>
-  <swrl:argument2 rdf:resource="urn:swrl#y"/>
-</swrl:IndividualPropertyAtom>
-
-<swrl:IndividualPropertyAtom>
-  <swrl:propertyPredicate rdf:resource="#has/Symptoms/Irritability"/>
-  <swrl:argument1 rdf:resource="urn:swrl#x"/>
-  <swrl:argument2 rdf:resource="urn:swrl#y"/>
-</swrl:IndividualPropertyAtom>
-
-<swrl:IndividualPropertyAtom>
-  <swrl:propertyPredicate rdf:resource="#has/Symptoms/Depression"/>
-  <swrl:argument1 rdf:resource="urn:swrl#x"/>
-  <swrl:argument2 rdf:resource="urn:swrl#y"/>
-</swrl:IndividualPropertyAtom>
-
 <swrl:Imp>
   <swrl:body>
     <rdf:Description>
       <rdf:first>
         <swrl:IndividualPropertyAtom>
-          <swrl:propertyPredicate rdf:resource="#has/Symptoms/Thc"/>
+          <swrl:propertyPredicate rdf:resource="#Thc"/>
           <swrl:argument1 rdf:resource="urn:swrl#x"/>
           <swrl:argument2 rdf:resource="urn:swrl#y"/>
         </swrl:IndividualPropertyAtom>
@@ -8966,7 +8779,7 @@
         <rdf:Description>
           <rdf:first>
             <swrl:IndividualPropertyAtom>
-              <swrl:propertyPredicate rdf:resource="#has/Symptoms/Signs"/>
+              <swrl:propertyPredicate rdf:resource="#Signs"/>
               <swrl:argument1 rdf:resource="urn:swrl#x"/>
               <swrl:argument2 rdf:resource="urn:swrl#y"/>
             </swrl:IndividualPropertyAtom>
@@ -8975,7 +8788,7 @@
             <rdf:Description>
               <rdf:first>
                 <swrl:IndividualPropertyAtom>
-                  <swrl:propertyPredicate rdf:resource="#has/Symptoms/Dysphoria"/>
+                  <swrl:propertyPredicate rdf:resource="#Dysphoria"/>
                   <swrl:argument1 rdf:resource="urn:swrl#x"/>
                   <swrl:argument2 rdf:resource="urn:swrl#y"/>
                 </swrl:IndividualPropertyAtom>
@@ -8984,7 +8797,7 @@
                 <rdf:Description>
                   <rdf:first>
                     <swrl:IndividualPropertyAtom>
-                      <swrl:propertyPredicate rdf:resource="#has/Symptoms/Anxiety"/>
+                      <swrl:propertyPredicate rdf:resource="#Anxiety"/>
                       <swrl:argument1 rdf:resource="urn:swrl#x"/>
                       <swrl:argument2 rdf:resource="urn:swrl#y"/>
                     </swrl:IndividualPropertyAtom>
@@ -8993,7 +8806,7 @@
                     <rdf:Description>
                       <rdf:first>
                         <swrl:IndividualPropertyAtom>
-                          <swrl:propertyPredicate rdf:resource="#has/Symptoms/Irritability"/>
+                          <swrl:propertyPredicate rdf:resource="#Irritability"/>
                           <swrl:argument1 rdf:resource="urn:swrl#x"/>
                           <swrl:argument2 rdf:resource="urn:swrl#y"/>
                         </swrl:IndividualPropertyAtom>
@@ -9002,7 +8815,7 @@
                         <rdf:Description>
                           <rdf:first>
                             <swrl:IndividualPropertyAtom>
-                              <swrl:propertyPredicate rdf:resource="#has/Symptoms/Depression"/>
+                              <swrl:propertyPredicate rdf:resource="#Depression"/>
                               <swrl:argument1 rdf:resource="urn:swrl#x"/>
                               <swrl:argument2 rdf:resource="urn:swrl#y"/>
                             </swrl:IndividualPropertyAtom>
@@ -9011,7 +8824,7 @@
                             <rdf:Description>
                               <rdf:first>
                                 <swrl:IndividualPropertyAtom>
-                                  <swrl:propertyPredicate rdf:resource="#has/Symptoms/Depersonalization"/>
+                                  <swrl:propertyPredicate rdf:resource="#Depersonalization"/>
                                   <swrl:argument1 rdf:resource="urn:swrl#x"/>
                                   <swrl:argument2 rdf:resource="urn:swrl#y"/>
                                 </swrl:IndividualPropertyAtom>
@@ -9020,7 +8833,7 @@
                                 <rdf:Description>
                                   <rdf:first>
                                     <swrl:IndividualPropertyAtom>
-                                      <swrl:propertyPredicate rdf:resource="#has/Symptoms/Gastrointestinal"/>
+                                      <swrl:propertyPredicate rdf:resource="#Gastrointestinal"/>
                                       <swrl:argument1 rdf:resource="urn:swrl#x"/>
                                       <swrl:argument2 rdf:resource="urn:swrl#y"/>
                                     </swrl:IndividualPropertyAtom>
@@ -9047,6 +8860,106 @@
       <rdf:first>
         <swrl:ClassAtom>
           <swrl:classPredicate rdf:resource="#MarijuanaAbuse"/>
+          <swrl:argument1 rdf:resource="urn:swrl#x"/>
+        </swrl:ClassAtom>
+      </rdf:first>
+      <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    </rdf:Description>
+  </swrl:head>
+</swrl:Imp>
+
+<swrl:Imp>
+  <swrl:body>
+    <rdf:Description>
+      <rdf:first>
+        <swrl:IndividualPropertyAtom>
+          <swrl:propertyPredicate rdf:resource="#Depression"/>
+          <swrl:argument1 rdf:resource="urn:swrl#x"/>
+          <swrl:argument2 rdf:resource="urn:swrl#y"/>
+        </swrl:IndividualPropertyAtom>
+      </rdf:first>
+      <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    </rdf:Description>
+  </swrl:body>
+  <swrl:head>
+    <rdf:Description>
+      <rdf:first>
+        <swrl:ClassAtom>
+          <swrl:classPredicate rdf:resource="#PanicDisorder"/>
+          <swrl:argument1 rdf:resource="urn:swrl#x"/>
+        </swrl:ClassAtom>
+      </rdf:first>
+      <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    </rdf:Description>
+  </swrl:head>
+</swrl:Imp>
+
+<swrl:Imp>
+  <swrl:body>
+    <rdf:Description>
+      <rdf:first>
+        <swrl:IndividualPropertyAtom>
+          <swrl:propertyPredicate rdf:resource="#Depression"/>
+          <swrl:argument1 rdf:resource="urn:swrl#x"/>
+          <swrl:argument2 rdf:resource="urn:swrl#y"/>
+        </swrl:IndividualPropertyAtom>
+      </rdf:first>
+      <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    </rdf:Description>
+  </swrl:body>
+  <swrl:head>
+    <rdf:Description>
+      <rdf:first>
+        <swrl:ClassAtom>
+          <swrl:classPredicate rdf:resource="#PhobicDisorders"/>
+          <swrl:argument1 rdf:resource="urn:swrl#x"/>
+        </swrl:ClassAtom>
+      </rdf:first>
+      <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    </rdf:Description>
+  </swrl:head>
+</swrl:Imp>
+
+<swrl:Imp>
+  <swrl:body>
+    <rdf:Description>
+      <rdf:first>
+        <swrl:IndividualPropertyAtom>
+          <swrl:propertyPredicate rdf:resource="#Depression"/>
+          <swrl:argument1 rdf:resource="urn:swrl#x"/>
+          <swrl:argument2 rdf:resource="urn:swrl#y"/>
+        </swrl:IndividualPropertyAtom>
+      </rdf:first>
+      <rdf:rest>
+        <rdf:Description>
+          <rdf:first>
+            <swrl:IndividualPropertyAtom>
+              <swrl:propertyPredicate rdf:resource="#Irritability"/>
+              <swrl:argument1 rdf:resource="urn:swrl#x"/>
+              <swrl:argument2 rdf:resource="urn:swrl#y"/>
+            </swrl:IndividualPropertyAtom>
+          </rdf:first>
+          <rdf:rest>
+            <rdf:Description>
+              <rdf:first>
+                <swrl:IndividualPropertyAtom>
+                  <swrl:propertyPredicate rdf:resource="#Anxiety"/>
+                  <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                  <swrl:argument2 rdf:resource="urn:swrl#y"/>
+                </swrl:IndividualPropertyAtom>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </rdf:rest>
+        </rdf:Description>
+      </rdf:rest>
+    </rdf:Description>
+  </swrl:body>
+  <swrl:head>
+    <rdf:Description>
+      <rdf:first>
+        <swrl:ClassAtom>
+          <swrl:classPredicate rdf:resource="#NeuroticDisorders"/>
           <swrl:argument1 rdf:resource="urn:swrl#x"/>
         </swrl:ClassAtom>
       </rdf:first>
