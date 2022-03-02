@@ -1,3 +1,4 @@
+import wikipedia_api
 import wikipedia_api as wiki
 import ULMS_api as ulms
 import pandas as pd
@@ -95,6 +96,26 @@ def get_parents(tree, childname):
         return None
 
 
+def wiki_corpus_prune(disease, object_props, thresh = 1):
+    '''
+
+    For a disease, pull the sumamry text from wikipedia and only keep symptoms that appear in the summary text.
+    :param disease: disease to look up on wikipedia
+    :param object_props: df of the object properties
+    :param thresh: number of occurences needed in the corpus to justify keeping
+    :return:
+    '''
+
+    summary = wikipedia_api.get_wiki_summary(disease)
+    object_props = object_props.to_list()
+
+    for prop in object_props:
+        count = summary.count(prop.lower())
+        if count < thresh:
+            object_props.remove(prop)
+    return object_props
+
+
 def gen_inherited_properties(tree, properties, N):
     '''
 
@@ -132,7 +153,8 @@ def gen_inherited_properties(tree, properties, N):
         node_prop_types = [n.split('/')[1] for n in node_props]
 
         for anc in ancestors:
-            anc_props = properties.loc[properties['range']==anc]['object_property (op)']
+            anc_props = properties.loc[properties['range'] == anc]['object_property (op)']
+            anc_props = pd.Series(wiki_corpus_prune(node, anc_props, thresh=1))
             for ap in anc_props:
                 prop_type = ap.split('/')[1]
                 if prop_type not in node_prop_types: # only add in if doesn't exist
@@ -146,11 +168,10 @@ def gen_inherited_properties(tree, properties, N):
     return
 
 
+
 if __name__ == "__main__":
     #build_hierarchy('74732009')
     treeDF = pd.read_csv('disease_classes_SMED.csv')
     #gen_object_properties(treeDF, labels=['Symptoms', 'Complications', 'Speciality', 'Medication', 'Frequency', 'Other names'])
     obj_props = pd.read_csv('object_props_SMED2.csv')
     gen_inherited_properties(treeDF, obj_props, 2)
-
-
