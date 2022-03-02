@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ce504fd7-7858-4d50-bcf1-b827400a863b" name="Changes" comment="rules ready!">
-      <change afterPath="$PROJECT_DIR$/2022-03-01_23-10-59_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-01_23-11-13_ontor.log" afterDir="false" />
+    <list default="true" id="ce504fd7-7858-4d50-bcf1-b827400a863b" name="Changes" comment="wiki api added to improve the accuracy of wikipedia scraping by comparing inherited properties to the corpus text.&#10;&#10;reformat.py added to adjust the order of csvs so parents are always predefined.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/disease_ontology_rules.owl" beforeDir="false" afterPath="$PROJECT_DIR$/disease_ontology_rules.owl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/object_props_2.csv" beforeDir="false" afterPath="$PROJECT_DIR$/object_props_2.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ontology_final.py" beforeDir="false" afterPath="$PROJECT_DIR$/ontology_final.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build_ontology_james.py" beforeDir="false" afterPath="$PROJECT_DIR$/build_ontology_james.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/object_props_SMED_inherited.csv" beforeDir="false" afterPath="$PROJECT_DIR$/object_props_SMED_inherited.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ontology.py" beforeDir="false" afterPath="$PROJECT_DIR$/ontology.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +48,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.ontology_final">
+  <component name="RunManager" selected="Python.build_ontology_james">
     <configuration name="ULMS_api" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DiseaseOntology" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -77,9 +75,6 @@
       <module name="DiseaseOntology" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -117,22 +112,22 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ontology_final" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="reformat" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DiseaseOntology" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="$USER_HOME$/.conda/envs/MSAI-349-Fall-2021-HW3/bin/python" />
+      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ontology_final.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/reformat.py" />
       <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
@@ -163,9 +158,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.ontology_final" />
         <item itemvalue="Python.build_ontology_james" />
         <item itemvalue="Python.build_ontology_james" />
+        <item itemvalue="Python.ontology" />
         <item itemvalue="Python.ontology" />
         <item itemvalue="Python.ontology" />
       </list>
@@ -186,6 +181,7 @@
       <workItem from="1646083014091" duration="59000" />
       <workItem from="1646177057466" duration="176000" />
       <workItem from="1646180855979" duration="15000" />
+      <workItem from="1646195901106" duration="255000" />
     </task>
     <task id="LOCAL-00001" summary="reading csv classes">
       <created>1646142215781</created>
@@ -229,7 +225,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646155047920</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="wiki api added to improve the accuracy of wikipedia scraping by comparing inherited properties to the corpus text.&#10;&#10;reformat.py added to adjust the order of csvs so parents are always predefined.">
+      <created>1646181073228</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1646181073228</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,7 +248,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -253,7 +255,8 @@
     <MESSAGE value="trying to add ops" />
     <MESSAGE value="ops added to Protege" />
     <MESSAGE value="working on adding rules" />
-    <option name="LAST_COMMIT_MESSAGE" value="working on adding rules" />
+    <MESSAGE value="wiki api added to improve the accuracy of wikipedia scraping by comparing inherited properties to the corpus text.&#10;&#10;reformat.py added to adjust the order of csvs so parents are always predefined." />
+    <option name="LAST_COMMIT_MESSAGE" value="wiki api added to improve the accuracy of wikipedia scraping by comparing inherited properties to the corpus text.&#10;&#10;reformat.py added to adjust the order of csvs so parents are always predefined." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -305,11 +308,5 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/DiseaseOntology$ontology_final.coverage" NAME="ontology_final Coverage Results" MODIFIED="1646197872925" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/DiseaseOntology$ontology.coverage" NAME="ontology Coverage Results" MODIFIED="1646191425474" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/DiseaseOntology$ULMS_api.coverage" NAME="ULMS_api Coverage Results" MODIFIED="1645816972641" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/DiseaseOntology$ontology_kaleem.coverage" NAME="ontology_kaleem Coverage Results" MODIFIED="1645383117234" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
