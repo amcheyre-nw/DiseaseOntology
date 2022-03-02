@@ -174,4 +174,4 @@ if __name__ == "__main__":
     treeDF = pd.read_csv('disease_classes_SMED.csv')
     #gen_object_properties(treeDF, labels=['Symptoms', 'Complications', 'Speciality', 'Medication', 'Frequency', 'Other names'])
     obj_props = pd.read_csv('object_props_SMED2.csv')
-    gen_inherited_properties(treeDF, obj_props, 2)
+    gen_inherited_properties(treeDF, obj_props, 3)

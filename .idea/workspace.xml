@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ce504fd7-7858-4d50-bcf1-b827400a863b" name="Changes" comment="contributions in build_ontology_james.py -&gt; ability to scrape from SNOMEDCT added into the UMLS_api along with ability to pull not children but reverse_isa statements which gives a higher yield + utilization of these new methods completed and functioning in build_ontology_james.py. Also functionality to pythonically hardcode inheritance into the CSVs based on 1) a child not having a property type (eg: Symptoms) already, and 2) limiting inheritence to a distance down the tree. This will need to be checked manually as certain inheritences may be erroneous.">
-      <change afterPath="$PROJECT_DIR$/new.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reformat.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/DiseaseOntology.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DiseaseOntology.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="ce504fd7-7858-4d50-bcf1-b827400a863b" name="Changes" comment="wiki api added to improve the accuracy of wikipedia scraping by comparing inherited properties to the corpus text.&#10;&#10;reformat.py added to adjust the order of csvs so parents are always predefined.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/__pycache__/wikipedia_api.cpython-39.pyc" beforeDir="false" afterPath="$PROJECT_DIR$/__pycache__/wikipedia_api.cpython-39.pyc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build_ontology_james.py" beforeDir="false" afterPath="$PROJECT_DIR$/build_ontology_james.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/disease_ontology.owl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/object_props_SMED_inherited.csv" beforeDir="false" afterPath="$PROJECT_DIR$/object_props_SMED_inherited.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ontology.py" beforeDir="false" afterPath="$PROJECT_DIR$/ontology.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wikipedia_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/wikipedia_api.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,9 +75,6 @@
       <module name="DiseaseOntology" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -190,6 +181,7 @@
       <workItem from="1646083014091" duration="59000" />
       <workItem from="1646177057466" duration="176000" />
       <workItem from="1646180855979" duration="15000" />
+      <workItem from="1646195901106" duration="255000" />
     </task>
     <task id="LOCAL-00001" summary="reading csv classes">
       <created>1646142215781</created>
@@ -233,7 +225,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646155047920</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="wiki api added to improve the accuracy of wikipedia scraping by comparing inherited properties to the corpus text.&#10;&#10;reformat.py added to adjust the order of csvs so parents are always predefined.">
+      <created>1646181073228</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1646181073228</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,7 +255,8 @@
     <MESSAGE value="trying to add ops" />
     <MESSAGE value="ops added to Protege" />
     <MESSAGE value="working on adding rules" />
-    <option name="LAST_COMMIT_MESSAGE" value="working on adding rules" />
+    <MESSAGE value="wiki api added to improve the accuracy of wikipedia scraping by comparing inherited properties to the corpus text.&#10;&#10;reformat.py added to adjust the order of csvs so parents are always predefined." />
+    <option name="LAST_COMMIT_MESSAGE" value="wiki api added to improve the accuracy of wikipedia scraping by comparing inherited properties to the corpus text.&#10;&#10;reformat.py added to adjust the order of csvs so parents are always predefined." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
