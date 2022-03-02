@@ -50,13 +50,13 @@ def create_ontology_and_rules():
             if superclass1 == None:
                 NewClass = types.new_class(class1, (Thing,))
             else:
-                NewClass = types.new_class(superclass1, (Thing,))
-                SubClass = types.new_class(class1, (NewClass,))
+                NewClass = types.new_class(str(superclass1).replace(",",""), (Thing,))
+                SubClass = types.new_class(str(class1).replace(",",""), (NewClass,))
 
         for s in new_ops:
             symptom = s[0]
             if type(symptom) == str:
-                NewClass = types.new_class(symptom, (ObjectProperty,))
+                NewClass = types.new_class(symptom.replace(",",""), (ObjectProperty,))
 
         # Create a list of unique diseases
         unique_diseases = []
@@ -68,9 +68,11 @@ def create_ontology_and_rules():
         symptoms_dict = {}
         for disease in unique_diseases:
             symptoms_list = []
+            disease = disease.replace(",","")
             for s in new_ops:
                 symptom = s[0]
-                if s[3] == disease:
+
+                if s[3].replace(",","") == disease:
                     symptoms_list.append(symptom)
             symptoms_dict[disease] = symptoms_list
 
@@ -91,6 +93,7 @@ def create_ontology_and_rules():
                             symptom = s + "(?x, ?y)"
                             rule_str = rule_str + symptom
                             count += 1
+
                 i = i.replace(",","")
                 disease = "->" + i + "(?x)"
                 rule_str = rule_str + disease
@@ -99,7 +102,7 @@ def create_ontology_and_rules():
                 rule.set_as_rule(rule_str)
 
     path = os.getcwd()
-    onto.save(path+"/disease_ontology_rules.owl")
+    onto.save(path+"/disease_ontology_SMED.owl")
 
 if __name__ == "__main__":
     create_ontology_and_rules()

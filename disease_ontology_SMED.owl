@@ -3,11 +3,11 @@
          xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
          xmlns:owl="http://www.w3.org/2002/07/owl#"
-         xml:base="disease_ontology.owl"
-         xmlns="disease_ontology.owl#"
+         xml:base="disease_ontology_SMED.owl"
+         xmlns="disease_ontology_SMED.owl#"
          xmlns:swrl="http://www.w3.org/2003/11/swrl#">
 
-<owl:Ontology rdf:about="disease_ontology.owl"/>
+<owl:Ontology rdf:about="disease_ontology_SMED.owl"/>
 
 <owl:ObjectProperty rdf:about="#hasSymptomsAgitation"/>
 
