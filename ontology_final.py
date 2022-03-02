@@ -10,7 +10,7 @@ def create_ontology_and_rules():
     onto = get_ontology('disease_ontology_SMED.owl')
 
     # Create Clasess
-    with open('disease_classes_2.csv', newline='') as c:
+    with open('disease_classes_SMED.csv', newline='') as c:
         reader2 = csv.reader(c)
         classes = list(reader2)
 
@@ -75,12 +75,13 @@ def create_ontology_and_rules():
             symptoms_dict[disease] = symptoms_list
 
         # Create rules with diseases and symptoms
-
         for i,j in symptoms_dict.items():
             rule_str = ""
             if j != []:
                 count = 0
                 for s in j:
+                    s = str(s)
+                    s = s.replace(",","")
                     if "hasSymptoms" in s:
                         if count < len(j)-1:
                             symptom = s + "(?x, ?y) ^"
@@ -90,7 +91,7 @@ def create_ontology_and_rules():
                             symptom = s + "(?x, ?y)"
                             rule_str = rule_str + symptom
                             count += 1
-
+                i = i.replace(",","")
                 disease = "->" + i + "(?x)"
                 rule_str = rule_str + disease
                 rule = Imp()
