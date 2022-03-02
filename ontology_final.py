@@ -7,7 +7,7 @@ import types
 
 def create_ontology_and_rules():
 
-    onto = get_ontology('disease_ontology.owl')
+    onto = get_ontology('disease_ontology_SMED.owl')
 
     # Create Clasess
     with open('disease_classes_2.csv', newline='') as c:
@@ -25,7 +25,7 @@ def create_ontology_and_rules():
             aux.append(word)
         new_classes.append(aux)
 
-    with open('object_props_2.csv', newline='') as op:
+    with open('object_props_SMED_inherited_2.csv', newline='') as op:
         reader1 = csv.reader(op)
         ops = list(reader1)
 
@@ -55,7 +55,8 @@ def create_ontology_and_rules():
 
         for s in new_ops:
             symptom = s[0]
-            NewClass = types.new_class(symptom, (ObjectProperty,))
+            if type(symptom) == str:
+                NewClass = types.new_class(symptom, (ObjectProperty,))
 
         # Create a list of unique diseases
         unique_diseases = []
@@ -74,23 +75,26 @@ def create_ontology_and_rules():
             symptoms_dict[disease] = symptoms_list
 
         # Create rules with diseases and symptoms
-        rule_set = []
+
         for i,j in symptoms_dict.items():
             rule_str = ""
             if j != []:
                 count = 0
                 for s in j:
-                    if count < len(j)-1:
-                        symptom = s + "(?x, ?y) ^"
-                        rule_str = rule_str + symptom
-                        count +=1
-                    else:
-                        symptom = s + "(?x, ?y)"
-                        rule_str = rule_str + symptom
-                        count += 1
+                    if "hasSymptoms" in s:
+                        if count < len(j)-1:
+                            symptom = s + "(?x, ?y) ^"
+                            rule_str = rule_str + symptom
+                            count +=1
+                        else:
+                            symptom = s + "(?x, ?y)"
+                            rule_str = rule_str + symptom
+                            count += 1
+
                 disease = "->" + i + "(?x)"
                 rule_str = rule_str + disease
                 rule = Imp()
+                print(rule_str)
                 rule.set_as_rule(rule_str)
 
     path = os.getcwd()

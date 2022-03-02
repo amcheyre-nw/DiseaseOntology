@@ -3,21 +3,377 @@
          xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
          xmlns:owl="http://www.w3.org/2002/07/owl#"
-         xml:base="disease_ontology.owl"
-         xmlns="disease_ontology.owl#"
+         xml:base="disease_ontology_SMED.owl"
+         xmlns="disease_ontology_SMED.owl#"
          xmlns:swrl="http://www.w3.org/2003/11/swrl#">
 
-<owl:Ontology rdf:about="disease_ontology.owl"/>
+<owl:Ontology rdf:about="disease_ontology_SMED.owl"/>
 
-<owl:ObjectProperty rdf:about="#Thc"/>
+<owl:ObjectProperty rdf:about="#hasSymptomsAgitation"/>
 
-<owl:ObjectProperty rdf:about="#Signs"/>
+<owl:ObjectProperty rdf:about="#hasSymptomsAnxiety"/>
 
-<owl:ObjectProperty rdf:about="#Dysphoria"/>
+<owl:ObjectProperty rdf:about="#hasSymptomsDepression"/>
 
-<owl:ObjectProperty rdf:about="#Irritability"/>
+<owl:ObjectProperty rdf:about="#hasSymptomsMania"/>
 
-<owl:ObjectProperty rdf:about="#Gastrointestinal"/>
+<owl:ObjectProperty rdf:about="#hasSymptomsParanoia"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsPsychosis"/>
+
+<owl:ObjectProperty rdf:about="#hasMedicationAntidepressants"/>
+
+<owl:ObjectProperty rdf:about="#hasMedicationAntipsychotics"/>
+
+<owl:ObjectProperty rdf:about="#hasMedicationAnxiolytics"/>
+
+<owl:ObjectProperty rdf:about="#hasMedicationMood_stabilizers"/>
+
+<owl:ObjectProperty rdf:about="#hasMedicationStimulants"/>
+
+<owl:ObjectProperty rdf:about="#hasComplicationsSuicide"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsFast_heart_rate"/>
+
+<owl:ObjectProperty rdf:about="#hasComplicationsDepression"/>
+
+<owl:ObjectProperty rdf:about="#hasComplicationsTrouble_sleeping"/>
+
+<owl:ObjectProperty rdf:about="#hasMedicationBeta_blockers"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsMemory_problems"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsPersonality_changes"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsMood_swings"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsCognitive_impairment"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsVision"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsMovement_problems"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsSeeing_or_hearing_things_that_others_do_not_see_or_hear"/>
+
+<owl:ObjectProperty rdf:about="#hasComplicationsSelf-harm"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsCertain_routines_repeatedly"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsCertain_thoughts_repeatedly"/>
+
+<owl:ObjectProperty rdf:about="#hasComplicationsTics"/>
+
+<owl:ObjectProperty rdf:about="#hasComplicationsAnxiety_disorder"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsFear"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsPalpitations"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsShortness_of_breath"/>
+
+<owl:ObjectProperty rdf:about="#hasMedicationBenzodiazepines"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsDreams"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsFight-or-flight_response"/>
+
+<owl:ObjectProperty rdf:about="#hasMedicationSelective_serotonin_reuptake_inhibitor"/>
+
+<owl:ObjectProperty rdf:about="#hasFrequencyLifetime_risk"/>
+
+<owl:ObjectProperty rdf:about="#hasFrequency12-month_risk"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsTrouble_sleeping"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsFeeling_tired"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsTrembling"/>
+
+<owl:ObjectProperty rdf:about="#hasComplicationsHeart_disease"/>
+
+<owl:ObjectProperty rdf:about="#hasMedicationBeta-blockers"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsPanic_attacks"/>
+
+<owl:ObjectProperty rdf:about="#hasComplicationsSubstance_use_disorder"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsSocial_isolation"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsHypervigilance"/>
+
+<owl:ObjectProperty rdf:about="#hasMedicationSsri"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsHallucinations"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsHearing_voices"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsDelusions"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsConfused_thinking"/>
+
+<owl:ObjectProperty rdf:about="#hasComplicationsLifestyle_diseases"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsMemory_loss"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsProblems_with_language"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsDisorientation"/>
+
+<owl:ObjectProperty rdf:about="#hasComplicationsDehydration"/>
+
+<owl:ObjectProperty rdf:about="#hasComplicationsPneumonia"/>
+
+<owl:ObjectProperty rdf:about="#hasMedicationAcetylcholinesterase_inhibitors"/>
+
+<owl:ObjectProperty rdf:about="#hasMedicationNmda_receptor_antagonists"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsThink"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsLanguage"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsMotivation"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsDistrust"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsRelationships"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsSense_of_self"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsEmotions"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsImpulsivity"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsSelf-harm"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsAbandonment"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsEmptiness"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsAnger"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsFeeling_detached_from_reality"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsVideo_game_addiction"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsHair_loss"/>
+
+<owl:ObjectProperty rdf:about="#hasMedicationCognitive_behavioral_therapy"/>
+
+<owl:ObjectProperty rdf:about="#hasMedicationClomipramine"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsXerostomia"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsPolydipsia"/>
+
+<owl:ObjectProperty rdf:about="#hasComplicationsWater_intoxication"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsProblem_gambling"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsSocial_withdrawal"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsVideo_games"/>
+
+<owl:ObjectProperty rdf:about="#hasComplicationsMood_disorders"/>
+
+<owl:ObjectProperty rdf:about="#hasComplicationsSomatisation"/>
+
+<owl:ObjectProperty rdf:about="#hasComplicationsObesity"/>
+
+<owl:ObjectProperty rdf:about="#hasComplicationsAnxiety_disorders"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsPersonality_states"/>
+
+<owl:ObjectProperty rdf:about="#hasComplicationsSelf_harm"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsNumbness"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsWeakness"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsParalysis"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsSeizures"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsTremor"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsFainting"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsImpaired_hearing"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsSwallowing"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsFatigue"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsSweating"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsChest_pain"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsHeadaches"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsBowel_movements"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsPain_with_sex"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsDistress"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsConfusion"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsDrowsiness"/>
+
+<owl:ObjectProperty rdf:about="#hasMedicationHaloperidol"/>
+
+<owl:ObjectProperty rdf:about="#hasMedicationRisperidone"/>
+
+<owl:ObjectProperty rdf:about="#hasMedicationOlanzapine"/>
+
+<owl:ObjectProperty rdf:about="#hasMedicationQuetiapine"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsHigh_body_temperature"/>
+
+<owl:ObjectProperty rdf:about="#hasComplicationsSeizures"/>
+
+<owl:ObjectProperty rdf:about="#hasComplicationsRhabdomyolysis"/>
+
+<owl:ObjectProperty rdf:about="#hasComplicationsKidney_failure"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsHallucination"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsShaking"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsIrregular_heart_rate"/>
+
+<owl:ObjectProperty rdf:about="#hasComplicationsVery_high_body_temperature"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsShakiness"/>
+
+<owl:ObjectProperty rdf:about="#hasComplicationsHallucinations"/>
+
+<owl:ObjectProperty rdf:about="#hasComplicationsDelirium_tremens"/>
+
+<owl:ObjectProperty rdf:about="#hasFrequencyAlcohol_use_disorder"/>
+
+<owl:ObjectProperty rdf:about="#hasMedicationTetrabenazine"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsMood_problems"/>
+
+<owl:ObjectProperty rdf:about="#hasComplicationsBrain_damage"/>
+
+<owl:ObjectProperty rdf:about="#hasComplicationsDementia"/>
+
+<owl:ObjectProperty rdf:about="#hasComplicationsAggression"/>
+
+<owl:ObjectProperty rdf:about="#hasComplicationsCodependent_or_abusive_relationships"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsSocial_anxiety"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsSocial_inhibition"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsInferiority"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsWithdrawal"/>
+
+<owl:ObjectProperty rdf:about="#hasComplicationsSubstance_use_disorders"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsParanoid"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsEmotional_detachment"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsReduced_affect"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsFriends"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsApathy"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsAnhedonia"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsSocial_norms"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsSexual_abstinence"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsFantasy"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsAutistic_thinking"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsLoss_of_skill_to_recognize_reality"/>
+
+<owl:ObjectProperty rdf:about="#hasMedicationΒ-blockers"/>
+
+<owl:ObjectProperty rdf:about="#hasMedicationNefazodone"/>
+
+<owl:ObjectProperty rdf:about="#hasMedicationBupropion"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsIdeas_of_reference"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsUnusual_beliefs"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsPerceptual_illusions"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsOdd_thinking_and_speech"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsSuspiciousness"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsInappropriate_affect"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsStrange_behavior"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsLack_of_friends"/>
+
+<owl:ObjectProperty rdf:about="#hasComplicationsSchizophrenia"/>
+
+<owl:ObjectProperty rdf:about="#hasComplicationsMajor_depressive_disorder"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsDeviance"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsDeception"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsIrritability"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsAggression"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsRecklessness"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsCallous_and_unemotional_traits"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsAttention_seeking"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsExhibitionism"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsExaggerated_feelings_of_self-importance"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsAdmiration"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsEmpathy"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsCross-dressing"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsDisorganized_thinking"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsDepressed_mood"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsManic_behavior"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsRestlessness"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsCatatonia"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsAvolition"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsReduced_affect_display"/>
+
+<owl:ObjectProperty rdf:about="#hasFrequencySpectrum"/>
+
+<owl:ObjectProperty rdf:about="#hasSymptomsTics"/>
+
+<owl:ObjectProperty rdf:about="#hasMedicationNeuroleptics"/>
+
+<owl:ObjectProperty rdf:about="#hasMedicationNoradrenergics"/>
+
+<owl:ObjectProperty rdf:about="#hasMedicationHormones"/>
+
+<owl:ObjectProperty rdf:about="#hasMedicationAndrogens"/>
+
+<owl:ObjectProperty rdf:about="#hasMedicationAntiandrogens"/>
+
+<owl:ObjectProperty rdf:about="#hasMedicationEstrogens"/>
 
 <owl:Class rdf:about="#PsychiatryandPsychology(MeSHCategory)">
   <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
@@ -8770,7 +9126,7 @@
     <rdf:Description>
       <rdf:first>
         <swrl:IndividualPropertyAtom>
-          <swrl:propertyPredicate rdf:resource="#Thc"/>
+          <swrl:propertyPredicate rdf:resource="#hasSymptomsHallucinations"/>
           <swrl:argument1 rdf:resource="urn:swrl#x"/>
           <swrl:argument2 rdf:resource="urn:swrl#y"/>
         </swrl:IndividualPropertyAtom>
@@ -8779,7 +9135,7 @@
         <rdf:Description>
           <rdf:first>
             <swrl:IndividualPropertyAtom>
-              <swrl:propertyPredicate rdf:resource="#Signs"/>
+              <swrl:propertyPredicate rdf:resource="#hasSymptomsHearing_voices"/>
               <swrl:argument1 rdf:resource="urn:swrl#x"/>
               <swrl:argument2 rdf:resource="urn:swrl#y"/>
             </swrl:IndividualPropertyAtom>
@@ -8788,7 +9144,7 @@
             <rdf:Description>
               <rdf:first>
                 <swrl:IndividualPropertyAtom>
-                  <swrl:propertyPredicate rdf:resource="#Dysphoria"/>
+                  <swrl:propertyPredicate rdf:resource="#hasSymptomsDelusions"/>
                   <swrl:argument1 rdf:resource="urn:swrl#x"/>
                   <swrl:argument2 rdf:resource="urn:swrl#y"/>
                 </swrl:IndividualPropertyAtom>
@@ -8797,7 +9153,7 @@
                 <rdf:Description>
                   <rdf:first>
                     <swrl:IndividualPropertyAtom>
-                      <swrl:propertyPredicate rdf:resource="#Anxiety"/>
+                      <swrl:propertyPredicate rdf:resource="#hasSymptomsParanoia"/>
                       <swrl:argument1 rdf:resource="urn:swrl#x"/>
                       <swrl:argument2 rdf:resource="urn:swrl#y"/>
                     </swrl:IndividualPropertyAtom>
@@ -8806,7 +9162,125 @@
                     <rdf:Description>
                       <rdf:first>
                         <swrl:IndividualPropertyAtom>
-                          <swrl:propertyPredicate rdf:resource="#Irritability"/>
+                          <swrl:propertyPredicate rdf:resource="#hasSymptomsConfused_thinking"/>
+                          <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                          <swrl:argument2 rdf:resource="urn:swrl#y"/>
+                        </swrl:IndividualPropertyAtom>
+                      </rdf:first>
+                      <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                  </rdf:rest>
+                </rdf:Description>
+              </rdf:rest>
+            </rdf:Description>
+          </rdf:rest>
+        </rdf:Description>
+      </rdf:rest>
+    </rdf:Description>
+  </swrl:body>
+  <swrl:head>
+    <rdf:Description>
+      <rdf:first>
+        <swrl:ClassAtom>
+          <swrl:classPredicate rdf:resource="#Schizophrenia"/>
+          <swrl:argument1 rdf:resource="urn:swrl#x"/>
+        </swrl:ClassAtom>
+      </rdf:first>
+      <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    </rdf:Description>
+  </swrl:head>
+</swrl:Imp>
+
+<swrl:Imp>
+  <swrl:body>
+    <rdf:Description>
+      <rdf:first>
+        <swrl:IndividualPropertyAtom>
+          <swrl:propertyPredicate rdf:resource="#hasSymptomsThink"/>
+          <swrl:argument1 rdf:resource="urn:swrl#x"/>
+          <swrl:argument2 rdf:resource="urn:swrl#y"/>
+        </swrl:IndividualPropertyAtom>
+      </rdf:first>
+      <rdf:rest>
+        <rdf:Description>
+          <rdf:first>
+            <swrl:IndividualPropertyAtom>
+              <swrl:propertyPredicate rdf:resource="#hasSymptomsLanguage"/>
+              <swrl:argument1 rdf:resource="urn:swrl#x"/>
+              <swrl:argument2 rdf:resource="urn:swrl#y"/>
+            </swrl:IndividualPropertyAtom>
+          </rdf:first>
+          <rdf:rest>
+            <rdf:Description>
+              <rdf:first>
+                <swrl:IndividualPropertyAtom>
+                  <swrl:propertyPredicate rdf:resource="#hasSymptomsMotivation"/>
+                  <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                  <swrl:argument2 rdf:resource="urn:swrl#y"/>
+                </swrl:IndividualPropertyAtom>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </rdf:rest>
+        </rdf:Description>
+      </rdf:rest>
+    </rdf:Description>
+  </swrl:body>
+  <swrl:head>
+    <rdf:Description>
+      <rdf:first>
+        <swrl:ClassAtom>
+          <swrl:classPredicate rdf:resource="#Dementia"/>
+          <swrl:argument1 rdf:resource="urn:swrl#x"/>
+        </swrl:ClassAtom>
+      </rdf:first>
+      <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    </rdf:Description>
+  </swrl:head>
+</swrl:Imp>
+
+<swrl:Imp>
+  <swrl:body>
+    <rdf:Description>
+      <rdf:first>
+        <swrl:IndividualPropertyAtom>
+          <swrl:propertyPredicate rdf:resource="#hasSymptomsAgitation"/>
+          <swrl:argument1 rdf:resource="urn:swrl#x"/>
+          <swrl:argument2 rdf:resource="urn:swrl#y"/>
+        </swrl:IndividualPropertyAtom>
+      </rdf:first>
+      <rdf:rest>
+        <rdf:Description>
+          <rdf:first>
+            <swrl:IndividualPropertyAtom>
+              <swrl:propertyPredicate rdf:resource="#hasSymptomsAnxiety"/>
+              <swrl:argument1 rdf:resource="urn:swrl#x"/>
+              <swrl:argument2 rdf:resource="urn:swrl#y"/>
+            </swrl:IndividualPropertyAtom>
+          </rdf:first>
+          <rdf:rest>
+            <rdf:Description>
+              <rdf:first>
+                <swrl:IndividualPropertyAtom>
+                  <swrl:propertyPredicate rdf:resource="#hasSymptomsDepression"/>
+                  <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                  <swrl:argument2 rdf:resource="urn:swrl#y"/>
+                </swrl:IndividualPropertyAtom>
+              </rdf:first>
+              <rdf:rest>
+                <rdf:Description>
+                  <rdf:first>
+                    <swrl:IndividualPropertyAtom>
+                      <swrl:propertyPredicate rdf:resource="#hasSymptomsMania"/>
+                      <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                      <swrl:argument2 rdf:resource="urn:swrl#y"/>
+                    </swrl:IndividualPropertyAtom>
+                  </rdf:first>
+                  <rdf:rest>
+                    <rdf:Description>
+                      <rdf:first>
+                        <swrl:IndividualPropertyAtom>
+                          <swrl:propertyPredicate rdf:resource="#hasSymptomsParanoia"/>
                           <swrl:argument1 rdf:resource="urn:swrl#x"/>
                           <swrl:argument2 rdf:resource="urn:swrl#y"/>
                         </swrl:IndividualPropertyAtom>
@@ -8815,7 +9289,114 @@
                         <rdf:Description>
                           <rdf:first>
                             <swrl:IndividualPropertyAtom>
-                              <swrl:propertyPredicate rdf:resource="#Depression"/>
+                              <swrl:propertyPredicate rdf:resource="#hasSymptomsPsychosis"/>
+                              <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                              <swrl:argument2 rdf:resource="urn:swrl#y"/>
+                            </swrl:IndividualPropertyAtom>
+                          </rdf:first>
+                          <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                        </rdf:Description>
+                      </rdf:rest>
+                    </rdf:Description>
+                  </rdf:rest>
+                </rdf:Description>
+              </rdf:rest>
+            </rdf:Description>
+          </rdf:rest>
+        </rdf:Description>
+      </rdf:rest>
+    </rdf:Description>
+  </swrl:body>
+  <swrl:head>
+    <rdf:Description>
+      <rdf:first>
+        <swrl:ClassAtom>
+          <swrl:classPredicate rdf:resource="#Hypochondriasis"/>
+          <swrl:argument1 rdf:resource="urn:swrl#x"/>
+        </swrl:ClassAtom>
+      </rdf:first>
+      <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    </rdf:Description>
+  </swrl:head>
+</swrl:Imp>
+
+<swrl:Imp>
+  <swrl:body>
+    <rdf:Description>
+      <rdf:first>
+        <swrl:IndividualPropertyAtom>
+          <swrl:propertyPredicate rdf:resource="#hasSymptomsHair_loss"/>
+          <swrl:argument1 rdf:resource="urn:swrl#x"/>
+          <swrl:argument2 rdf:resource="urn:swrl#y"/>
+        </swrl:IndividualPropertyAtom>
+      </rdf:first>
+      <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    </rdf:Description>
+  </swrl:body>
+  <swrl:head>
+    <rdf:Description>
+      <rdf:first>
+        <swrl:ClassAtom>
+          <swrl:classPredicate rdf:resource="#Trichotillomania"/>
+          <swrl:argument1 rdf:resource="urn:swrl#x"/>
+        </swrl:ClassAtom>
+      </rdf:first>
+      <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    </rdf:Description>
+  </swrl:head>
+</swrl:Imp>
+
+<swrl:Imp>
+  <swrl:body>
+    <rdf:Description>
+      <rdf:first>
+        <swrl:IndividualPropertyAtom>
+          <swrl:propertyPredicate rdf:resource="#hasSymptomsAnxiety"/>
+          <swrl:argument1 rdf:resource="urn:swrl#x"/>
+          <swrl:argument2 rdf:resource="urn:swrl#y"/>
+        </swrl:IndividualPropertyAtom>
+      </rdf:first>
+      <rdf:rest>
+        <rdf:Description>
+          <rdf:first>
+            <swrl:IndividualPropertyAtom>
+              <swrl:propertyPredicate rdf:resource="#hasSymptomsPanic_attacks"/>
+              <swrl:argument1 rdf:resource="urn:swrl#x"/>
+              <swrl:argument2 rdf:resource="urn:swrl#y"/>
+            </swrl:IndividualPropertyAtom>
+          </rdf:first>
+          <rdf:rest>
+            <rdf:Description>
+              <rdf:first>
+                <swrl:IndividualPropertyAtom>
+                  <swrl:propertyPredicate rdf:resource="#hasSymptomsFast_heart_rate"/>
+                  <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                  <swrl:argument2 rdf:resource="urn:swrl#y"/>
+                </swrl:IndividualPropertyAtom>
+              </rdf:first>
+              <rdf:rest>
+                <rdf:Description>
+                  <rdf:first>
+                    <swrl:IndividualPropertyAtom>
+                      <swrl:propertyPredicate rdf:resource="#hasSymptomsAgitation"/>
+                      <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                      <swrl:argument2 rdf:resource="urn:swrl#y"/>
+                    </swrl:IndividualPropertyAtom>
+                  </rdf:first>
+                  <rdf:rest>
+                    <rdf:Description>
+                      <rdf:first>
+                        <swrl:IndividualPropertyAtom>
+                          <swrl:propertyPredicate rdf:resource="#hasSymptomsDepression"/>
+                          <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                          <swrl:argument2 rdf:resource="urn:swrl#y"/>
+                        </swrl:IndividualPropertyAtom>
+                      </rdf:first>
+                      <rdf:rest>
+                        <rdf:Description>
+                          <rdf:first>
+                            <swrl:IndividualPropertyAtom>
+                              <swrl:propertyPredicate rdf:resource="#hasSymptomsMania"/>
                               <swrl:argument1 rdf:resource="urn:swrl#x"/>
                               <swrl:argument2 rdf:resource="urn:swrl#y"/>
                             </swrl:IndividualPropertyAtom>
@@ -8824,7 +9405,7 @@
                             <rdf:Description>
                               <rdf:first>
                                 <swrl:IndividualPropertyAtom>
-                                  <swrl:propertyPredicate rdf:resource="#Depersonalization"/>
+                                  <swrl:propertyPredicate rdf:resource="#hasSymptomsParanoia"/>
                                   <swrl:argument1 rdf:resource="urn:swrl#x"/>
                                   <swrl:argument2 rdf:resource="urn:swrl#y"/>
                                 </swrl:IndividualPropertyAtom>
@@ -8833,7 +9414,7 @@
                                 <rdf:Description>
                                   <rdf:first>
                                     <swrl:IndividualPropertyAtom>
-                                      <swrl:propertyPredicate rdf:resource="#Gastrointestinal"/>
+                                      <swrl:propertyPredicate rdf:resource="#hasSymptomsPsychosis"/>
                                       <swrl:argument1 rdf:resource="urn:swrl#x"/>
                                       <swrl:argument2 rdf:resource="urn:swrl#y"/>
                                     </swrl:IndividualPropertyAtom>
@@ -8859,7 +9440,7 @@
     <rdf:Description>
       <rdf:first>
         <swrl:ClassAtom>
-          <swrl:classPredicate rdf:resource="#MarijuanaAbuse"/>
+          <swrl:classPredicate rdf:resource="#Agoraphobia"/>
           <swrl:argument1 rdf:resource="urn:swrl#x"/>
         </swrl:ClassAtom>
       </rdf:first>
@@ -8873,59 +9454,7 @@
     <rdf:Description>
       <rdf:first>
         <swrl:IndividualPropertyAtom>
-          <swrl:propertyPredicate rdf:resource="#Depression"/>
-          <swrl:argument1 rdf:resource="urn:swrl#x"/>
-          <swrl:argument2 rdf:resource="urn:swrl#y"/>
-        </swrl:IndividualPropertyAtom>
-      </rdf:first>
-      <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-    </rdf:Description>
-  </swrl:body>
-  <swrl:head>
-    <rdf:Description>
-      <rdf:first>
-        <swrl:ClassAtom>
-          <swrl:classPredicate rdf:resource="#PanicDisorder"/>
-          <swrl:argument1 rdf:resource="urn:swrl#x"/>
-        </swrl:ClassAtom>
-      </rdf:first>
-      <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-    </rdf:Description>
-  </swrl:head>
-</swrl:Imp>
-
-<swrl:Imp>
-  <swrl:body>
-    <rdf:Description>
-      <rdf:first>
-        <swrl:IndividualPropertyAtom>
-          <swrl:propertyPredicate rdf:resource="#Depression"/>
-          <swrl:argument1 rdf:resource="urn:swrl#x"/>
-          <swrl:argument2 rdf:resource="urn:swrl#y"/>
-        </swrl:IndividualPropertyAtom>
-      </rdf:first>
-      <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-    </rdf:Description>
-  </swrl:body>
-  <swrl:head>
-    <rdf:Description>
-      <rdf:first>
-        <swrl:ClassAtom>
-          <swrl:classPredicate rdf:resource="#PhobicDisorders"/>
-          <swrl:argument1 rdf:resource="urn:swrl#x"/>
-        </swrl:ClassAtom>
-      </rdf:first>
-      <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-    </rdf:Description>
-  </swrl:head>
-</swrl:Imp>
-
-<swrl:Imp>
-  <swrl:body>
-    <rdf:Description>
-      <rdf:first>
-        <swrl:IndividualPropertyAtom>
-          <swrl:propertyPredicate rdf:resource="#Depression"/>
+          <swrl:propertyPredicate rdf:resource="#hasSymptomsAgitation"/>
           <swrl:argument1 rdf:resource="urn:swrl#x"/>
           <swrl:argument2 rdf:resource="urn:swrl#y"/>
         </swrl:IndividualPropertyAtom>
@@ -8934,7 +9463,7 @@
         <rdf:Description>
           <rdf:first>
             <swrl:IndividualPropertyAtom>
-              <swrl:propertyPredicate rdf:resource="#Irritability"/>
+              <swrl:propertyPredicate rdf:resource="#hasSymptomsConfusion"/>
               <swrl:argument1 rdf:resource="urn:swrl#x"/>
               <swrl:argument2 rdf:resource="urn:swrl#y"/>
             </swrl:IndividualPropertyAtom>
@@ -8943,12 +9472,45 @@
             <rdf:Description>
               <rdf:first>
                 <swrl:IndividualPropertyAtom>
-                  <swrl:propertyPredicate rdf:resource="#Anxiety"/>
+                  <swrl:propertyPredicate rdf:resource="#hasSymptomsDrowsiness"/>
                   <swrl:argument1 rdf:resource="urn:swrl#x"/>
                   <swrl:argument2 rdf:resource="urn:swrl#y"/>
                 </swrl:IndividualPropertyAtom>
               </rdf:first>
-              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+              <rdf:rest>
+                <rdf:Description>
+                  <rdf:first>
+                    <swrl:IndividualPropertyAtom>
+                      <swrl:propertyPredicate rdf:resource="#hasSymptomsHallucinations"/>
+                      <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                      <swrl:argument2 rdf:resource="urn:swrl#y"/>
+                    </swrl:IndividualPropertyAtom>
+                  </rdf:first>
+                  <rdf:rest>
+                    <rdf:Description>
+                      <rdf:first>
+                        <swrl:IndividualPropertyAtom>
+                          <swrl:propertyPredicate rdf:resource="#hasSymptomsDelusions"/>
+                          <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                          <swrl:argument2 rdf:resource="urn:swrl#y"/>
+                        </swrl:IndividualPropertyAtom>
+                      </rdf:first>
+                      <rdf:rest>
+                        <rdf:Description>
+                          <rdf:first>
+                            <swrl:IndividualPropertyAtom>
+                              <swrl:propertyPredicate rdf:resource="#hasSymptomsMemory_problems"/>
+                              <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                              <swrl:argument2 rdf:resource="urn:swrl#y"/>
+                            </swrl:IndividualPropertyAtom>
+                          </rdf:first>
+                          <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                        </rdf:Description>
+                      </rdf:rest>
+                    </rdf:Description>
+                  </rdf:rest>
+                </rdf:Description>
+              </rdf:rest>
             </rdf:Description>
           </rdf:rest>
         </rdf:Description>
@@ -8959,7 +9521,88 @@
     <rdf:Description>
       <rdf:first>
         <swrl:ClassAtom>
-          <swrl:classPredicate rdf:resource="#NeuroticDisorders"/>
+          <swrl:classPredicate rdf:resource="#Delirium"/>
+          <swrl:argument1 rdf:resource="urn:swrl#x"/>
+        </swrl:ClassAtom>
+      </rdf:first>
+      <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    </rdf:Description>
+  </swrl:head>
+</swrl:Imp>
+
+<swrl:Imp>
+  <swrl:body>
+    <rdf:Description>
+      <rdf:first>
+        <swrl:IndividualPropertyAtom>
+          <swrl:propertyPredicate rdf:resource="#hasSymptomsAgitation"/>
+          <swrl:argument1 rdf:resource="urn:swrl#x"/>
+          <swrl:argument2 rdf:resource="urn:swrl#y"/>
+        </swrl:IndividualPropertyAtom>
+      </rdf:first>
+      <rdf:rest>
+        <rdf:Description>
+          <rdf:first>
+            <swrl:IndividualPropertyAtom>
+              <swrl:propertyPredicate rdf:resource="#hasSymptomsAnxiety"/>
+              <swrl:argument1 rdf:resource="urn:swrl#x"/>
+              <swrl:argument2 rdf:resource="urn:swrl#y"/>
+            </swrl:IndividualPropertyAtom>
+          </rdf:first>
+          <rdf:rest>
+            <rdf:Description>
+              <rdf:first>
+                <swrl:IndividualPropertyAtom>
+                  <swrl:propertyPredicate rdf:resource="#hasSymptomsDepression"/>
+                  <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                  <swrl:argument2 rdf:resource="urn:swrl#y"/>
+                </swrl:IndividualPropertyAtom>
+              </rdf:first>
+              <rdf:rest>
+                <rdf:Description>
+                  <rdf:first>
+                    <swrl:IndividualPropertyAtom>
+                      <swrl:propertyPredicate rdf:resource="#hasSymptomsMania"/>
+                      <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                      <swrl:argument2 rdf:resource="urn:swrl#y"/>
+                    </swrl:IndividualPropertyAtom>
+                  </rdf:first>
+                  <rdf:rest>
+                    <rdf:Description>
+                      <rdf:first>
+                        <swrl:IndividualPropertyAtom>
+                          <swrl:propertyPredicate rdf:resource="#hasSymptomsParanoia"/>
+                          <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                          <swrl:argument2 rdf:resource="urn:swrl#y"/>
+                        </swrl:IndividualPropertyAtom>
+                      </rdf:first>
+                      <rdf:rest>
+                        <rdf:Description>
+                          <rdf:first>
+                            <swrl:IndividualPropertyAtom>
+                              <swrl:propertyPredicate rdf:resource="#hasSymptomsPsychosis"/>
+                              <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                              <swrl:argument2 rdf:resource="urn:swrl#y"/>
+                            </swrl:IndividualPropertyAtom>
+                          </rdf:first>
+                          <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                        </rdf:Description>
+                      </rdf:rest>
+                    </rdf:Description>
+                  </rdf:rest>
+                </rdf:Description>
+              </rdf:rest>
+            </rdf:Description>
+          </rdf:rest>
+        </rdf:Description>
+      </rdf:rest>
+    </rdf:Description>
+  </swrl:body>
+  <swrl:head>
+    <rdf:Description>
+      <rdf:first>
+        <swrl:ClassAtom>
+          <swrl:classPredicate rdf:resource="#Koro"/>
           <swrl:argument1 rdf:resource="urn:swrl#x"/>
         </swrl:ClassAtom>
       </rdf:first>
