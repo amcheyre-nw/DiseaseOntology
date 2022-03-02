@@ -1,83 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ce504fd7-7858-4d50-bcf1-b827400a863b" name="Changes" comment="adding rules">
-      <change afterPath="$PROJECT_DIR$/2022-03-01_21-11-50_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-01_21-22-36_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-01_21-23-05_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-01_21-23-22_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-01_21-23-46_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-01_21-23-55_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-01_21-25-54_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-01_21-28-17_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-01_21-28-39_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-01_21-30-02_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-01_21-30-22_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-01_21-31-40_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-01_21-32-04_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-01_21-32-24_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-01_21-33-22_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-01_21-33-54_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-01_21-35-59_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-01_21-37-26_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-01_21-46-12_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-01_21-46-48_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-01_21-49-13_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-01_21-50-00_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-01_21-51-57_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-01_21-52-40_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-01_21-54-38_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-01_21-55-39_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-01_21-56-22_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-01_21-56-30_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-01_21-57-17_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-01_22-04-24_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-01_22-04-57_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-01_22-12-43_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-01_22-12-57_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-01_22-13-26_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-01_22-13-59_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-01_22-15-26_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-01_22-15-56_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-01_22-16-44_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-01_22-17-09_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-01_22-17-14_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-01_22-19-06_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-01_22-20-56_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-01_22-21-15_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-01_22-21-36_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-01_22-28-02_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-01_22-29-12_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-01_22-29-45_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-01_22-32-12_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-01_22-32-49_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-01_22-32-59_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-01_22-34-12_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-01_22-34-22_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-01_22-34-30_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-01_22-35-07_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-01_22-35-16_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-01_22-35-36_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-01_22-36-25_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-01_22-36-53_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-01_22-38-06_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-01_22-40-15_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-01_22-43-00_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-01_22-43-47_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-01_22-44-34_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-01_22-45-05_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-01_22-45-36_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-01_22-46-21_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-01_22-46-39_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/disease_classes_2.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/disease_classes_SMED_copy.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/disease_ontology_rules.owl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/object_props_SMED_inherited.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ontology_final.py" afterDir="false" />
+    <list default="true" id="ce504fd7-7858-4d50-bcf1-b827400a863b" name="Changes" comment="contributions in build_ontology_james.py -&gt; ability to scrape from SNOMEDCT added into the UMLS_api along with ability to pull not children but reverse_isa statements which gives a higher yield + utilization of these new methods completed and functioning in build_ontology_james.py. Also functionality to pythonically hardcode inheritance into the CSVs based on 1) a child not having a property type (eg: Symptoms) already, and 2) limiting inheritence to a distance down the tree. This will need to be checked manually as certain inheritences may be erroneous.">
+      <change afterPath="$PROJECT_DIR$/new.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reformat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/DiseaseOntology.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DiseaseOntology.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/disease_classes.csv" beforeDir="false" afterPath="$PROJECT_DIR$/disease_classes.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/disease_ontology.owl" beforeDir="false" afterPath="$PROJECT_DIR$/disease_ontology.owl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/__pycache__/wikipedia_api.cpython-39.pyc" beforeDir="false" afterPath="$PROJECT_DIR$/__pycache__/wikipedia_api.cpython-39.pyc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build_ontology_james.py" beforeDir="false" afterPath="$PROJECT_DIR$/build_ontology_james.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/disease_ontology.owl" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ontology.py" beforeDir="false" afterPath="$PROJECT_DIR$/ontology.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wikipedia_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/wikipedia_api.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,14 +27,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GitSEFilterConfiguration">
-    <file-type-list>
-      <filtered-out-file-type name="LOCAL_BRANCH" />
-      <filtered-out-file-type name="REMOTE_BRANCH" />
-      <filtered-out-file-type name="TAG" />
-      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
-    </file-type-list>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -121,13 +47,14 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.ontology_final">
+  <component name="RunManager" selected="Python.build_ontology_james">
     <configuration name="ULMS_api" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DiseaseOntology" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -150,6 +77,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="build_ontology_james" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DiseaseOntology" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/build_ontology_james.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="ontology" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DiseaseOntology" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -157,22 +106,22 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="$USER_HOME$/.conda/envs/MSAI-349-Fall-2021-HW3/bin/python" />
+      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ontology.py" />
       <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ontology_final" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="reformat" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DiseaseOntology" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -185,16 +134,16 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ontology_final.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/reformat.py" />
       <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ontology_kaleem" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="wikipedia_api" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DiseaseOntology" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -207,9 +156,9 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ontology_kaleem.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/wikipedia_api.py" />
       <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
@@ -218,10 +167,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.ontology_final" />
+        <item itemvalue="Python.build_ontology_james" />
+        <item itemvalue="Python.build_ontology_james" />
         <item itemvalue="Python.ontology" />
-        <item itemvalue="Python.ULMS_api" />
-        <item itemvalue="Python.ontology_kaleem" />
+        <item itemvalue="Python.ontology" />
+        <item itemvalue="Python.ontology" />
       </list>
     </recent_temporary>
   </component>
@@ -238,8 +188,8 @@
       <workItem from="1645807073966" duration="232000" />
       <workItem from="1645813112369" duration="4000000" />
       <workItem from="1646083014091" duration="59000" />
-      <workItem from="1646166323307" duration="1690000" />
-      <workItem from="1646176217213" duration="15091000" />
+      <workItem from="1646177057466" duration="176000" />
+      <workItem from="1646180855979" duration="15000" />
     </task>
     <task id="LOCAL-00001" summary="reading csv classes">
       <created>1646142215781</created>
@@ -283,14 +233,7 @@
       <option name="project" value="LOCAL" />
       <updated>1646155047920</updated>
     </task>
-    <task id="LOCAL-00007" summary="adding rules">
-      <created>1646156112393</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1646156112393</updated>
-    </task>
-    <option name="localTasksCounter" value="8" />
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -306,7 +249,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -314,8 +256,7 @@
     <MESSAGE value="trying to add ops" />
     <MESSAGE value="ops added to Protege" />
     <MESSAGE value="working on adding rules" />
-    <MESSAGE value="adding rules" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding rules" />
+    <option name="LAST_COMMIT_MESSAGE" value="working on adding rules" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -325,13 +266,47 @@
           <line>89</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/wikipedia_api.py</url>
+          <line>93</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/.conda/envs/DiseaseOntology/lib/python3.9/site-packages/ontor/ontor.py</url>
+          <line>248</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/build_ontology_james.py</url>
+          <line>140</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/build_ontology_james.py</url>
+          <line>88</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/reformat.py</url>
+          <line>7</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/reformat.py</url>
+          <line>8</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/reformat.py</url>
+          <line>9</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/reformat.py</url>
+          <line>10</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/DiseaseOntology$ontology_final.coverage" NAME="ontology_final Coverage Results" MODIFIED="1646196399250" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/DiseaseOntology$ontology.coverage" NAME="ontology Coverage Results" MODIFIED="1646191425474" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/DiseaseOntology$ULMS_api.coverage" NAME="ULMS_api Coverage Results" MODIFIED="1645816972641" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/DiseaseOntology$ontology_kaleem.coverage" NAME="ontology_kaleem Coverage Results" MODIFIED="1645383117234" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

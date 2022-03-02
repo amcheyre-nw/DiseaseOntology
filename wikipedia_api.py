@@ -62,6 +62,20 @@ def get_wikiURL_from_title(title):
         return None
 
 
+def get_wiki_summary(disease):
+    '''
+    retrieves the body text from wikipedia entry on disease
+    :param disease:  disease/label to search wikipedia for
+    :return:
+    '''
+    wiki_wiki = wikipediaapi.Wikipedia('en') # english
+    page = wiki_wiki.page(disease)
+
+    summary = page.summary.split(' ')
+    summary_lower = [s.lower() for s in summary]
+    return summary_lower
+
+
 def retrieveFacts(disease, label):
     '''
     Wrapper of above functions for ease of use. Returns the data associated with a disease/label.
@@ -90,7 +104,8 @@ def retrieveLabels(disease):
     else:
         return None
 
+
 if __name__ == '__main__':
     print("Possible labels for type 2 diabetes: ", retrieveLabels("Schizophrenia"))
-    # notice it doesn't matter whether I put II or 2... both point to the same place
-    print("\nSymptoms for type 2 diabetes: ", retrieveFacts("Latent schizophrenia", "Symptoms"))
+    ## notice it doesn't matter whether I put II or 2... both point to the same place
+    #print("\nSymptoms for type 2 diabetes: ", retrieveFacts("Eating disorders", "Symptoms"))

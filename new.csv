@@ -1,4 +1,3 @@
-class,superclass
 Mental disorder,
 Adjustment disorder,Mental disorder
 Anxiety disorder,Mental disorder
@@ -1237,7 +1236,6 @@ Autosomal dominant Alzheimer disease due to mutation of amyloid precursor protei
 familial Alzheimer disease AD1,Familial Alzheimer's disease of early onset
 familial Alzheimer disease AD3,Familial Alzheimer's disease of early onset
 familial Alzheimer disease AD4,Familial Alzheimer's disease of early onset
-Acute left-sided congestive heart failure,Acute left-sided heart failure
 Presenile dementia with delirium,Presenile dementia
 Presenile dementia with paranoia,Presenile dementia
 Presenile dementia with depression,Presenile dementia
@@ -1924,3 +1922,4 @@ Atypical childhood psychoses,Psychosis with origin in childhood
 Residual childhood psychosis,Psychosis with origin in childhood
 Psychosis in early childhood,Psychosis with origin in childhood
 Academic underachievement disorder,Behavioral and emotional disorder with onset in childhood
+Acute left-sided congestive heart failure,Acute left-sided heart failure

@@ -1,3 +1,4 @@
+object_property (op),super-op,domain,range,functional,inverse functional,transitive,symmetric,asymmetric,reflexive,irreflexive,inverse_prop
 has/Symptoms/Agitation,,Mental disorder,Mental disorder,False,False,False,False,False,False,False,
 has/Symptoms/Anxiety,,Mental disorder,Mental disorder,False,False,False,False,False,False,False,
 has/Symptoms/Depression,,Mental disorder,Mental disorder,False,False,False,False,False,False,False,
