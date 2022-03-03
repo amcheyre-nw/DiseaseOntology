@@ -76,9 +76,22 @@ def create_ontology_and_rules():
                     symptoms_list.append(symptom)
             symptoms_dict[disease] = symptoms_list
 
-        # Create rules with diseases and symptoms
+
+        # Count symptoms per disease
+        symp_count = {}
         for i,j in symptoms_dict.items():
-            rule_count = 0
+            sym = 0
+            if j != []:
+                for s in j:
+                    s = str(s)
+                    s = s.replace(",", "")
+                    if "hasSymptoms" in s:
+                        sym += 1
+            symp_count[i] = sym
+
+        # Create rules with diseases and symptoms
+        rule_count = 0
+        for i,j in symptoms_dict.items():
             if rule_count < 50:
                 rule_str = ""
                 if j != []:
@@ -87,7 +100,7 @@ def create_ontology_and_rules():
                         s = str(s)
                         s = s.replace(",","")
                         if "hasSymptoms" in s:
-                            if count < len(j)-1:
+                            if count < symp_count[i]-1:
                                 symptom = s + "(?x, ?y) ^"
                                 rule_str = rule_str + symptom
                                 count +=1
@@ -103,8 +116,7 @@ def create_ontology_and_rules():
                     print(rule_str)
                     rule.set_as_rule(rule_str)
                     rule_count +=1
-                else:
-                    break
+                    print(rule_count)
 
     onto.save(path+"/disease_ontology_SMED.owl")
 
