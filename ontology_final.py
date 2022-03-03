@@ -6,7 +6,7 @@ import types
 
 
 def create_ontology_and_rules():
-
+    path = os.getcwd()
     onto = get_ontology('disease_ontology_SMED.owl')
 
     # Create Clasess
@@ -78,30 +78,34 @@ def create_ontology_and_rules():
 
         # Create rules with diseases and symptoms
         for i,j in symptoms_dict.items():
-            rule_str = ""
-            if j != []:
-                count = 0
-                for s in j:
-                    s = str(s)
-                    s = s.replace(",","")
-                    if "hasSymptoms" in s:
-                        if count < len(j)-1:
-                            symptom = s + "(?x, ?y) ^"
-                            rule_str = rule_str + symptom
-                            count +=1
-                        else:
-                            symptom = s + "(?x, ?y)"
-                            rule_str = rule_str + symptom
-                            count += 1
+            rule_count = 0
+            if rule_count < 50:
+                rule_str = ""
+                if j != []:
+                    count = 0
+                    for s in j:
+                        s = str(s)
+                        s = s.replace(",","")
+                        if "hasSymptoms" in s:
+                            if count < len(j)-1:
+                                symptom = s + "(?x, ?y) ^"
+                                rule_str = rule_str + symptom
+                                count +=1
+                            else:
+                                symptom = s + "(?x, ?y)"
+                                rule_str = rule_str + symptom
+                                count += 1
 
-                i = i.replace(",","")
-                disease = "->" + i + "(?x)"
-                rule_str = rule_str + disease
-                rule = Imp()
-                print(rule_str)
-                rule.set_as_rule(rule_str)
+                    i = i.replace(",","")
+                    disease = "->" + i + "(?x)"
+                    rule_str = rule_str + disease
+                    rule = Imp()
+                    print(rule_str)
+                    rule.set_as_rule(rule_str)
+                    rule_count +=1
+                else:
+                    break
 
-    path = os.getcwd()
     onto.save(path+"/disease_ontology_SMED.owl")
 
 if __name__ == "__main__":
