@@ -1,4 +1,3 @@
-class,superclass
 Mental disorder,
 Adjustment disorder,Mental disorder
 Anxiety disorder,Mental disorder
@@ -268,7 +267,7 @@ Presenile dementia with delusions,Delusional disorder
 Delusional disorder in remission,Delusional disorder
 Delusional disorder currently symptomatic,Delusional disorder
 Olfactory reference disorder,Delusional disorder
-delusional disorder of unknown (Axis III) etiology,Delusional disorder
+delusional disorder of unknown Axis III etiology,Delusional disorder
 Obsessional erotomania,Erotomania
 Psychoactive substance-induced organic delusional disorder,Organic delusional disorder
 Secondary psychotic syndrome with hallucinations and delusions,Organic delusional disorder
@@ -509,7 +508,7 @@ Organic brain syndrome associated with AIDS,Organic mental disorder
 Dysexecutive syndrome,Organic mental disorder
 Organic brain syndrome co-occurrent with human immunodeficiency virus infection,Organic mental disorder
 psychotic disorder due to general medical condition,Organic mental disorder
-mental disorder of unknown (Axis III) etiology,Organic mental disorder
+mental disorder of unknown Axis III etiology,Organic mental disorder
 Drug-induced amnestic syndrome,Amnestic disorder
 Non-alcoholic Korsakoff's psychosis,Amnestic disorder
 Amnestic disorder caused by substance,Amnestic disorder
@@ -517,7 +516,7 @@ Amnestic disorder associated with general medical condition,Amnestic disorder
 Amnestic disorder due to multiple etiological factors,Amnestic disorder
 Amnestic disorder caused by psychoactive substance,Amnestic disorder
 Amnestic disorder caused by volatile solvent,Amnestic disorder
-amnestic disorder of unknown (Axis III) etiology,Amnestic disorder
+amnestic disorder of unknown Axis III etiology,Amnestic disorder
 "Sedative, hypnotic AND/OR anxiolytic-induced persisting amnestic disorder",Drug-induced amnestic syndrome
 cocaine use with cocaine-induced amnesic syndrome,Drug-induced amnestic syndrome
 opioid use with opioid-induced amnesic syndrome,Drug-induced amnestic syndrome
@@ -531,7 +530,7 @@ Sedative amnestic disorder,"Sedative, hypnotic AND/OR anxiolytic-induced persist
 Amnestic disorder caused by anxiolytic,Amnestic disorder caused by substance
 Amnestic disorder caused by hypnotic,Amnestic disorder caused by substance
 Amnestic disorder caused by sedative,Amnestic disorder caused by substance
-amnestic disorder of known (Axis III) etiology,Amnestic disorder associated with general medical condition
+amnestic disorder of known Axis III etiology,Amnestic disorder associated with general medical condition
 Alcohol amnestic disorder,Amnestic disorder caused by psychoactive substance
 "Sedative, hypnotic AND/OR anxiolytic-induced persisting amnestic disorder",Amnestic disorder caused by psychoactive substance
 Psychoactive substance-induced organic amnestic disorder,Amnestic disorder caused by psychoactive substance
@@ -569,8 +568,8 @@ Postoperative delirium,Delirium
 Delirium due to drug withdrawal,Delirium
 delirium not superimposed on dementia,Delirium
 delirium not induced by alcohol and other psychoactive substances,Delirium
-delirium of known (Axis III) etiology,Delirium
-delirium of unknown (Axis III) etiology,Delirium
+delirium of known Axis III etiology,Delirium
+delirium of unknown Axis III etiology,Delirium
 postimmunization acute necrotizing hemorrhagic encephalopathy,Delirium
 Alcohol withdrawal delirium,Drug-induced delirium
 Alcohol intoxication delirium,Drug-induced delirium
@@ -580,7 +579,7 @@ Cocaine intoxication delirium,Drug-induced delirium
 Hallucinogen intoxication delirium,Drug-induced delirium
 Inhalant intoxication delirium,Drug-induced delirium
 Opioid intoxication delirium,Drug-induced delirium
-Phencyclidine (PCP) delirium,Drug-induced delirium
+Phencyclidine PCP delirium,Drug-induced delirium
 Psychoactive substance-induced organic delirium,Drug-induced delirium
 Drug-induced intensive care psychosis,Drug-induced delirium
 Delirium caused by dissociative drug,Drug-induced delirium
@@ -613,7 +612,7 @@ psychoactive substance abuse with withdrawal delirium,Psychoactive substance-ind
 "Subacute confusional state, of metabolic origin",Subacute delirium
 "Subacute confusional state, of cerebrovascular origin",Subacute delirium
 "Subacute confusional state, post-traumatic",Subacute delirium
-subacute delirium of unknown (Axis III) etiology,Subacute delirium
+subacute delirium of unknown Axis III etiology,Subacute delirium
 Drug-induced intensive care psychosis,Psychosis associated with intensive care
 Hypoactive postoperative delirium,Postoperative delirium
 Hyperactive postoperative delirium,Postoperative delirium
@@ -793,8 +792,8 @@ Organic pseudopsychopathic personality,Organic personality disorder
 Organic pseudoretarded personality,Organic personality disorder
 Lobotomy syndrome,Organic personality disorder
 Frontal lobe syndrome,Organic personality disorder
-personality disorder of unknown (Axis III) etiology,Organic personality disorder
-personality disorder of known (Axis III) etiology,Organic personality disorder
+personality disorder of unknown Axis III etiology,Organic personality disorder
+personality disorder of known Axis III etiology,Organic personality disorder
 labile type personality change due to Axis III etiology,Organic personality disorder
 disinhibited type personality change due to Axis III etiology,Organic personality disorder
 apathetic type personality change due to Axis III etiology,Organic personality disorder
@@ -803,7 +802,7 @@ combined type personality change due to Axis III etiology,Organic personality di
 personality change due to Axis III etiology,Organic personality disorder
 aggressive type personality change due to axis III etiology,Organic personality disorder
 explosive personality disorder of known Axis III etiology,Explosive type organic personality disorder
-"explosive personality disorder, unknown (Axis III) etiology",Explosive type organic personality disorder
+"explosive personality disorder, unknown Axis III etiology",Explosive type organic personality disorder
 Caffeine-induced organic mental disorder,Psychoactive substance-induced organic mental disorder
 Phencyclidine-induced psychotic disorder with hallucinations,Psychoactive substance-induced organic mental disorder
 Amphetamine-induced organic mental disorder,Psychoactive substance-induced organic mental disorder
@@ -917,7 +916,7 @@ Episodic flashbacks,Flashbacks
 Duplicative flashbacks,Flashbacks
 Short duration flashbacks,Flashbacks
 hallucinogen dependence with hallucinogen-induced flashbacks,Flashbacks
-hallucinogen abuse with hallucinogen-induced persisting perception disorder (flashbacks),Flashbacks
+hallucinogen abuse with hallucinogen-induced persisting perception disorder flashbacks,Flashbacks
 hallucinogen use with hallucinogen-induced psychotic disorder,Psychotic disorder caused by hallucinogen
 hallucinogen use with hallucinogen-induced residual and late onset psychotic disorder,Psychotic disorder caused by hallucinogen
 Inhalant-induced psychotic disorder with delusions,Inhalant-induced organic mental disorder
@@ -1327,8 +1326,8 @@ dementia in disease classified elsewhere with behavioral disturbance,Dementia as
 dementia in disease classified elsewhere without behavioral disturbance,Dementia associated with another disease
 Organic dementia associated with AIDS,Dementia associated with AIDS
 Presenile dementia associated with AIDS,Dementia associated with AIDS
-acquired immunodeficiency syndrome (AIDS) dementia with behavioral disturbance,Dementia associated with AIDS
-acquired immunodeficiency syndrome (AIDS) dementia without behavioral disturbance,Dementia associated with AIDS
+acquired immunodeficiency syndrome AIDS dementia with behavioral disturbance,Dementia associated with AIDS
+acquired immunodeficiency syndrome AIDS dementia without behavioral disturbance,Dementia associated with AIDS
 organic dementia associated with AIDS with behavioral disturbance,Organic dementia associated with AIDS
 organic dementia associated with AIDS without behavioral disturbance,Organic dementia associated with AIDS
 Multi-infarct dementia,Vascular dementia
@@ -1398,12 +1397,12 @@ Creutzfeldt-Jakob disease with dementia without behavioral disturbance,Dementia 
 dementia due to herpes encephalitis with behavioral disturbance,Dementia due to herpes encephalitis
 dementia due to herpes encephalitis without behavioral disturbance,Dementia due to herpes encephalitis
 head injury with dementia with no loss of consciousness,Dementia due to and following injury of head
-head injury with dementia with prolonged (> 24 hrs) loss of consciousness with return to prior level of consciousness,Dementia due to and following injury of head
-head injury with dementia with prolonged (> 24 hrs) loss of consciousness without return to prior level of consciousness,Dementia due to and following injury of head
+head injury with dementia with prolonged  24 hrs loss of consciousness with return to prior level of consciousness,Dementia due to and following injury of head
+head injury with dementia with prolonged  24 hrs loss of consciousness without return to prior level of consciousness,Dementia due to and following injury of head
 Vascular dementia with behavioral disturbance,Dementia with behavioral disturbance
 Epileptic dementia with behavioral disturbance,Dementia with behavioral disturbance
-dementia known (Axis III) etiology with behavior disturbance,Dementia with behavioral disturbance
-dementia of unknown (axis III) etiology with behavioral disturbance,Dementia with behavioral disturbance
+dementia known Axis III etiology with behavior disturbance,Dementia with behavioral disturbance
+dementia of unknown axis III etiology with behavioral disturbance,Dementia with behavioral disturbance
 Vascular dementia in remission,Dementia in remission
 "Primary degenerative dementia of the Alzheimer type, presenile onset in remission",Dementia in remission
 "Primary degenerative dementia of the Alzheimer type, senile onset in remission",Dementia in remission
@@ -1486,8 +1485,8 @@ Organic pseudopsychopathic personality,Organic personality disorder
 Organic pseudoretarded personality,Organic personality disorder
 Lobotomy syndrome,Organic personality disorder
 Frontal lobe syndrome,Organic personality disorder
-personality disorder of unknown (Axis III) etiology,Organic personality disorder
-personality disorder of known (Axis III) etiology,Organic personality disorder
+personality disorder of unknown Axis III etiology,Organic personality disorder
+personality disorder of known Axis III etiology,Organic personality disorder
 labile type personality change due to Axis III etiology,Organic personality disorder
 disinhibited type personality change due to Axis III etiology,Organic personality disorder
 apathetic type personality change due to Axis III etiology,Organic personality disorder
@@ -1496,7 +1495,7 @@ combined type personality change due to Axis III etiology,Organic personality di
 personality change due to Axis III etiology,Organic personality disorder
 aggressive type personality change due to axis III etiology,Organic personality disorder
 explosive personality disorder of known Axis III etiology,Explosive type organic personality disorder
-"explosive personality disorder, unknown (Axis III) etiology",Explosive type organic personality disorder
+"explosive personality disorder, unknown Axis III etiology",Explosive type organic personality disorder
 personality change-reduced effectiveness or productivity,Change in personality
 Psychoactive substance-induced organic personality disorder,Drug-induced personality disorder
 Chronic hypomanic personality disorder,Hypomanic personality disorder
@@ -1737,7 +1736,7 @@ chronic simple schizophrenia with acute exacerbation,Acute exacerbation of chron
 Cycloid psychosis,Acute polymorphic psychotic disorder
 Acute polymorphic psychotic disorder without symptoms of schizophrenia,Acute polymorphic psychotic disorder
 Acute polymorphic psychotic disorder co-occurrent with symptoms of schizophrenia,Acute polymorphic psychotic disorder
-Bouffée délirante,Acute polymorphic psychotic disorder
+Bouffee delirante,Acute polymorphic psychotic disorder
 Reactive confusion,Acute transient psychotic disorder
 Acute paranoid reaction,Acute transient psychotic disorder
 Schizophreniform disorder,Acute schizophrenia-like psychotic disorder
@@ -1915,7 +1914,7 @@ Gender identity disorder of childhood,Identity disorder of childhood
 Deferred diagnosis on Axis I,Axis I diagnosis
 Deferred diagnosis on Axis II,Axis II diagnosis
 Deferred diagnosis on Axis III,Axis III diagnosis
-mental disorder of known (Axis III) etiology,Axis III diagnosis
+mental disorder of known Axis III etiology,Axis III diagnosis
 Deferred diagnosis on Axis IV,Axis IV diagnosis
 Deferred diagnosis on Axis V,Axis V diagnosis
 unspecified nonpsychotic mental disorder due to brain damage and dysfunction and to physical disease,Specific nonpsychotic mental disorders following organic brain damage
