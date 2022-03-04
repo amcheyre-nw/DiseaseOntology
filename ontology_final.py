@@ -64,7 +64,7 @@ def create_ontology_and_rules():
             if x[0] not in unique_diseases:
                 unique_diseases.append(x[0])
 
-        # Create a dictionary of all symptoms of a disease
+        # Create a dictionary of all symptoms, medications and complications of a disease
         symptoms_dict = {}
         for disease in unique_diseases:
             symptoms_list = []
@@ -91,31 +91,54 @@ def create_ontology_and_rules():
 
         # Create rules with diseases and symptoms
         rule_count = 0
+        sym_count = 0
+        med_count = 0
+        comp_count = 0
         for i,j in symptoms_dict.items():
-            if rule_count < 50:
-                rule_str = ""
+            if rule_count < 60:
+                rule_sym = ""
+                rule_comp = ""
+                rule_med = ""
                 if j != []:
                     count = 0
                     for s in j:
                         s = str(s)
                         s = s.replace(",","")
                         if "hasSymptoms" in s:
-                            if count < symp_count[i]-1:
-                                symptom = s + "(?x, ?y) ^"
-                                rule_str = rule_str + symptom
-                                count +=1
-                            else:
-                                symptom = s + "(?x, ?y)"
-                                rule_str = rule_str + symptom
-                                count += 1
+                            symptom = s + "(?x, ?y) ^"
+                            rule_sym = rule_sym + symptom
+                            count +=1
+
+                        if "hasComplications" in s:
+                            complication = s + "(?x, ?y) ^"
+                            rule_comp = rule_comp + complication
+                            count +=1
+
+                        if "hasMedication" in s:
+                            medication = s + "(?x, ?y) ^"
+                            rule_med = rule_med + medication
+                            count +=1
 
                     i = i.replace(",","")
                     disease = "->" + i + "(?x)"
-                    rule_str = rule_str + disease
+
                     rule = Imp()
-                    print(rule_str)
-                    rule.set_as_rule(rule_str)
-                    rule_count +=1
+                    if rule_sym != "":
+                        rule_sym = rule_sym + disease
+                        rule.set_as_rule(rule_sym)
+                        rule_count += 1
+                    if rule_comp != "":
+                        rule_comp = rule_comp + disease
+                        rule.set_as_rule(rule_comp)
+                        rule_count += 1
+                    if rule_med != "":
+                        rule_med = rule_med + disease
+                        rule.set_as_rule(rule_med)
+                        rule_count += 1
+
+                    print(rule_sym)
+                    print(rule_comp)
+                    print(rule_med)
                     print(rule_count)
 
     onto.save(path+"/disease_ontology_SMED.owl")

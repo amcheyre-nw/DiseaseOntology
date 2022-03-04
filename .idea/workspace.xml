@@ -2,14 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce504fd7-7858-4d50-bcf1-b827400a863b" name="Changes" comment="horn clauses restriction">
-      <change afterPath="$PROJECT_DIR$/2022-03-03_12-56-02_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-03_12-56-21_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-03_12-57-28_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-03_12-58-26_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-03_13-29-08_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-03_13-29-48_ontor.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2022-03-03_21-49-51_ontor.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2022-03-03_12-29-20_ontor.log" beforeDir="false" afterPath="$PROJECT_DIR$/2022-03-03_21-27-16_ontor.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2022-03-03_12-31-11_ontor.log" beforeDir="false" afterPath="$PROJECT_DIR$/2022-03-03_21-28-09_ontor.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2022-03-03_12-56-02_ontor.log" beforeDir="false" afterPath="$PROJECT_DIR$/2022-03-03_21-28-28_ontor.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2022-03-03_12-56-21_ontor.log" beforeDir="false" afterPath="$PROJECT_DIR$/2022-03-03_21-39-04_ontor.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2022-03-03_12-57-28_ontor.log" beforeDir="false" afterPath="$PROJECT_DIR$/2022-03-03_21-42-53_ontor.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2022-03-03_12-58-26_ontor.log" beforeDir="false" afterPath="$PROJECT_DIR$/2022-03-03_21-45-35_ontor.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2022-03-03_13-29-08_ontor.log" beforeDir="false" afterPath="$PROJECT_DIR$/2022-03-03_21-47-13_ontor.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2022-03-03_13-29-48_ontor.log" beforeDir="false" afterPath="$PROJECT_DIR$/2022-03-03_21-49-26_ontor.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/disease_ontology_SMED.owl" beforeDir="false" afterPath="$PROJECT_DIR$/disease_ontology_SMED.owl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/object_props_SMED_inherited_2.csv" beforeDir="false" afterPath="$PROJECT_DIR$/object_props_SMED_inherited_2.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ontology_final.py" beforeDir="false" afterPath="$PROJECT_DIR$/ontology_final.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -268,7 +272,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646332580654</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="horn clauses restriction">
+      <created>1646335816129</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1646335816129</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -350,7 +361,7 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/DiseaseOntology$ontology_final.coverage" NAME="ontology_final Coverage Results" MODIFIED="1646335787112" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/DiseaseOntology$ontology_final.coverage" NAME="ontology_final Coverage Results" MODIFIED="1646365790870" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DiseaseOntology$ontology.coverage" NAME="ontology Coverage Results" MODIFIED="1646191425474" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DiseaseOntology$ULMS_api.coverage" NAME="ULMS_api Coverage Results" MODIFIED="1645816972641" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DiseaseOntology$ontology_kaleem.coverage" NAME="ontology_kaleem Coverage Results" MODIFIED="1645383117234" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
