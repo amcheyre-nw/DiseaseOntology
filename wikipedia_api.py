@@ -2,6 +2,8 @@ import requests
 from bs4 import BeautifulSoup
 import wikipediaapi
 import re
+import pandas as pd
+from tqdm import tqdm
 
 def getData_from_wikiInfoBox(url, infobox_item):
     '''
@@ -91,6 +93,7 @@ def retrieveFacts(disease, label):
     except:
         return None
 
+
 def retrieveLabels(disease):
     '''
     Wrapper of above functions for ease of use. Gives list of possible labels we can scrape from Wikipedia, for
@@ -105,7 +108,38 @@ def retrieveLabels(disease):
         return None
 
 
+def histogram_of_labels(diseases, pctg=False):
+    '''
+
+    :param diseases: list of diseases to look up
+    :param pctg: if True, histogram returned contains % of dataset, if False, it returns raw count
+    :return: histogram of all labels associated with these diseases, in histogram format
+    '''
+
+    histogram = pd.DataFrame(index=None, columns=['disease', 'label'])
+    for d in tqdm(diseases):
+        labels = retrieveLabels(d)
+        if labels is not None:
+            for l in labels:
+                histogram.loc[len(histogram)] = [d, l]
+
+    histogram = histogram.groupby('label').agg('count')
+    if pctg:
+        histogram = pd.DataFrame(histogram).rename(columns={'disease': '% occurence'})
+        pctgs = (histogram.astype('float')/len(diseases)*100).sort_values(by='% occurence', ascending=False).round(1)
+        pctgs['% occurence'] = pctgs['% occurence'].astype('str') + '%'
+        return pctgs
+    else:
+        histogram = pd.DataFrame(histogram).rename(columns={'disease': 'Number of occurences'})
+        return histogram.sort_values(by='Number of occurences', ascending=False)
+
+
 if __name__ == '__main__':
     print("Possible labels for type 2 diabetes: ", retrieveLabels("Schizophrenia"))
     ## notice it doesn't matter whether I put II or 2... both point to the same place
     #print("\nSymptoms for type 2 diabetes: ", retrieveFacts("Eating disorders", "Symptoms"))
+
+    treeDF = pd.read_csv('disease_classes_SMED.csv')
+    diseases = treeDF['class']
+    h = histogram_of_labels(diseases, pctg=True)
+    print(h)
