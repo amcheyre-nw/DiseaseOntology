@@ -75,7 +75,7 @@ def create_ontology_and_rules():
             else:
                 complications_dict[disease].append(property)
 
-
+    print('Length is: ', symptoms_dict['Parkinsondiseasewithdementiawithoutbehavioraldisturbance'])
     with onto:
         DiseaseClass = types.new_class('Disease', (Thing,))
         SymptomClass = types.new_class('Symptom', (Thing,))
@@ -95,6 +95,12 @@ def create_ontology_and_rules():
         for line in new_classes:
             class1 = line[0]
             superclass1 = line[1]
+            # hasSymptomclass.domain = []
+            # hasSymptomclass.range = []
+            # hasMedicationclass.domain = []
+            # hasMedicationclass.range = []
+            # hasComplicationclass.domain = []
+            # hasComplicationclass.range = []
             if superclass1 == None:
                 Disease = types.new_class(class1, (DiseaseClass,))
             else:
@@ -102,23 +108,30 @@ def create_ontology_and_rules():
                 Disease = types.new_class(str(class1).replace(",",""), (SuperClass,))
 
             if class1 in symptoms_dict:
+                # if class1 == 'Sunstroke':
+                #     print(symptoms_dict['Sunstroke'])
+                # if len(symptoms_dict[class1]) <= 5 and len(symptoms_dict[class1]) >= 1:
+                #     print(class1)
+                    # exit()
                 for symptoms in symptoms_dict[class1]:
                     Symptom = types.new_class(symptoms, (SymptomClass,))
                     hasSymptomclass.domain.append(Disease)
                     hasSymptomclass.range.append(Symptom)
+                    Disease.hasSymptom.append(Symptom)
 
             if class1 in medications_dict:
                 for medications in medications_dict[class1]:
                     Medication = types.new_class(medications, (MedicationClass,))
                     hasMedicationclass.domain.append(Disease)
                     hasMedicationclass.range.append(Medication)
+                    Disease.hasMedication.append(Medication)
 
             if class1 in complications_dict:
                 for complications in complications_dict[class1]:
                     Complication = types.new_class(complications, (ComplicationClass,))
                     hasComplicationclass.domain.append(Disease)
                     hasComplicationclass.range.append(Complication)
-
+                    Disease.hasComplication.append(Complication)
 
 
 
@@ -179,3 +192,4 @@ def create_ontology_and_rules():
 #
 if __name__ == "__main__":
     create_ontology_and_rules()
+
