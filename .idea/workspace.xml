@@ -1,26 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ce504fd7-7858-4d50-bcf1-b827400a863b" name="Changes" comment="Creating new ontology">
-      <change afterPath="$PROJECT_DIR$/2022-03-04_18-26-55_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-04_18-36-03_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-04_18-36-57_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-04_18-37-12_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-04_18-40-57_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-04_18-51-04_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-05_12-23-59_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-05_12-41-59_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-05_12-43-21_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-05_12-43-50_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-05_12-44-53_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-05_12-46-07_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-05_13-54-22_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-05_13-55-29_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-05_13-58-31_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-05_14-06-17_ontor.log" afterDir="false" />
+    <list default="true" id="ce504fd7-7858-4d50-bcf1-b827400a863b" name="Changes" comment="Adding predicate relationships">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/disease_ontology_trial.owl" beforeDir="false" afterPath="$PROJECT_DIR$/disease_ontology_trial.owl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new_ontology.py" beforeDir="false" afterPath="$PROJECT_DIR$/new_ontology.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,7 +193,7 @@
       <workItem from="1646180855979" duration="15000" />
       <workItem from="1646195901106" duration="255000" />
       <workItem from="1646428208364" duration="2802000" />
-      <workItem from="1646431336182" duration="9212000" />
+      <workItem from="1646431336182" duration="10013000" />
     </task>
     <task id="LOCAL-00001" summary="reading csv classes">
       <created>1646142215781</created>
@@ -283,7 +265,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646433419946</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Adding predicate relationships">
+      <created>1646511415208</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1646511415208</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -310,7 +299,8 @@
     <MESSAGE value="wiki api added to improve the accuracy of wikipedia scraping by comparing inherited properties to the corpus text.&#10;&#10;reformat.py added to adjust the order of csvs so parents are always predefined." />
     <MESSAGE value="rules ready" />
     <MESSAGE value="Creating new ontology" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creating new ontology" />
+    <MESSAGE value="Adding predicate relationships" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding predicate relationships" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
