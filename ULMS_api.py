@@ -42,7 +42,7 @@ class API:
         self.api_key = api_key
 
     def get_cui(self, cui):
-        self._auth = Auth(api_key=api_key) # need to call this multiple times? painful
+        self._auth = Auth(api_key=self.api_key) # need to call this multiple times? painful
         url = f'{self.BASE_URL}/content/{self._version}/CUI/{cui}'
         return self._get(url=url)
 
@@ -64,6 +64,11 @@ class API:
     def get_inverse_isa(self, ui, sourcename="MSH"):
         self._auth = Auth(api_key=self.api_key) # need to call this multiple times? painful
         url = f'{self.BASE_URL}/content/{self._version}/source/{sourcename}/{ui}/relations?includeAdditionalRelationLabels=inverse_isa'
+        return self._get(url=url)
+
+    def get_inverse_isa_CUI(self, cui, sourcename="CUI"):
+        self._auth = Auth(api_key=self.api_key) # need to call this multiple times? painful
+        url = f'{self.BASE_URL}/content/{self._version}/{sourcename}/{cui}/relations?includeAdditionalRelationLabels=inverse_isa'
         return self._get(url=url)
 
     def _get(self, url):

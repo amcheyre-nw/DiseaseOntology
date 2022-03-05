@@ -4,14 +4,15 @@ import ULMS_api as ulms
 import pandas as pd
 from tqdm import tqdm
 import numpy as np
+from duckduckgo_api import get_wikititle_from_queery
 
 
-def build_hierarchy(superparent_ui):
+def build_hierarchy(superparent_ui, sourcename="SNOMEDCT_US"):
     # first build the disease tree structure and save the instances
     api_key = '66bc8361-7450-4750-861c-52ed6ae1dd18'
     api = ulms.API(api_key=api_key)
 
-    tree = ulms.build_tree_inverse_isa(superparent_ui, api, sourcename='SNOMEDCT_US')
+    tree = ulms.build_tree_inverse_isa(superparent_ui, api, sourcename=sourcename)
 
     treeDF = pd.DataFrame(index=None, columns=['class', 'superclass'])
     treeDF['class'] = [t[0] for t in tree[1:]]
@@ -22,7 +23,17 @@ def build_hierarchy(superparent_ui):
     return
 
 
-def gen_object_properties(treeDF, labels=None):
+def gen_object_properties(treeDF, labelDict=None, priorpass=None, filename='object_properties_SMED.csv',
+                          duckduckgo_backup=False):
+    '''
+
+    :param treeDF:  DataFrame containing first column, classes we want to investigate
+    :param label_names: dictionary mapping the label we're after along with kwargs in getting the label
+    :param prior pass: list of all the values that have been scraped in a prior run, for string matching
+    :param duckduckgo_backup: bool. If true, use duckduckgo api to find the correct name of wiki articles when the
+    normal process doesn't work.
+    :return:
+    '''
     # generate object properties
     oprops = pd.DataFrame(index=None, columns=['object_property (op)', 'super-op', 'domain', 'range', 'functional',
                                                'inverse functional', 'transitive', 'symmetric', 'asymmetric',
@@ -44,45 +55,71 @@ def gen_object_properties(treeDF, labels=None):
     for d in treeDF.iloc[:, 0].unique():
         disease_str = d
 
-        if labels is None:
-            labels = wiki.retrieveLabels(disease_str)
+        for label in labelDict.keys():
 
-        # labels = ['Symptoms'] # just stick to these right now
-        if isinstance(labels, list):
+            if len(label) == 1:
+                label = label.upper()
+            else:
+                label = label[0].upper() + label[1:].lower()  # format
 
-            if '' in labels:  # found a weird edge case where '' was a label
-                labels.remove('')
+            delimeter = labelDict[label]['delimiter']
+            # here we make an exception if label=speciality. Turns out specialty is also used, so we look for both and concat
+            if label=='Speciality':
+                props1 = wiki.retrieveFacts(disease_str, "Speciality", delimeter=delimeter, duckduckgo_backup=duckduckgo_backup)
+                props2 = wiki.retrieveFacts(disease_str, "Specialty", delimeter=delimeter, duckduckgo_backup=duckduckgo_backup)
+                if props1 is None:
+                    props1 = []
+                if props2 is None:
+                    props2 = []
+                props = props1 + props2
+            else:
+                props = wiki.retrieveFacts(disease_str, label, delimeter=delimeter, duckduckgo_backup=duckduckgo_backup)
 
-            for label in labels:
+            label = label.replace(' ', '_')  # remove spaces
 
-                if len(label) == 1:
-                    label = label.upper()
-                else:
-                    label = label[0].upper() + label[1:].lower()  # format
+            if label == 'Other_names' and duckduckgo_backup:
+                ddg_name = get_wikititle_from_queery(disease_str)
+                if props is None:
+                    props=[]
+                try:
+                    props.remove(ddg_name)  # try and remove it first to stop duplication
+                except:
+                    pass
+                if isinstance(ddg_name, str):
+                    props.append(ddg_name)
 
-                label = label.replace(' ', '_')  # remove spaces
-                props = wiki.retrieveFacts(disease_str, label)
+            if props is not None and len(props) != 0:
 
-                if props is not None and len(props) != 0:
+                if priorpass is not None:
+                    assert isinstance(priorpass, pd.DataFrame)
+                    assert delimeter == None
+                    pp_label = priorpass.loc[
+                        priorpass['object_property (op)'].str.split('/').str[1].str.lower() == label.lower()]
+                    pp_values = pp_label['object_property (op)'].str.split('/').str[-1].str.replace('_', ' ').str.lower().unique()
 
-                    if label == 'wiki_name' and disease_str in props:  # if wiki_name is already our main disease name, dont bother
-                        props.remove(disease_str)
+                    if len(props) > 1:
+                        text = ' '.join(props)
+                    else:
+                        text = props[0]
 
-                    elif label == 'Other_names' and disease_str in props:
-                        props.remove(disease_str)  # don't record our main 'disease_str' as "other name"
+                    props = [p for p in pp_values if p in text] # keep any words we've seen in the priorpass
 
-                    elif label == 'wiki_name' and disease_str not in props:  # if wiki_name is something different, add it as an "other name"
-                        label = 'Other_names'
+                if label == 'Other_names' and disease_str in props:
+                    props.remove(disease_str)  # don't record our main 'disease_str' as "other name"
 
-                    for p in props:
-                        oprops.loc[len(oprops)] = ['has/{}/{}'.format(label, p.replace(' ', '_')), None, disease_domain,
-                                                   disease_str,
-                                                   False, False, False, False, False, False, False, None]
 
-                print('disease {} | label {} | values {}'.format(disease_str, label, props))
+                for p in props:
+                    oprops.loc[len(oprops)] = ['has/{}/{}'.format(label, p.replace(' ', '_')), None, disease_domain,
+                                               disease_str,
+                                               False, False, False, False, False, False, False, None]
 
-    oprops.to_csv('object_props_SMED.csv', index=False)
-    return
+            print('disease {} | label {} | values {}'.format(disease_str, label, props))
+
+    if priorpass is not None: # we want to stick them together and then remove duplicates
+        oprops = pd.concat([priorpass, oprops], axis=0).drop_duplicates(ignore_index=True)
+
+    oprops.to_csv(filename, index=False)
+    return oprops
 
 
 def get_parents(tree, childname):
@@ -169,9 +206,47 @@ def gen_inherited_properties(tree, properties, N):
 
 
 if __name__ == "__main__":
-    # build_hierarchy('74732009')
+    #build_hierarchy('74732009', sourcename="SNOMEDCT_US")
+    #build_hierarchy("C0033975", sourcename="CUI")
     treeDF = pd.read_csv('disease_classes_SMED.csv')
-    gen_object_properties(treeDF,
-                          labels=['Symptoms', 'Complications', 'Speciality', 'Medication', 'Frequency', 'Other names'])
+    ops = gen_object_properties(treeDF,
+                          labelDict={
+                                     'Symptoms':        {"delimiter": "hyperlinks"},
+                                     'Complications':   {"delimiter": "hyperlinks"},
+                                     'Speciality':      {"delimiter": "hyperlinks"},
+                                     'Medication':      {"delimiter": "hyperlinks"},
+                                     'Frequency':       {"delimiter": None},
+                                     'Other names':     {"delimiter": ","}, # Other names are always either comma or
+                                     'Prognosis':       {"delimiter": None},
+                                     'Causes':          {"delimiter": ","},
+                                     'Risk factors':    {"delimiter": ","}
+                                     },
+                          duckduckgo_backup=True,
+                          filename='object_properties_SMED.csv'
+                                )
+
+    ops = pd.read_csv('object_properties_SMED.csv')
+
+    ops2 = gen_object_properties(treeDF,
+                          labelDict={
+                                     'Symptoms':        {"delimiter": None},
+                                     'Complications':   {"delimiter": None},
+                                     'Speciality':      {"delimiter": None},
+                                     'Medication':      {"delimiter": None},
+                                     'Frequency':       {"delimiter": None},
+                                     'Other names':     {"delimiter": None}, # Other names are always either comma or
+                                     'Prognosis':       {"delimiter": None},
+                                     'Causes':          {"delimiter": None},
+                                     'Risk factors':    {"delimiter": None}
+                                     },
+                                 priorpass=ops,
+                                 filename='object_properties_SMED_2pass.csv',
+                                 duckduckgo_backup=True
+                          )
+
+    ops3 = gen_inherited_properties(treeDF, ['Symptoms', 'Complications', 'Speciality', 'Medication'], 3)
+
+
+
     # obj_props = pd.read_csv('object_props_SMED2.csv')
     # gen_inherited_properties(treeDF, obj_props, 3)

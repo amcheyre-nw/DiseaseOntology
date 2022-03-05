@@ -4,13 +4,16 @@ import wikipediaapi
 import re
 import pandas as pd
 from tqdm import tqdm
+import duckduckgo_api as ddg_wrapper
 
-def getData_from_wikiInfoBox(url, infobox_item):
+def getData_from_wikiInfoBox(url, infobox_item, delimeter="hyperlinks"):
     '''
 
     Function pulls a infobox_item value from wikipedia's InfoBox, from URL
     :param url: URL of wikipedia page
     :param infobox_item: the label within the InfoBox that we're scraping the value of (eg: "Symptoms")
+    :param delimeter: either "hyperlinks" to scrape only text associated with hyperlinks, "," to split text by commas,
+    or None to pull whole text in one block
     :return: list of the InfoBox data (formatted nicely)
     '''
 
@@ -26,9 +29,26 @@ def getData_from_wikiInfoBox(url, infobox_item):
     lhs_bool = [c.text == infobox_item for c in lhs]
     rhs = soup.find_all('td', {"class":"infobox-data"}) # rhs of InfoBox
     itemsHTML = rhs[lhs_bool.index(True)]
-    itemsText = [i.text for i in itemsHTML.find_all('a')]
+
+    if delimeter=="hyperlinks":
+        itemsText = [i.text for i in itemsHTML.find_all('a')]
+    elif delimeter==",":
+        itemsText = itemsHTML.text.lower().replace(' and ', ' ')
+        itemsText = itemsText.replace(' or ', ' ')
+        itemsText = itemsText.split(". ")
+        itemsText = [i.split('; ') for i in itemsText] # this will be a list of lists... need to flatten
+        itemsText = [item for sublist in itemsText for item in sublist] # flatten
+        itemsText = [i.split(', ') for i in itemsText] # this will be a list of lists... need to flatten
+        itemsText = [item for sublist in itemsText for item in sublist] # flatten
+        itemsText = [re.sub(r'\[[^()]*?\]', '', i) for i in itemsText]
+    else:
+        #itemsText = re.sub(r'\[[0-9]+]', '', itemsHTML.text)
+        itemsText = [re.sub(r'\[[^()]*?\]', '', itemsHTML.text)]
+        itemsText = [i.replace('  ', ' ') for i in itemsText] # get rid of any double spaces
 
     regex = re.compile(r'\[[0-9]+]') # remove references like '[13]'
+    itemsText = [i for i in itemsText if not regex.match(i)]
+    regex = re.compile(r'\[[^()]*?\]') # remove references like '[13]'
     itemsText = [i for i in itemsText if not regex.match(i)]
 
     items = [i[0].upper() + i[1:].lower() for i in itemsText] # format capital letters
@@ -51,17 +71,28 @@ def getLabels_from_wikiInfoBox(url):
     return labels
 
 
-def get_wikiURL_from_title(title):
+def get_wikiURL_from_title(title, duckduckgo_backup=False):
     '''
     :param title: title of wikipedia page (string)
+    :param duckduckgo_backup: Bool: if True, if wikipedia fails to find a page, use duckduckgo to find the most relevant
+    wiki page to use.
     :return: URL of wiki page
     '''
     wiki_wiki = wikipediaapi.Wikipedia('en') # english
     page_py = wiki_wiki.page(title)
     try:
         return page_py.fullurl
-    except:
-        return None
+    except(KeyError):
+        if duckduckgo_backup:
+            ddg_title = ddg_wrapper.get_wikititle_from_queery(title)
+            wiki_wiki_ddg = wikipediaapi.Wikipedia('en')
+            page_py = wiki_wiki_ddg.page(ddg_title)
+            try:
+                return page_py.fullurl
+            except:
+                pass
+        else:
+            return None
 
 
 def get_wiki_summary(disease):
@@ -78,18 +109,21 @@ def get_wiki_summary(disease):
     return summary_lower
 
 
-def retrieveFacts(disease, label):
+def retrieveFacts(disease, label, delimeter='hyperlinks', duckduckgo_backup=False):
     '''
     Wrapper of above functions for ease of use. Returns the data associated with a disease/label.
     Eg: disease = "Arthritis", label = "Symptoms" will return a list of symptoms associated with Arthritis
     :param disease: disease name (string)
     :param label: descriptor of what we want to retrieve about the disease (ie: Symptoms)
+    :param delimeter: see getData_from_wikiInfoBox documentation
+    :param duckduckgo_backup: Bool: if True, if wikipedia fails to find a page, use duckduckgo to find the most relevant
+    wiki page to use.
     :return: list of "fact"s concerning the disease
     '''
-    url = get_wikiURL_from_title(disease)
+    url = get_wikiURL_from_title(disease, duckduckgo_backup=duckduckgo_backup)
     label = '{}{}'.format(label[0].upper(), label[1:].lower()) # ensure correct formatting
     try:
-        return getData_from_wikiInfoBox(url, label)
+        return getData_from_wikiInfoBox(url, label, delimeter=delimeter)
     except:
         return None
 
@@ -135,11 +169,5 @@ def histogram_of_labels(diseases, pctg=False):
 
 
 if __name__ == '__main__':
-    print("Possible labels for type 2 diabetes: ", retrieveLabels("Schizophrenia"))
-    ## notice it doesn't matter whether I put II or 2... both point to the same place
-    #print("\nSymptoms for type 2 diabetes: ", retrieveFacts("Eating disorders", "Symptoms"))
-
-    treeDF = pd.read_csv('disease_classes_SMED.csv')
-    diseases = treeDF['class']
-    h = histogram_of_labels(diseases, pctg=True)
-    print(h)
+    x = get_wikiURL_from_title("concentration camp syndrome", duckduckgo_backup=True)
+    print(x)
