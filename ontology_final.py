@@ -120,18 +120,20 @@ def create_ontology_and_rules():
                             count +=1
 
                     i = i.replace(",","")
-                    disease = "->" + i + "(?x)"
 
                     rule = Imp()
                     if rule_sym != "":
+                        disease = "->" + i + "(?x)"
                         rule_sym = rule_sym + disease
                         rule.set_as_rule(rule_sym)
                         rule_count += 1
                     if rule_comp != "":
+                        disease = "->" + i + "(?x)"
                         rule_comp = rule_comp + disease
                         rule.set_as_rule(rule_comp)
                         rule_count += 1
                     if rule_med != "":
+                        disease = "->" + i + "(?x)"
                         rule_med = rule_med + disease
                         rule.set_as_rule(rule_med)
                         rule_count += 1
