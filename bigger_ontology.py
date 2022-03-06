@@ -37,6 +37,7 @@ def create_ontology_and_rules():
             word = word.strip(')')
             word = word.strip(' ')
             word = word.strip('.')
+
             if " " in word:
                 word = word.replace(" ","")
             if "False" in word:
@@ -62,7 +63,7 @@ def create_ontology_and_rules():
         predicate = values[1]
         label = values[2]
         label = re.sub('[^0-9a-zA-Z]+', '_', label)
-
+        label = label.lower()
         # Create a dictionary >> {Symptom: {} , Complication:{}, Medication:{}, ... }
         # Each nested dictionary will have >> Symptom : {Disease1 : [<list of symptoms>], Disease2 : [<list of symptoms>], .. }
         if predicate not in dict:
