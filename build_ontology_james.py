@@ -157,7 +157,7 @@ def gen_inherited_properties(tree, properties, N):
     '''
 
     :param tree: dataframe of class/superclass structure
-    :param properties: pythonic dataframe of data properties within the tree
+    :param properties: pythonic dataframe of data properties within the tree. ie: object_class dataframe from gen_object_properties()
     :param N: number of paths a property can be inherited over
     :return:
     '''
@@ -209,42 +209,46 @@ if __name__ == "__main__":
     #build_hierarchy('74732009', sourcename="SNOMEDCT_US")
     #build_hierarchy("C0033975", sourcename="CUI")
     treeDF = pd.read_csv('disease_classes_SMED.csv')
-    ops = gen_object_properties(treeDF,
-                          labelDict={
-                                     'Symptoms':        {"delimiter": "hyperlinks"},
-                                     'Complications':   {"delimiter": "hyperlinks"},
-                                     'Speciality':      {"delimiter": "hyperlinks"},
-                                     'Medication':      {"delimiter": "hyperlinks"},
-                                     'Frequency':       {"delimiter": None},
-                                     'Other names':     {"delimiter": ","}, # Other names are always either comma or
-                                     'Prognosis':       {"delimiter": None},
-                                     'Causes':          {"delimiter": ","},
-                                     'Risk factors':    {"delimiter": ","}
-                                     },
-                          duckduckgo_backup=True,
-                          filename='object_properties_SMED.csv'
-                                )
+    #treeDF.iloc[0, 0] = 'Organic mental disorder'
+    #treeDF.iloc[0, 0] = 'Factitious disorder imposed on another'
 
-    ops = pd.read_csv('object_properties_SMED.csv')
+#    ops = gen_object_properties(treeDF,
+#                          labelDict={
+#                                     'Symptoms':        {"delimiter": "hyperlinks"},
+#                                     'Complications':   {"delimiter": "hyperlinks"},
+#                                     'Speciality':      {"delimiter": "hyperlinks"},
+#                                     'Medication':      {"delimiter": "hyperlinks"},
+#                                     'Frequency':       {"delimiter": None},
+#                                     'Other names':     {"delimiter": ","}, # Other names are always either comma or
+#                                     'Prognosis':       {"delimiter": None},
+#                                     'Causes':          {"delimiter": ","},
+#                                     'Risk factors':    {"delimiter": ","}
+#                                     },
+#                          duckduckgo_backup=True,
+#                          filename='object_properties_SMED.csv'
+#                                )
+#
+#    ops = pd.read_csv('object_properties_SMED.csv')
+#
+#    ops2 = gen_object_properties(treeDF,
+#                          labelDict={
+#                                     'Symptoms':        {"delimiter": None},
+#                                     'Complications':   {"delimiter": None},
+#                                     'Speciality':      {"delimiter": None},
+#                                     'Medication':      {"delimiter": None},
+#                                     'Frequency':       {"delimiter": None},
+#                                     'Other names':     {"delimiter": None}, # Other names are always either comma or
+#                                     'Prognosis':       {"delimiter": None},
+#                                     'Causes':          {"delimiter": None},
+#                                     'Risk factors':    {"delimiter": None}
+#                                     },
+#                                 priorpass=ops,
+#                                 filename='object_properties_SMED_2pass.csv',
+#                                 duckduckgo_backup=True
+#                          )
 
-    ops2 = gen_object_properties(treeDF,
-                          labelDict={
-                                     'Symptoms':        {"delimiter": None},
-                                     'Complications':   {"delimiter": None},
-                                     'Speciality':      {"delimiter": None},
-                                     'Medication':      {"delimiter": None},
-                                     'Frequency':       {"delimiter": None},
-                                     'Other names':     {"delimiter": None}, # Other names are always either comma or
-                                     'Prognosis':       {"delimiter": None},
-                                     'Causes':          {"delimiter": None},
-                                     'Risk factors':    {"delimiter": None}
-                                     },
-                                 priorpass=ops,
-                                 filename='object_properties_SMED_2pass.csv',
-                                 duckduckgo_backup=True
-                          )
-
-    ops3 = gen_inherited_properties(treeDF, ['Symptoms', 'Complications', 'Speciality', 'Medication'], 3)
+    ops2 = pd.read_csv('object_properties_SMED_2pass.csv')
+    ops3 = gen_inherited_properties(treeDF, ops2, 3)
 
 
 

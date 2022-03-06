@@ -56,18 +56,21 @@ def create_ontology_and_rules():
 
         if 'Symptom' in property:
             property = property.replace('hasSymptoms', '')
+            property = property + 'Symptom'
             if disease not in symptoms_dict:
                 symptoms_dict[disease] = [property]
             else:
                 symptoms_dict[disease].append(property)
         if 'Medication' in property:
             property = property.replace('hasMedication', '')
+            property = property + 'Medication'
             if disease not in medications_dict:
                 medications_dict[disease] = [property]
             else:
                 medications_dict[disease].append(property)
         if 'Complication' in property:
             property = property.replace('hasComplications', '')
+            property = property + 'Complication'
             if disease not in complications_dict:
                 complications_dict[disease] = [property]
             else:
@@ -92,6 +95,12 @@ def create_ontology_and_rules():
         for line in new_classes:
             class1 = line[0]
             superclass1 = line[1]
+            # hasSymptomclass.domain = []
+            # hasSymptomclass.range = []
+            # hasMedicationclass.domain = []
+            # hasMedicationclass.range = []
+            # hasComplicationclass.domain = []
+            # hasComplicationclass.range = []
             if superclass1 == None:
                 Disease = types.new_class(class1, (DiseaseClass,))
             else:
@@ -99,22 +108,30 @@ def create_ontology_and_rules():
                 Disease = types.new_class(str(class1).replace(",",""), (SuperClass,))
 
             if class1 in symptoms_dict:
+                # if class1 == 'Sunstroke':
+                #     print(symptoms_dict['Sunstroke'])
+                # if len(symptoms_dict[class1]) <= 5 and len(symptoms_dict[class1]) >= 1:
+                #     print(class1)
+                    # exit()
                 for symptoms in symptoms_dict[class1]:
                     Symptom = types.new_class(symptoms, (SymptomClass,))
-                    hasSymptomclass.domain.append(Disease)
-                    hasSymptomclass.range.append(Symptom)
+                    # hasSymptomclass.domain.append(Disease)
+                    # hasSymptomclass.range.append(Symptom)
+                    Disease.hasSymptom.append(Symptom)
 
             if class1 in medications_dict:
                 for medications in medications_dict[class1]:
                     Medication = types.new_class(medications, (MedicationClass,))
-                    hasMedicationclass.domain.append(Disease)
-                    hasMedicationclass.range.append(Medication)
+                    # hasMedicationclass.domain.append(Disease)
+                    # hasMedicationclass.range.append(Medication)
+                    Disease.hasMedication.append(Medication)
 
             if class1 in complications_dict:
                 for complications in complications_dict[class1]:
                     Complication = types.new_class(complications, (ComplicationClass,))
-                    hasComplicationclass.domain.append(Disease)
-                    hasComplicationclass.range.append(Complication)
+                    # hasComplicationclass.domain.append(Disease)
+                    # hasComplicationclass.range.append(Complication)
+                    Disease.hasComplication.append(Complication)
 
 
         # Create rules with diseases and symptoms
@@ -126,14 +143,19 @@ def create_ontology_and_rules():
             if sym_count < 15:
                 rule_sym = ""
                 if j != []:
+                    abc = "abcdefghijklmnopqrstuvwxyz"
+                    x = 0
                     for s in j:
                         s = str(s)
                         s = s.replace(",","")
-                        symptom = s + "(?x, ?y) ^"
+                        a = abc[x]
+                        symptom = "hasSymptom(?x,?"+a+") ^" + s + "(?"+a+") ^"
                         rule_sym = rule_sym + symptom
+                        x += 1
 
                 i = i.replace(",", "")
                 disease = "->" + i + "(?x)"
+                #rule_sym = "hasSymptom(?x,?y) ^" + rule_sym + disease
                 rule_sym = rule_sym + disease
                 rule = Imp()
                 rule.set_as_rule(rule_sym)
@@ -144,7 +166,7 @@ def create_ontology_and_rules():
             if comp_count < 15:
                 rule_comp = ""
                 if j != []:
-                    complication = j[0] + "(?x, ?y) ^"
+                    complication = j[0] + "(?x)"
                     rule_comp = rule_comp + complication
 
                 i = i.replace(",", "")
@@ -156,10 +178,10 @@ def create_ontology_and_rules():
                 print(rule_comp)
 
         for i, j in medications_dict.items():
-            if comp_count < 15:
-                rule_comp = ""
+            if med_count < 15:
+                rule_med = ""
                 if j != []:
-                    medication = j[0] + "(?x, ?y) ^"
+                    medication = j[0] + "(?x)"
                     rule_med = rule_med + medication
 
                 i = i.replace(",", "")
@@ -167,9 +189,8 @@ def create_ontology_and_rules():
                 rule_med = disease + rule_med
                 rule = Imp()
                 rule.set_as_rule(rule_med)
-                comp_count += 1
+                med_count += 1
                 print(rule_med)
-
 
     onto.save(path+"/disease_ontology_trial.owl")
 

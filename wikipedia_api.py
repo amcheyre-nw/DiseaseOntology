@@ -1,5 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
+import bs4
 import wikipediaapi
 import re
 import pandas as pd
@@ -33,9 +34,20 @@ def getData_from_wikiInfoBox(url, infobox_item, delimeter="hyperlinks"):
     if delimeter=="hyperlinks":
         itemsText = [i.text for i in itemsHTML.find_all('a')]
     elif delimeter==",":
-        itemsText = itemsHTML.text.lower().replace(' and ', ' ')
-        itemsText = itemsText.replace(' or ', ' ')
-        itemsText = itemsText.split(". ")
+#        itemsText = itemsHTML.getText('<br/>').split('<br/>')
+        # new lines in contents are defined by <br/> and not <a>. Stitch <a> instances back up with text
+#        _itemsText = [i.text for i in itemsText]
+#        itemsText = []
+#        for i in range(1, len(itemsText)):
+#            if _itemsText[i] != '' and _itemsText[i-1] != '':
+#                itemsText = itemsText + [_itemsText[i-1] + ' ' + _itemsText[i]]
+
+#        itemsText = [i for i in itemsText if not isinstance(i, bs4.element.Tag)]
+        itemsText = [itemsHTML.text]
+        itemsText = [i.lower().replace(' and ', ' ') for i in itemsText]
+        itemsText = [i.replace(' or ', ' ') for i in itemsText]
+        itemsText = [i.split(". ") for i in itemsText]
+        itemsText = [item for sublist in itemsText for item in sublist] # flatten
         itemsText = [i.split('; ') for i in itemsText] # this will be a list of lists... need to flatten
         itemsText = [item for sublist in itemsText for item in sublist] # flatten
         itemsText = [i.split(', ') for i in itemsText] # this will be a list of lists... need to flatten
