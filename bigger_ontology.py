@@ -183,7 +183,6 @@ def create_ontology_and_rules():
                         print(med_count)
                         med_count += 1
 
-
             # Frequency
             if i == 'Frequency':
                 for x, y in j.items():
