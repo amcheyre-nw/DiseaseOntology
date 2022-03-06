@@ -3,7 +3,6 @@ Adjustment disorder,Mental disorder
 Anxiety disorder,Mental disorder
 Delusional disorder,Mental disorder
 Factitious disorder,Mental disorder
-Hypersomnia disorder related to another mental disorder,Mental disorder
 Impulse control disorder,Mental disorder
 Bodily distress disorder,Mental disorder
 Neurosis,Mental disorder
@@ -12,7 +11,7 @@ Personality disorder,Mental disorder
 Psychosexual disorder,Mental disorder
 Psychotic disorder,Mental disorder
 Tic disorder,Mental disorder
-Munchausen's by proxy,Mental disorder
+Munchausens by proxy,Mental disorder
 Mixed behavior and emotional disorder,Mental disorder
 Identity disorder,Mental disorder
 Axis I diagnosis,Mental disorder
@@ -297,7 +296,7 @@ Delusion of foul odor,Cutaneous monosymptomatic delusional psychosis
 Delusions of infestation,Cutaneous monosymptomatic delusional psychosis
 Pinocchio syndrome,Cutaneous monosymptomatic delusional psychosis
 "Primary degenerative dementia of the Alzheimer type, senile onset, with delusions",Senile dementia with delusion
-late onset Alzheimer's dementia with psychotic condition,"Primary degenerative dementia of the Alzheimer type, senile onset, with delusions"
+late onset Alzheimers dementia with psychotic condition,"Primary degenerative dementia of the Alzheimer type, senile onset, with delusions"
 Alcoholic paranoia,Paranoid disorder
 atypical paranoid disorder,Paranoid disorder
 Alcoholic paranoia,Drug-induced delusional disorder
@@ -328,7 +327,7 @@ Psychotic disorder caused by methylenedioxymethamphetamine,Psychotic disorder wi
 Delusional disorder currently in partial remission,Delusional disorder in remission
 Delusional disorder currently in full remission,Delusional disorder in remission
 Factitious disorder with predominantly psychological signs and symptoms,Factitious disorder
-Munchausen's syndrome,Factitious disorder
+Munchausens syndrome,Factitious disorder
 Factitious disorder with predominantly physical signs and symptoms,Factitious disorder
 Thyrotoxicosis factitia,Factitious disorder
 Compensation neurosis,Factitious disorder
@@ -358,7 +357,6 @@ iatrogenic hyperthyroidism with thyrotoxic crisis or storm,Thyrotoxicosis factit
 conversion disorder with seizures,Dissociative convulsions
 "factitious disorder imposed on self, with combined psychological and physical signs and symptoms",Factitious disorder with combined physical AND psychological symptoms
 iatrogenic thyrotoxicosis factitia with thyrotoxic crisis or storm,Iatrogenic thyrotoxicosis factitia
-secondary hypersomnia due to trauma,Hypersomnia disorder related to another mental disorder
 Pyromania,Impulse control disorder
 Intermittent explosive disorder,Impulse control disorder
 Kleptomania,Impulse control disorder
@@ -482,9 +480,9 @@ Psychogenic pylorospasm,Somatoform autonomic dysfunction - gastrointestinal trac
 Psychogenic air hunger,Somatoform autonomic dysfunction - respiratory tract
 psychophysiological respiratory malfunction,Somatoform autonomic dysfunction - respiratory tract
 Polysomatizing disorder,Somatization disorder
-Briquet's syndrome,Somatization disorder
+Briquets syndrome,Somatization disorder
 Psychogenic dermatitis,Psychogenic skin disease
-Writer's cramp neurosis,Occupational neurosis
+Writers cramp neurosis,Occupational neurosis
 Depersonalization disorder,Depersonalization-derealization syndrome
 Derealization syndrome,Depersonalization disorder
 Amnestic disorder,Organic mental disorder
@@ -510,7 +508,7 @@ Organic brain syndrome co-occurrent with human immunodeficiency virus infection,
 psychotic disorder due to general medical condition,Organic mental disorder
 mental disorder of unknown Axis III etiology,Organic mental disorder
 Drug-induced amnestic syndrome,Amnestic disorder
-Non-alcoholic Korsakoff's psychosis,Amnestic disorder
+Non-alcoholic Korsakoffs psychosis,Amnestic disorder
 Amnestic disorder caused by substance,Amnestic disorder
 Amnestic disorder associated with general medical condition,Amnestic disorder
 Amnestic disorder due to multiple etiological factors,Amnestic disorder
@@ -534,14 +532,14 @@ amnestic disorder of known Axis III etiology,Amnestic disorder associated with g
 Alcohol amnestic disorder,Amnestic disorder caused by psychoactive substance
 "Sedative, hypnotic AND/OR anxiolytic-induced persisting amnestic disorder",Amnestic disorder caused by psychoactive substance
 Psychoactive substance-induced organic amnestic disorder,Amnestic disorder caused by psychoactive substance
-Korsakoff's psychosis,Amnestic disorder caused by psychoactive substance
+Korsakoffs psychosis,Amnestic disorder caused by psychoactive substance
 Amnestic disorder caused by anxiolytic,Amnestic disorder caused by psychoactive substance
 Amnestic disorder caused by hypnotic,Amnestic disorder caused by psychoactive substance
 Amnestic disorder caused by sedative,Amnestic disorder caused by psychoactive substance
 alcohol use with alcohol induced amnesic syndrome,Alcohol amnestic disorder
 Sedative amnestic disorder,"Sedative, hypnotic AND/OR anxiolytic-induced persisting amnestic disorder"
 "specified sedative, hypnotic, or anxiolytic amnestic disorder","Sedative, hypnotic AND/OR anxiolytic-induced persisting amnestic disorder"
-Korsakov's alcoholic psychosis with peripheral neuritis,Korsakoff's psychosis
+Korsakovs alcoholic psychosis with peripheral neuritis,Korsakoffs psychosis
 Delirium,Confusional state
 Heat stroke,Confusional state
 Postseizure confusion,Confusional state
@@ -1171,10 +1169,10 @@ Anxiety disorder caused by methamphetamine,Anxiety disorder caused by stimulant
 Anxiety disorder caused by methylenedioxymethamphetamine,Anxiety disorder caused by methamphetamine
 Paranoid-hallucinatory epileptic psychosis,Epileptic psychosis
 Postencephalitic parkinsonism,Post-encephalitic syndrome
-Alzheimer's disease,Dementia
+Alzheimers disease,Dementia
 Presenile dementia,Dementia
 Senile dementia,Dementia
-Huntington's chorea,Dementia
+Huntingtons chorea,Dementia
 Senile and presenile organic psychotic conditions,Dementia
 Drug-induced dementia,Dementia
 General paresis - neurosyphilis,Dementia
@@ -1196,46 +1194,46 @@ Subcortical dementia,Dementia
 Dementia co-occurrent with human immunodeficiency virus infection,Dementia
 Parkinsonism with dementia of Guadeloupe,Dementia
 Dementia caused by toxin,Dementia
-Focal Alzheimer's disease,Alzheimer's disease
-Progressive aphasia in Alzheimer's disease,Alzheimer's disease
-"Primary degenerative dementia of the Alzheimer type, senile onset",Alzheimer's disease
-"Primary degenerative dementia of the Alzheimer type, presenile onset",Alzheimer's disease
-Mixed dementia,Alzheimer's disease
-Dementia of the Alzheimer type with behavioral disturbance,Alzheimer's disease
-Altered behavior in Alzheimer's disease,Alzheimer's disease
-Depressed mood in Alzheimer's disease,Alzheimer's disease
-Delusions in Alzheimer's disease,Alzheimer's disease
-Alzheimer's disease co-occurrent with delirium,Alzheimer's disease
-Non-amnestic Alzheimer disease,Alzheimer's disease
-Behavioral disturbance co-occurrent and due to late onset Alzheimer dementia,Alzheimer's disease
-dementia of Alzheimer's type without behavior disturbance,Alzheimer's disease
-Alzheimer's dementia without behavioral disturbance,Alzheimer's disease
-"dementia of Alzheimer's type, atypical or mixed type",Alzheimer's disease
+Focal Alzheimers disease,Alzheimers disease
+Progressive aphasia in Alzheimers disease,Alzheimers disease
+"Primary degenerative dementia of the Alzheimer type, senile onset",Alzheimers disease
+"Primary degenerative dementia of the Alzheimer type, presenile onset",Alzheimers disease
+Mixed dementia,Alzheimers disease
+Dementia of the Alzheimer type with behavioral disturbance,Alzheimers disease
+Altered behavior in Alzheimers disease,Alzheimers disease
+Depressed mood in Alzheimers disease,Alzheimers disease
+Delusions in Alzheimers disease,Alzheimers disease
+Alzheimers disease co-occurrent with delirium,Alzheimers disease
+Non-amnestic Alzheimer disease,Alzheimers disease
+Behavioral disturbance co-occurrent and due to late onset Alzheimer dementia,Alzheimers disease
+dementia of Alzheimers type without behavior disturbance,Alzheimers disease
+Alzheimers dementia without behavioral disturbance,Alzheimers disease
+"dementia of Alzheimers type, atypical or mixed type",Alzheimers disease
 "Primary degenerative dementia of the Alzheimer type, senile onset, uncomplicated","Primary degenerative dementia of the Alzheimer type, senile onset"
 "Primary degenerative dementia of the Alzheimer type, senile onset, with delusions","Primary degenerative dementia of the Alzheimer type, senile onset"
 "Primary degenerative dementia of the Alzheimer type, senile onset, with depression","Primary degenerative dementia of the Alzheimer type, senile onset"
 "Primary degenerative dementia of the Alzheimer type, senile onset, with delirium","Primary degenerative dementia of the Alzheimer type, senile onset"
-Non-familial Alzheimer's disease of late onset,"Primary degenerative dementia of the Alzheimer type, senile onset"
-Familial Alzheimer's disease of late onset,"Primary degenerative dementia of the Alzheimer type, senile onset"
+Non-familial Alzheimers disease of late onset,"Primary degenerative dementia of the Alzheimer type, senile onset"
+Familial Alzheimers disease of late onset,"Primary degenerative dementia of the Alzheimer type, senile onset"
 "Primary degenerative dementia of the Alzheimer type, senile onset, with behavioral disturbance","Primary degenerative dementia of the Alzheimer type, senile onset"
 "Primary degenerative dementia of the Alzheimer type, senile onset in remission","Primary degenerative dementia of the Alzheimer type, senile onset"
-Alzheimer's type dementia with late onset without behavioral disturbance,"Primary degenerative dementia of the Alzheimer type, senile onset, uncomplicated"
-late onset Alzheimer's dementia with psychotic condition,"Primary degenerative dementia of the Alzheimer type, senile onset, with delusions"
+Alzheimers type dementia with late onset without behavioral disturbance,"Primary degenerative dementia of the Alzheimer type, senile onset, uncomplicated"
+late onset Alzheimers dementia with psychotic condition,"Primary degenerative dementia of the Alzheimer type, senile onset, with delusions"
 "Primary degenerative dementia of the Alzheimer type, presenile onset, with delirium","Primary degenerative dementia of the Alzheimer type, presenile onset"
 "Primary degenerative dementia of the Alzheimer type, presenile onset, with delusions","Primary degenerative dementia of the Alzheimer type, presenile onset"
 "Primary degenerative dementia of the Alzheimer type, presenile onset, with depression","Primary degenerative dementia of the Alzheimer type, presenile onset"
-Familial Alzheimer's disease of early onset,"Primary degenerative dementia of the Alzheimer type, presenile onset"
-Non-familial Alzheimer's disease of early onset,"Primary degenerative dementia of the Alzheimer type, presenile onset"
+Familial Alzheimers disease of early onset,"Primary degenerative dementia of the Alzheimer type, presenile onset"
+Non-familial Alzheimers disease of early onset,"Primary degenerative dementia of the Alzheimer type, presenile onset"
 "Primary degenerative dementia of the Alzheimer type, presenile onset, uncomplicated","Primary degenerative dementia of the Alzheimer type, presenile onset"
-Early onset Alzheimer's disease with behavioral disturbance,"Primary degenerative dementia of the Alzheimer type, presenile onset"
+Early onset Alzheimers disease with behavioral disturbance,"Primary degenerative dementia of the Alzheimer type, presenile onset"
 "Primary degenerative dementia of the Alzheimer type, presenile onset in remission","Primary degenerative dementia of the Alzheimer type, presenile onset"
-Alzheimer's type dementia with early onset with behavioral disturbance,"Primary degenerative dementia of the Alzheimer type, presenile onset"
-Autosomal dominant Alzheimer disease due to mutation of presenilin 1,Familial Alzheimer's disease of early onset
-Autosomal dominant Alzheimer disease due to mutation of presenilin 2,Familial Alzheimer's disease of early onset
-Autosomal dominant Alzheimer disease due to mutation of amyloid precursor protein,Familial Alzheimer's disease of early onset
-familial Alzheimer disease AD1,Familial Alzheimer's disease of early onset
-familial Alzheimer disease AD3,Familial Alzheimer's disease of early onset
-familial Alzheimer disease AD4,Familial Alzheimer's disease of early onset
+Alzheimers type dementia with early onset with behavioral disturbance,"Primary degenerative dementia of the Alzheimer type, presenile onset"
+Autosomal dominant Alzheimer disease due to mutation of presenilin 1,Familial Alzheimers disease of early onset
+Autosomal dominant Alzheimer disease due to mutation of presenilin 2,Familial Alzheimers disease of early onset
+Autosomal dominant Alzheimer disease due to mutation of amyloid precursor protein,Familial Alzheimers disease of early onset
+familial Alzheimer disease AD1,Familial Alzheimers disease of early onset
+familial Alzheimer disease AD3,Familial Alzheimers disease of early onset
+familial Alzheimer disease AD4,Familial Alzheimers disease of early onset
 Acute left-sided congestive heart failure,Acute left-sided heart failure
 Presenile dementia with delirium,Presenile dementia
 Presenile dementia with paranoia,Presenile dementia
@@ -1250,18 +1248,18 @@ Presenile dementia co-occurrent with human immunodeficiency virus infection,Pres
 "Primary degenerative dementia of the Alzheimer type, presenile onset, with delirium","Primary degenerative dementia of the Alzheimer type, presenile onset"
 "Primary degenerative dementia of the Alzheimer type, presenile onset, with delusions","Primary degenerative dementia of the Alzheimer type, presenile onset"
 "Primary degenerative dementia of the Alzheimer type, presenile onset, with depression","Primary degenerative dementia of the Alzheimer type, presenile onset"
-Familial Alzheimer's disease of early onset,"Primary degenerative dementia of the Alzheimer type, presenile onset"
-Non-familial Alzheimer's disease of early onset,"Primary degenerative dementia of the Alzheimer type, presenile onset"
+Familial Alzheimers disease of early onset,"Primary degenerative dementia of the Alzheimer type, presenile onset"
+Non-familial Alzheimers disease of early onset,"Primary degenerative dementia of the Alzheimer type, presenile onset"
 "Primary degenerative dementia of the Alzheimer type, presenile onset, uncomplicated","Primary degenerative dementia of the Alzheimer type, presenile onset"
-Early onset Alzheimer's disease with behavioral disturbance,"Primary degenerative dementia of the Alzheimer type, presenile onset"
+Early onset Alzheimers disease with behavioral disturbance,"Primary degenerative dementia of the Alzheimer type, presenile onset"
 "Primary degenerative dementia of the Alzheimer type, presenile onset in remission","Primary degenerative dementia of the Alzheimer type, presenile onset"
-Alzheimer's type dementia with early onset with behavioral disturbance,"Primary degenerative dementia of the Alzheimer type, presenile onset"
-Autosomal dominant Alzheimer disease due to mutation of presenilin 1,Familial Alzheimer's disease of early onset
-Autosomal dominant Alzheimer disease due to mutation of presenilin 2,Familial Alzheimer's disease of early onset
-Autosomal dominant Alzheimer disease due to mutation of amyloid precursor protein,Familial Alzheimer's disease of early onset
-familial Alzheimer disease AD1,Familial Alzheimer's disease of early onset
-familial Alzheimer disease AD3,Familial Alzheimer's disease of early onset
-familial Alzheimer disease AD4,Familial Alzheimer's disease of early onset
+Alzheimers type dementia with early onset with behavioral disturbance,"Primary degenerative dementia of the Alzheimer type, presenile onset"
+Autosomal dominant Alzheimer disease due to mutation of presenilin 1,Familial Alzheimers disease of early onset
+Autosomal dominant Alzheimer disease due to mutation of presenilin 2,Familial Alzheimers disease of early onset
+Autosomal dominant Alzheimer disease due to mutation of amyloid precursor protein,Familial Alzheimers disease of early onset
+familial Alzheimer disease AD1,Familial Alzheimers disease of early onset
+familial Alzheimer disease AD3,Familial Alzheimers disease of early onset
+familial Alzheimer disease AD4,Familial Alzheimers disease of early onset
 Senile dementia with delirium,Senile dementia
 Senile dementia with depressive or paranoid features,Senile dementia
 "Primary degenerative dementia of the Alzheimer type, senile onset",Senile dementia
@@ -1278,17 +1276,17 @@ Senile dementia with depression,Senile dementia with depressive or paranoid feat
 "Primary degenerative dementia of the Alzheimer type, senile onset, with delusions","Primary degenerative dementia of the Alzheimer type, senile onset"
 "Primary degenerative dementia of the Alzheimer type, senile onset, with depression","Primary degenerative dementia of the Alzheimer type, senile onset"
 "Primary degenerative dementia of the Alzheimer type, senile onset, with delirium","Primary degenerative dementia of the Alzheimer type, senile onset"
-Non-familial Alzheimer's disease of late onset,"Primary degenerative dementia of the Alzheimer type, senile onset"
-Familial Alzheimer's disease of late onset,"Primary degenerative dementia of the Alzheimer type, senile onset"
+Non-familial Alzheimers disease of late onset,"Primary degenerative dementia of the Alzheimer type, senile onset"
+Familial Alzheimers disease of late onset,"Primary degenerative dementia of the Alzheimer type, senile onset"
 "Primary degenerative dementia of the Alzheimer type, senile onset, with behavioral disturbance","Primary degenerative dementia of the Alzheimer type, senile onset"
 "Primary degenerative dementia of the Alzheimer type, senile onset in remission","Primary degenerative dementia of the Alzheimer type, senile onset"
-Alzheimer's type dementia with late onset without behavioral disturbance,"Primary degenerative dementia of the Alzheimer type, senile onset, uncomplicated"
-late onset Alzheimer's dementia with psychotic condition,"Primary degenerative dementia of the Alzheimer type, senile onset, with delusions"
+Alzheimers type dementia with late onset without behavioral disturbance,"Primary degenerative dementia of the Alzheimer type, senile onset, uncomplicated"
+late onset Alzheimers dementia with psychotic condition,"Primary degenerative dementia of the Alzheimer type, senile onset, with delusions"
 "Primary degenerative dementia of the Alzheimer type, senile onset, with delusions",Senile dementia with delusion
-late onset Alzheimer's dementia with psychotic condition,"Primary degenerative dementia of the Alzheimer type, senile onset, with delusions"
-Late onset Huntington's disease,Huntington's chorea
-Akinetic-rigid form of Huntington's disease,Huntington's chorea
-Juvenile onset Huntington's disease,Huntington's chorea
+late onset Alzheimers dementia with psychotic condition,"Primary degenerative dementia of the Alzheimer type, senile onset, with delusions"
+Late onset Huntingtons disease,Huntingtons chorea
+Akinetic-rigid form of Huntingtons disease,Huntingtons chorea
+Juvenile onset Huntingtons disease,Huntingtons chorea
 Dementia associated with alcoholism,Drug-induced dementia
 Inhalant-induced persisting dementia,Drug-induced dementia
 Psychoactive substance-induced organic dementia,Drug-induced dementia
@@ -1307,7 +1305,7 @@ Vascular dementia,Dementia associated with another disease
 Dementia associated with alcoholism,Dementia associated with another disease
 Postconcussion syndrome,Dementia associated with another disease
 Dementia associated with cerebral lipidosis,Dementia associated with another disease
-Dementia associated with Parkinson's Disease,Dementia associated with another disease
+Dementia associated with Parkinsons Disease,Dementia associated with another disease
 Dementia associated with neurosyphilis,Dementia associated with another disease
 Dementia associated with multiple sclerosis,Dementia associated with another disease
 Dementia associated with cerebral anoxia,Dementia associated with another disease
@@ -1352,9 +1350,9 @@ Mixed cortical and subcortical vascular dementia,Subcortical vascular dementia
 alcohol-induced persistent dementia,Dementia associated with alcoholism
 dementia associated with cerebral lipidosis with behavioral disturbance,Dementia associated with cerebral lipidosis
 dementia associated with cerebral lipidosis without behavioral disturbance,Dementia associated with cerebral lipidosis
-Dementia due to Parkinson's disease,Dementia associated with Parkinson's Disease
-Parkinson disease with dementia with behavioral disturbance,Dementia associated with Parkinson's Disease
-Parkinson disease with dementia without behavioral disturbance,Dementia associated with Parkinson's Disease
+Dementia due to Parkinsons disease,Dementia associated with Parkinsons Disease
+Parkinson disease with dementia with behavioral disturbance,Dementia associated with Parkinsons Disease
+Parkinson disease with dementia without behavioral disturbance,Dementia associated with Parkinsons Disease
 dementia associated with neurosyphilis with behavioral disturbance,Dementia associated with neurosyphilis
 dementia associated with neurosyphilis without behavioral disturbance,Dementia associated with neurosyphilis
 Dementia due to multiple sclerosis with altered behavior,Dementia associated with multiple sclerosis
@@ -1366,11 +1364,11 @@ dementia due to herpes encephalitis with behavioral disturbance,Dementia due to 
 dementia due to herpes encephalitis without behavioral disturbance,Dementia due to herpes encephalitis
 Dementia with Down syndrome,Dementia due to chromosomal anomaly
 Dementia due to Creutzfeldt Jakob disease,Dementia due to disorder of central nervous system
-Dementia due to Parkinson's disease,Dementia due to disorder of central nervous system
+Dementia due to Parkinsons disease,Dementia due to disorder of central nervous system
 Dementia due to Huntington chorea,Dementia due to disorder of central nervous system
 Epilepsy co-occurrent and due to dementia,Dementia due to disorder of central nervous system
-Dementia due to Pick's disease,Dementia due to disorder of central nervous system
-Dementia due to Rett's syndrome,Dementia due to disorder of central nervous system
+Dementia due to Picks disease,Dementia due to disorder of central nervous system
+Dementia due to Retts syndrome,Dementia due to disorder of central nervous system
 Dementia due to multiple sclerosis with altered behavior,Dementia due to disorder of central nervous system
 Dementia co-occurrent and due to neurocysticercosis,Dementia due to disorder of central nervous system
 Hallucinations co-occurrent and due to late onset dementia,Dementia due to disorder of central nervous system
@@ -1382,8 +1380,8 @@ Dementia due to prion disease,Dementia due to disorder of central nervous system
 Disinhibited behavior due to dementia,Dementia due to disorder of central nervous system
 Creutzfeldt-Jakob disease with dementia with behavioral disturbance,Dementia due to Creutzfeldt Jakob disease
 Creutzfeldt-Jakob disease with dementia without behavioral disturbance,Dementia due to Creutzfeldt Jakob disease
-Altered behavior in Huntington's dementia,Dementia due to Huntington chorea
-Huntington's chorea with dementia without behavioral disturbance,Dementia due to Huntington chorea
+Altered behavior in Huntingtons dementia,Dementia due to Huntington chorea
+Huntingtons chorea with dementia without behavioral disturbance,Dementia due to Huntington chorea
 epileptic dementia without behavioral disturbance,Epilepsy co-occurrent and due to dementia
 dementia due to herpes encephalitis with behavioral disturbance,Dementia due to herpes encephalitis
 dementia due to herpes encephalitis without behavioral disturbance,Dementia due to herpes encephalitis
@@ -1415,16 +1413,16 @@ Transient organic psychoses,Organic psychotic condition
 Secondary psychotic syndrome with hallucinations and delusions,Organic psychotic condition
 Age-associated memory impairment,Organic memory impairment
 Memory disorder co-occurrent and due to organic brain damage,Organic memory impairment
-Huntington's chorea,Chronic organic mental disorder
+Huntingtons chorea,Chronic organic mental disorder
 General paresis - neurosyphilis,Chronic organic mental disorder
 Chronic alcoholic brain syndrome,Chronic organic mental disorder
-Progressive aphasia in Alzheimer's disease,Chronic organic mental disorder
+Progressive aphasia in Alzheimers disease,Chronic organic mental disorder
 "Amyotrophic lateral sclerosis, parkinsonism, dementia complex",Chronic organic mental disorder
 ABri amyloidosis,Chronic organic mental disorder
 ADan amyloidosis,Chronic organic mental disorder
-Late onset Huntington's disease,Huntington's chorea
-Akinetic-rigid form of Huntington's disease,Huntington's chorea
-Juvenile onset Huntington's disease,Huntington's chorea
+Late onset Huntingtons disease,Huntingtons chorea
+Akinetic-rigid form of Huntingtons disease,Huntingtons chorea
+Juvenile onset Huntingtons disease,Huntingtons chorea
 Dementia paralytica juvenilis,General paresis - neurosyphilis
 Cluster A personality disorder,Personality disorder
 Cluster B personality disorder,Personality disorder
@@ -1593,7 +1591,7 @@ Schizophrenia,Psychotic disorder
 Induced psychotic disorder,Psychotic disorder
 Psychogenic paranoid psychosis,Psychotic disorder
 Reactive psychoses,Psychotic disorder
-Non-alcoholic Korsakoff's psychosis,Psychotic disorder
+Non-alcoholic Korsakoffs psychosis,Psychotic disorder
 "Severe mood disorder with psychotic features, mood-congruent",Psychotic disorder
 "Severe bipolar disorder with psychotic features, mood-congruent",Psychotic disorder
 Acute psychosis,Psychotic disorder
@@ -1605,7 +1603,7 @@ Cutaneous monosymptomatic delusional psychosis,Psychotic disorder
 Organic psychotic condition,Psychotic disorder
 Postpartum psychosis,Psychotic disorder
 Symbiotic infantile psychosis,Psychotic disorder
-Cotard's syndrome,Psychotic disorder
+Cotards syndrome,Psychotic disorder
 Senile dementia with psychosis,Psychotic disorder
 Infantile psychosis,Psychotic disorder
 Substance induced psychotic disorder,Psychotic disorder
@@ -1772,7 +1770,7 @@ Inhalant-induced psychotic disorder with delusions,Drug-induced psychosis
 Opioid-induced psychotic disorder with delusions,Drug-induced psychosis
 "Sedative, hypnotic AND/OR anxiolytic-induced psychotic disorder with delusions",Drug-induced psychosis
 Drug-induced intensive care psychosis,Drug-induced psychosis
-Korsakoff's psychosis,Drug-induced psychosis
+Korsakoffs psychosis,Drug-induced psychosis
 Psychotic disorder caused by cannabis,Drug-induced psychosis
 Psychotic disorder caused by opioid,Drug-induced psychosis
 Psychotic disorder caused by hallucinogen,Drug-induced psychosis
@@ -1817,7 +1815,7 @@ Psychotic disorder caused by anxiolytic,"Sedative, hypnotic AND/OR anxiolytic-in
 Psychotic disorder caused by sedative,"Sedative, hypnotic AND/OR anxiolytic-induced psychotic disorder with delusions"
 Psychotic disorder caused by hypnotic,"Sedative, hypnotic AND/OR anxiolytic-induced psychotic disorder with delusions"
 "specified sedative, hypnotic, or anxiolytic induced delusions","Sedative, hypnotic AND/OR anxiolytic-induced psychotic disorder with delusions"
-Korsakov's alcoholic psychosis with peripheral neuritis,Korsakoff's psychosis
+Korsakovs alcoholic psychosis with peripheral neuritis,Korsakoffs psychosis
 "cannabis-induced psychotic disorder, residual and late onset",Psychotic disorder caused by cannabis
 opioid use with opioid-induced psychotic disorder,Psychotic disorder caused by opioid
 opioid use with residual and late-onset opioid-induced psychotic disorder,Psychotic disorder caused by opioid
@@ -1841,7 +1839,7 @@ Psychotic disorder caused by methylenedioxymethamphetamine,Psychotic disorder wi
 Psychotic disorder with hallucinations caused by synthetic cathinone,Psychotic disorder caused by synthetic cathinone
 Psychotic disorder with delusions caused by synthetic cathinone,Psychotic disorder caused by synthetic cathinone
 Psychotic disorder with schizophreniform symptoms caused by synthetic cathinone,Psychotic disorder caused by synthetic cathinone
-Gilles de la Tourette's syndrome,Tic disorder
+Gilles de la Tourettes syndrome,Tic disorder
 Transient tic disorder,Tic disorder
 Chronic motor tic disorder,Tic disorder
 Atypical tic disorder,Tic disorder
@@ -1854,7 +1852,7 @@ Acute tic disorder,Tic disorder
 Primary tic disorder,Tic disorder
 Tic due to developmental disorder,Tic disorder
 Secondary tic disorder,Tic disorder
-Dysphonia of Gilles de la Tourette's syndrome,Gilles de la Tourette's syndrome
+Dysphonia of Gilles de la Tourettes syndrome,Gilles de la Tourettes syndrome
 "Transient tic disorder, single episode",Transient tic disorder
 Recurrent transient tic disorder,Transient tic disorder
 Transient childhood tic,Transient tic disorder

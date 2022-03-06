@@ -140,7 +140,9 @@ def create_ontology_and_rules():
         med_count = 0
         comp_count = 0
         for i,j in symptoms_dict.items():
-            if sym_count < 15:
+            index = list(symptoms_dict.keys()).index(i)
+
+            if sym_count < 15 and index%1 == 0:
                 rule_sym = ""
                 if j != []:
                     abc = "abcdefghijklmnopqrstuvwxyz"
