@@ -9,7 +9,7 @@ from pydoc import locate
 
 def create_ontology_and_rules():
     path = os.getcwd()
-    onto = get_ontology('disease_ontology_trial.owl')
+    onto = get_ontology('disease_ontology_SMED.owl')
 
     # Create Clasess
     with open('disease_classes_SMED.csv', newline='') as c:
@@ -63,7 +63,7 @@ def create_ontology_and_rules():
         predicate = values[1]
         label = values[2]
         label = re.sub('[^0-9a-zA-Z]+', '_', label)
-
+        label = label.lower()
         # Create a dictionary >> {Symptom: {} , Complication:{}, Medication:{}, ... }
         # Each nested dictionary will have >> Symptom : {Disease1 : [<list of symptoms>], Disease2 : [<list of symptoms>], .. }
         if predicate not in dict:
@@ -73,6 +73,7 @@ def create_ontology_and_rules():
                 dict[predicate][disease] = [label]
             else:
                 dict[predicate][disease].append(label)
+
 
     with onto:
         DiseaseClass = types.new_class('Disease', (Thing,))
