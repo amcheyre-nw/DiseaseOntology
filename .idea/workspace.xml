@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ce504fd7-7858-4d50-bcf1-b827400a863b" name="Changes" comment="horn clauses restriction">
-      <change afterPath="$PROJECT_DIR$/2022-03-05_21-03-50_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-05_21-04-31_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-05_21-18-35_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/symp.owl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/disease_ontology_trial.owl" beforeDir="false" afterPath="$PROJECT_DIR$/disease_ontology_trial.owl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new_ontology_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/new_ontology_2.py" afterDir="false" />
+    <list default="true" id="ce504fd7-7858-4d50-bcf1-b827400a863b" name="Changes" comment="horn clauses added">
+      <change afterPath="$PROJECT_DIR$/2022-03-05_21-53-40_ontor.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -273,7 +267,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646335816129</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="horn clauses added">
+      <created>1646537835848</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1646537835848</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -301,7 +302,8 @@
     <MESSAGE value="rules ready" />
     <MESSAGE value="done" />
     <MESSAGE value="horn clauses restriction" />
-    <option name="LAST_COMMIT_MESSAGE" value="horn clauses restriction" />
+    <MESSAGE value="horn clauses added" />
+    <option name="LAST_COMMIT_MESSAGE" value="horn clauses added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -357,7 +359,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/DiseaseOntology$ontology_final.coverage" NAME="ontology_final Coverage Results" MODIFIED="1646365790870" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DiseaseOntology$new_ontology.coverage" NAME="new_ontology Coverage Results" MODIFIED="1646515894744" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/DiseaseOntology$new_ontology_2.coverage" NAME="new_ontology_2 Coverage Results" MODIFIED="1646536714514" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/DiseaseOntology$new_ontology_2.coverage" NAME="new_ontology_2 Coverage Results" MODIFIED="1646538818839" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DiseaseOntology$ontology.coverage" NAME="ontology Coverage Results" MODIFIED="1646191425474" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DiseaseOntology$ULMS_api.coverage" NAME="ULMS_api Coverage Results" MODIFIED="1645816972641" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DiseaseOntology$ontology_kaleem.coverage" NAME="ontology_kaleem Coverage Results" MODIFIED="1645383117234" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

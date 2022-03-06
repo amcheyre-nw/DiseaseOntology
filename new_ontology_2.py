@@ -192,7 +192,6 @@ def create_ontology_and_rules():
                 med_count += 1
                 print(rule_med)
 
-
     onto.save(path+"/disease_ontology_trial.owl")
 
 if __name__ == "__main__":
