@@ -26,7 +26,7 @@ def create_ontology_and_rules():
             aux.append(word)
         new_classes.append(aux)
 
-    with open('/Users/anerypatel/Desktop/object_props_SMED_2.csv', newline='') as op:
+    with open('object_props_SMED_Final.csv', newline='') as op:
         reader1 = csv.reader(op)
         ops = list(reader1)
 
