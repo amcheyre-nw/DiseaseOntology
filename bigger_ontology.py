@@ -4,6 +4,7 @@ import re
 import csv
 import pandas as pd
 import types
+from random import randrange
 from pydoc import locate
 
 def create_ontology_and_rules():
@@ -26,7 +27,7 @@ def create_ontology_and_rules():
             aux.append(word)
         new_classes.append(aux)
 
-    with open('object_props_SMED_Final.csv', newline='') as op:
+    with open('object_props_SMED_inherited2.csv', newline='') as op:
         reader1 = csv.reader(op)
         ops = list(reader1)
 
@@ -37,7 +38,6 @@ def create_ontology_and_rules():
             word = word.strip(')')
             word = word.strip(' ')
             word = word.strip('.')
-
             if " " in word:
                 word = word.replace(" ","_")
             if "False" in word:
@@ -106,6 +106,200 @@ def create_ontology_and_rules():
                     setattr(Disease, 'has'+predicate, allLabels)
 
 # rules start from here
+    # Create rules for all the classes
+        rule_count = 0
+        sym_count = 0
+        spec_count = 0
+        risk_count = 0
+        freq_count = 0
+        caus_count = 0
+        prog_count = 0
+        med_count = 0
+        comp_count = 0
+        other_count = 0
+        max_per_class = 6
+        for i,j in dict.items():
+            pred = i
+            # Symptoms
+            if i == 'Symptoms':
+                for x,y in j.items():
+                    if sym_count < max_per_class and x in (item[0] for item in new_classes):
+                        dis = x
+                        rule_sym = ""
+                        abc = "abcdefghijklmnopqrstuvwxyz"
+                        x = 0
+                        for n in range(len(y)):
+                            s = y[n]
+                            a = abc[x]
+                            symptom = "has"+pred+"(?x,?"+a+") ^" + s + "(?"+a+") ^"
+                            rule_sym = rule_sym + symptom
+                            x += 1
+
+                        i = i.replace(",", "")
+                        disease = "->" + dis + "(?x)"
+                        rule_sym = rule_sym + disease
+                        print(rule_sym)
+                        rule = Imp()
+                        rule.set_as_rule(rule_sym)
+                        print(i)
+                        print(sym_count)
+                        sym_count += 1
+
+
+            # Speciality
+            if i == 'Speciality':
+                for x, y in j.items():
+                    if spec_count < max_per_class and x in (item[0] for item in new_classes):
+                        dis = x
+                        rule_comp = ""
+                        rand = randrange(len(y))
+                        complication = y[rand] + "(?x)"
+                        rule_comp = rule_comp + complication
+
+                        disease = dis + "(?x) ->"
+                        rule_comp = disease + rule_comp
+                        print(rule_comp)
+                        rule = Imp()
+                        rule.set_as_rule(rule_comp)
+                        print(i)
+                        print(spec_count)
+                        spec_count += 1
+
+            # Medication
+            if i == 'Medication':
+                for x, y in j.items():
+                    if med_count < max_per_class and x in (item[0] for item in new_classes):
+                        dis = x
+                        rule_med = ""
+                        rand = randrange(len(y))
+                        medication = y[rand] + "(?x)"
+                        rule_med = rule_med + medication
+
+                        disease = dis + "(?x) ->"
+                        rule_med = disease + rule_med
+                        print(rule_med)
+                        rule = Imp()
+                        rule.set_as_rule(rule_med)
+                        print(i)
+                        print(med_count)
+                        med_count += 1
+
+            # Frequency
+            if i == 'Frequency':
+                for x, y in j.items():
+                    if freq_count < max_per_class and x in (item[0] for item in new_classes):
+                        dis = x
+                        rule_comp = ""
+                        rand = randrange(len(y))
+                        if y[rand].isalpha()== True:
+                            complication = y[rand].replace('_',"") + "(?x)"
+                            rule_comp = rule_comp + complication
+
+                            disease = dis + "(?x) ->"
+                            rule_comp = disease + rule_comp
+                            print(rule_comp)
+                            rule = Imp()
+                            #rule.set_as_rule(rule_comp)
+                            print(i)
+                            print(freq_count)
+                            freq_count += 1
+
+            # Other_names
+            if i == 'Other_names':
+                for x, y in j.items():
+                    if other_count < max_per_class and x in (item[0] for item in new_classes):
+                        dis = x
+                        rule_comp = ""
+                        rand = randrange(len(y))
+                        other_name = y[rand] + "(?x)"
+                        rule_comp = rule_comp + other_name
+
+                        disease = dis + "(?x) ->"
+                        rule_comp = disease + rule_comp
+                        print(rule_comp)
+                        rule = Imp()
+                        rule.set_as_rule(rule_comp)
+                        print(i)
+                        print(other_count)
+                        other_count += 1
+
+            # Causes
+            if i == 'Causes':
+                for x, y in j.items():
+                    if caus_count < max_per_class and x in (item[0] for item in new_classes):
+                        dis = x
+                        rule_comp = ""
+
+                        rand = randrange(len(y))
+                        cause = y[rand] + "(?x)"
+                        rule_comp = rule_comp + cause
+
+                        disease = dis + "(?x) ->"
+                        rule_comp = disease + rule_comp
+                        print(rule_comp)
+                        rule = Imp()
+                        rule.set_as_rule(rule_comp)
+                        print(i)
+                        print(caus_count)
+                        caus_count += 1
+
+            # Complications
+            if i == 'Complications':
+                for x, y in j.items():
+                    if comp_count < max_per_class and x in (item[0] for item in new_classes):
+                        dis = x
+                        rule_comp = ""
+                        rand = randrange(len(y))
+                        complication = y[rand] + "(?x)"
+                        rule_comp = rule_comp + complication
+
+                        disease = dis + "(?x) ->"
+                        rule_comp = disease + rule_comp
+                        print(rule_comp)
+                        rule = Imp()
+                        rule.set_as_rule(rule_comp)
+                        print(i)
+                        print(comp_count)
+                        comp_count += 1
+                        print(rule_comp)
+
+            # Prognosis
+            if i == 'Prognosis':
+                for x, y in j.items():
+                    if prog_count < max_per_class and x in (item[0] for item in new_classes):
+                        dis = x
+                        rule_comp = ""
+                        rand = randrange(len(y))
+                        complication = y[rand] + "(?x)"
+                        rule_comp = rule_comp + complication
+
+                        disease = dis + "(?x) ->"
+                        rule_comp = disease + rule_comp
+                        print(rule_comp)
+                        rule = Imp()
+                        rule.set_as_rule(rule_comp)
+                        print(i)
+                        print(prog_count)
+                        prog_count += 1
+
+            # Risk_factors
+            if i == 'Risk_factors':
+                for x, y in j.items():
+                    if risk_count < max_per_class and x in (item[0] for item in new_classes):
+                        dis = x
+                        rule_comp = ""
+                        rand = randrange(len(y))
+                        complication = y[rand] + "(?x)"
+                        rule_comp = rule_comp + complication
+
+                        disease = dis + "(?x) ->"
+                        rule_comp = disease + rule_comp
+                        print(rule_comp)
+                        rule = Imp()
+                        rule.set_as_rule(rule_comp)
+                        print(i)
+                        print(risk_count)
+                        risk_count += 1
 
 
     onto.save(path+"/disease_ontology_trial.owl")
