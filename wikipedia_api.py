@@ -181,5 +181,11 @@ def histogram_of_labels(diseases, pctg=False):
 
 
 if __name__ == '__main__':
+    print("We get the symptoms associated with Schizophrenia from wikipedia:")
+    x = retrieveFacts("Schizophrenia", "Symptoms")
+    print(x)
+    print("\nGet info on disorder: 'concentration camp syndrome' "
+          "\n-> this page doesn't exist on wikipedia because it is represented with another name: Survivor Guilt"
+          "\nwe use duckduckGo to find the article's URL as follows:")
     x = get_wikiURL_from_title("concentration camp syndrome", duckduckgo_backup=True)
     print(x)

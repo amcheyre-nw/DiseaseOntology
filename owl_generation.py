@@ -12,7 +12,7 @@ def create_ontology_and_rules():
     onto = get_ontology('disease_ontology_trial.owl')
 
     # Create Clasess
-    with open('disease_classes_SMED.csv', newline='') as c:
+    with open('disease_classes.csv', newline='') as c:
         reader2 = csv.reader(c)
         classes = list(reader2)
 
@@ -27,7 +27,7 @@ def create_ontology_and_rules():
             aux.append(word)
         new_classes.append(aux)
 
-    with open('object_props_SMED_inherited2.csv', newline='') as op:
+    with open('object_props.csv', newline='') as op:
         reader1 = csv.reader(op)
         ops = list(reader1)
 

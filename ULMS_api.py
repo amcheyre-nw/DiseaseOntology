@@ -108,7 +108,7 @@ def build_tree(rootUI, _API, sourcename='MSH'):
 def build_tree_inverse_isa(rootUI, _API, sourcename='MSH'):
     tree = [['class', 'superclass', 'class_UI']]
     stack = [rootUI]
-
+    print("NB: this can take some time!")
     while len(stack) > 0:
         print("building tree... stack size: {} | completed: {}".format(len(stack), len(tree)), flush=True, end='\r')
         ui = stack.pop(0)
@@ -139,7 +139,6 @@ def build_tree_inverse_isa(rootUI, _API, sourcename='MSH'):
                 for child in children: # add the spo statements
                     childname = child['relatedIdName']
                     parentname = req['result']['name']
-                    print(parentname, childname, child['relatedUi'])
                     tree.append([childname, parentname, child['relatedUi']])
     return tree
 
@@ -150,7 +149,7 @@ if __name__ == '__main__':
     api = API(api_key=api_key)
 
     ui = '74732009'  # mental disorder SNOMEDCT
-    ui = '174178020'
     req = api.get_inverse_isa(ui, sourcename='SNOMEDCT_US')
+    print("UMLS children data for ui {}".format(ui))
     print(req)
 

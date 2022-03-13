@@ -26,4 +26,6 @@ def get_wikititle_from_queery(queery, site='en.wikipedia.org'):
         return None
 
 if __name__ == '__main__':
-    get_wikititle_from_queery('asdfasdfasdfa')
+    print("See how duckduckgo can find the wikipedia page on Concentration Camp Syndrome, by finding"
+          "\n its alternative name: Survivor Guilt")
+    print(get_wikititle_from_queery('Concentration camp syndrome'))
