@@ -1,28 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ce504fd7-7858-4d50-bcf1-b827400a863b" name="Changes" comment="horn clauses added">
-      <change afterPath="$PROJECT_DIR$/2022-03-06_16-31-44_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-06_16-32-42_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-06_16-34-17_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-06_16-37-18_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-06_16-37-56_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-06_16-38-18_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-06_16-40-03_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-06_16-41-22_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-06_16-43-51_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-06_16-45-21_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-06_16-46-31_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-06_16-47-43_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-06_16-48-53_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/object_props_SMED_inherited2.csv" afterDir="false" />
+    <list default="true" id="ce504fd7-7858-4d50-bcf1-b827400a863b" name="Changes" comment="new horn clauses added">
+      <change afterPath="$PROJECT_DIR$/2022-03-06_18-36-22_ontor.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2022-03-13_14-25-16_ontor.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2022-03-13_14-40-34_ontor.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bigger_ontology.py" beforeDir="false" afterPath="$PROJECT_DIR$/bigger_ontology.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/disease_classes_SMED.csv" beforeDir="false" afterPath="$PROJECT_DIR$/disease_classes_SMED.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/disease_classes_SMED_copy.csv" beforeDir="false" afterPath="$PROJECT_DIR$/disease_classes_SMED_copy.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/disease_ontology_trial.owl" beforeDir="false" afterPath="$PROJECT_DIR$/disease_ontology_trial.owl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new_ontology_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/new_ontology_2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/object_props_SMED_inherited_2.csv" beforeDir="false" afterPath="$PROJECT_DIR$/object_props_SMED_inherited_2.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,7 +190,8 @@
       <workItem from="1646177057466" duration="176000" />
       <workItem from="1646180855979" duration="15000" />
       <workItem from="1646195901106" duration="255000" />
-      <workItem from="1646600575096" duration="6354000" />
+      <workItem from="1646600575096" duration="9998000" />
+      <workItem from="1647196363997" duration="2598000" />
     </task>
     <task id="LOCAL-00001" summary="reading csv classes">
       <created>1646142215781</created>
@@ -305,7 +291,21 @@
       <option name="project" value="LOCAL" />
       <updated>1646538896585</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="new horn clauses added">
+      <created>1646606999715</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1646606999715</updated>
+    </task>
+    <task id="LOCAL-00016" summary="new horn clauses added">
+      <created>1646607018963</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1646607018963</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -334,7 +334,8 @@
     <MESSAGE value="done" />
     <MESSAGE value="horn clauses restriction" />
     <MESSAGE value="horn clauses added" />
-    <option name="LAST_COMMIT_MESSAGE" value="horn clauses added" />
+    <MESSAGE value="new horn clauses added" />
+    <option name="LAST_COMMIT_MESSAGE" value="new horn clauses added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -382,7 +383,7 @@
     <SUITE FILE_PATH="coverage/DiseaseOntology$new_ontology.coverage" NAME="new_ontology Coverage Results" MODIFIED="1646515894744" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DiseaseOntology$new_ontology_2.coverage" NAME="new_ontology_2 Coverage Results" MODIFIED="1646539998090" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DiseaseOntology$ontology.coverage" NAME="ontology Coverage Results" MODIFIED="1646191425474" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/DiseaseOntology$bigger_ontology.coverage" NAME="bigger_ontology Coverage Results" MODIFIED="1646606932670" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/DiseaseOntology$bigger_ontology.coverage" NAME="bigger_ontology Coverage Results" MODIFIED="1647200433099" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DiseaseOntology$ULMS_api.coverage" NAME="ULMS_api Coverage Results" MODIFIED="1645816972641" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DiseaseOntology$ontology_kaleem.coverage" NAME="ontology_kaleem Coverage Results" MODIFIED="1645383117234" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>

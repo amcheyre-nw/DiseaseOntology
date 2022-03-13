@@ -117,7 +117,7 @@ def create_ontology_and_rules():
         med_count = 0
         comp_count = 0
         other_count = 0
-        max_per_class = 6
+        max_per_class = 7
         for i,j in dict.items():
             pred = i
             # Symptoms
@@ -156,7 +156,7 @@ def create_ontology_and_rules():
                         complication = y[rand] + "(?x)"
                         rule_comp = rule_comp + complication
 
-                        disease = dis + "(?x) ->"
+                        disease = "has"+pred+"(?x,?y) ^" + dis + "(?y) ->"
                         rule_comp = disease + rule_comp
                         print(rule_comp)
                         rule = Imp()
@@ -174,8 +174,9 @@ def create_ontology_and_rules():
                         rand = randrange(len(y))
                         medication = y[rand] + "(?x)"
                         rule_med = rule_med + medication
+                        disease = "has" + pred + "(?x,?y) ^" + dis + "(?y) ->"
 
-                        disease = dis + "(?x) ->"
+                        #disease = dis + "(?x) ->"
                         rule_med = disease + rule_med
                         print(rule_med)
                         rule = Imp()
@@ -194,8 +195,8 @@ def create_ontology_and_rules():
                         if y[rand].isalpha()== True:
                             complication = y[rand].replace('_',"") + "(?x)"
                             rule_comp = rule_comp + complication
-
-                            disease = dis + "(?x) ->"
+                            disease = "has" + pred + "(?x,?y) ^" + dis + "(?y) ->"
+                            #disease = dis + "(?x) ->"
                             rule_comp = disease + rule_comp
                             print(rule_comp)
                             rule = Imp()
@@ -213,8 +214,8 @@ def create_ontology_and_rules():
                         rand = randrange(len(y))
                         other_name = y[rand] + "(?x)"
                         rule_comp = rule_comp + other_name
-
-                        disease = dis + "(?x) ->"
+                        disease = "has" + pred + "(?x,?y) ^" + dis + "(?y) ->"
+                        #disease = dis + "(?x) ->"
                         rule_comp = disease + rule_comp
                         print(rule_comp)
                         rule = Imp()
@@ -233,8 +234,8 @@ def create_ontology_and_rules():
                         rand = randrange(len(y))
                         cause = y[rand] + "(?x)"
                         rule_comp = rule_comp + cause
-
-                        disease = dis + "(?x) ->"
+                        disease = "has" + pred + "(?x,?y) ^" + dis + "(?y) ->"
+                        #disease = dis + "(?x) ->"
                         rule_comp = disease + rule_comp
                         print(rule_comp)
                         rule = Imp()
@@ -252,8 +253,8 @@ def create_ontology_and_rules():
                         rand = randrange(len(y))
                         complication = y[rand] + "(?x)"
                         rule_comp = rule_comp + complication
-
-                        disease = dis + "(?x) ->"
+                        disease = "has" + pred + "(?x,?y) ^" + dis + "(?y) ->"
+                        #disease = dis + "(?x) ->"
                         rule_comp = disease + rule_comp
                         print(rule_comp)
                         rule = Imp()
@@ -272,8 +273,8 @@ def create_ontology_and_rules():
                         rand = randrange(len(y))
                         complication = y[rand] + "(?x)"
                         rule_comp = rule_comp + complication
-
-                        disease = dis + "(?x) ->"
+                        disease = "has" + pred + "(?x,?y) ^" + dis + "(?y) ->"
+                        #disease = dis + "(?x) ->"
                         rule_comp = disease + rule_comp
                         print(rule_comp)
                         rule = Imp()
@@ -291,8 +292,8 @@ def create_ontology_and_rules():
                         rand = randrange(len(y))
                         complication = y[rand] + "(?x)"
                         rule_comp = rule_comp + complication
-
-                        disease = dis + "(?x) ->"
+                        disease = "has" + pred + "(?x,?y) ^" + dis + "(?y) ->"
+                        #disease = dis + "(?x) ->"
                         rule_comp = disease + rule_comp
                         print(rule_comp)
                         rule = Imp()
