@@ -9,7 +9,7 @@ from pydoc import locate
 
 def create_ontology_and_rules():
     path = os.getcwd()
-    onto = get_ontology('disease_ontology_SMED.owl')
+    onto = get_ontology('disease_ontology_trial.owl')
 
     # Create Clasess
     with open('disease_classes_SMED.csv', newline='') as c:

@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ce504fd7-7858-4d50-bcf1-b827400a863b" name="Changes" comment="new horn clauses added">
+    <list default="true" id="ce504fd7-7858-4d50-bcf1-b827400a863b" name="Changes" comment="edit to horn clauses">
       <change afterPath="$PROJECT_DIR$/2022-03-06_18-36-22_ontor.log" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/2022-03-13_14-25-16_ontor.log" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/2022-03-13_14-40-34_ontor.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bigger_ontology.py" beforeDir="false" afterPath="$PROJECT_DIR$/bigger_ontology.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/disease_ontology_trial.owl" beforeDir="false" afterPath="$PROJECT_DIR$/disease_ontology_trial.owl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,7 +189,7 @@
       <workItem from="1646180855979" duration="15000" />
       <workItem from="1646195901106" duration="255000" />
       <workItem from="1646600575096" duration="9998000" />
-      <workItem from="1647196363997" duration="2598000" />
+      <workItem from="1647196363997" duration="4607000" />
     </task>
     <task id="LOCAL-00001" summary="reading csv classes">
       <created>1646142215781</created>
@@ -305,7 +303,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646607018963</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="edit to horn clauses">
+      <created>1647203217121</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1647203217121</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -335,7 +340,8 @@
     <MESSAGE value="horn clauses restriction" />
     <MESSAGE value="horn clauses added" />
     <MESSAGE value="new horn clauses added" />
-    <option name="LAST_COMMIT_MESSAGE" value="new horn clauses added" />
+    <MESSAGE value="edit to horn clauses" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit to horn clauses" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
