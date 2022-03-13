@@ -14,9 +14,6 @@ XXXX
 
 ### OWL file generation
 
-After the ontology is created, the file ```owl_generation.py``` have to be executed, which will take the created CSVs and convert them into the OWL file that then will be uploaded to Protege.
+After the ontology is created, the file ```owl_generation.py``` have to be executed, which will take the created CSVs and convert them into the OWL file. This code will create all the classes, object properties and horn clauses that then will be displayed in an open source ontology editor and knowledge management system. We recommend using Protege, which is the most popular and widely used ontology editor.
 
-The output file ```disease_ontology.owl``` is the one that have to be uploaded in Protege to be able to start reasoning with it.
-
-
-
+To start using the file, it just have to be uploaded to the ontology editor and everything will be displayed and ready to use.
