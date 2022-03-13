@@ -1,24 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ce504fd7-7858-4d50-bcf1-b827400a863b" name="Changes" comment="cleaning">
-      <change afterPath="$PROJECT_DIR$/Cache/object_props_SMED_inherited.csv" afterDir="false" />
+    <list default="true" id="ce504fd7-7858-4d50-bcf1-b827400a863b" name="Changes" comment="updates. Readme augmented">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ULMS_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/ULMS_api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/__pycache__/ULMS_api.cpython-39.pyc" beforeDir="false" afterPath="$PROJECT_DIR$/__pycache__/ULMS_api.cpython-39.pyc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/__pycache__/wikipedia_api.cpython-39.pyc" beforeDir="false" afterPath="$PROJECT_DIR$/__pycache__/wikipedia_api.cpython-39.pyc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build_ontology_james.py" beforeDir="false" afterPath="$PROJECT_DIR$/build_ontology.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/disease_classes_SMED.csv" beforeDir="false" afterPath="$PROJECT_DIR$/disease_classes.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/duckduckgo_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/duckduckgo_api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/object_props_SMED2.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/object_props_SMED2.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/object_props_SMED_Final.csv" beforeDir="false" afterPath="$PROJECT_DIR$/object_props.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/object_props_SMED_inherited2.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/owl_generation.py" beforeDir="false" afterPath="$PROJECT_DIR$/owl_generation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reformat.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/symp.owl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wikipedia_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/wikipedia_api.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -318,7 +303,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647211938866</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="updates. Readme augmented">
+      <created>1647215722329</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1647215722329</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -349,7 +341,8 @@
     <MESSAGE value="new horn clauses added" />
     <MESSAGE value="edit to horn clauses" />
     <MESSAGE value="cleaning" />
-    <option name="LAST_COMMIT_MESSAGE" value="cleaning" />
+    <MESSAGE value="updates. Readme augmented" />
+    <option name="LAST_COMMIT_MESSAGE" value="updates. Readme augmented" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
