@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ce504fd7-7858-4d50-bcf1-b827400a863b" name="Changes" comment="edit to horn clauses">
-      <change afterPath="$PROJECT_DIR$/2022-03-06_18-36-22_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-13_14-25-16_ontor.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022-03-13_14-40-34_ontor.log" afterDir="false" />
+    <list default="true" id="ce504fd7-7858-4d50-bcf1-b827400a863b" name="Changes" comment="cleaning">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2022-03-13_17-48-26_ontor.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bigger_ontology.py" beforeDir="false" afterPath="$PROJECT_DIR$/owl_generation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/object_props_2.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/object_props_SMED.csv" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,29 +52,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.bigger_ontology">
-    <configuration name="bigger_ontology" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="DiseaseOntology" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="$USER_HOME$/.conda/envs/MSAI-349-Fall-2021-HW3/bin/python" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bigger_ontology.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.owl_generation">
     <configuration name="build_ontology_james" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DiseaseOntology" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -162,9 +141,31 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="owl_generation" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DiseaseOntology" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/.conda/envs/MSAI-349-Fall-2021-HW3/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/owl_generation.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.bigger_ontology" />
+        <item itemvalue="Python.owl_generation" />
         <item itemvalue="Python.new_ontology_2" />
         <item itemvalue="Python.new_ontology" />
         <item itemvalue="Python.ontology_final" />
@@ -189,7 +190,7 @@
       <workItem from="1646180855979" duration="15000" />
       <workItem from="1646195901106" duration="255000" />
       <workItem from="1646600575096" duration="9998000" />
-      <workItem from="1647196363997" duration="4607000" />
+      <workItem from="1647196363997" duration="5343000" />
     </task>
     <task id="LOCAL-00001" summary="reading csv classes">
       <created>1646142215781</created>
@@ -310,7 +311,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647203217121</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="cleaning">
+      <created>1647211938866</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1647211938866</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -341,7 +349,8 @@
     <MESSAGE value="horn clauses added" />
     <MESSAGE value="new horn clauses added" />
     <MESSAGE value="edit to horn clauses" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit to horn clauses" />
+    <MESSAGE value="cleaning" />
+    <option name="LAST_COMMIT_MESSAGE" value="cleaning" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -389,7 +398,7 @@
     <SUITE FILE_PATH="coverage/DiseaseOntology$new_ontology.coverage" NAME="new_ontology Coverage Results" MODIFIED="1646515894744" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DiseaseOntology$new_ontology_2.coverage" NAME="new_ontology_2 Coverage Results" MODIFIED="1646539998090" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DiseaseOntology$ontology.coverage" NAME="ontology Coverage Results" MODIFIED="1646191425474" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/DiseaseOntology$bigger_ontology.coverage" NAME="bigger_ontology Coverage Results" MODIFIED="1647200433099" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/DiseaseOntology$bigger_ontology.coverage" NAME="bigger_ontology Coverage Results" MODIFIED="1647211704919" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DiseaseOntology$ULMS_api.coverage" NAME="ULMS_api Coverage Results" MODIFIED="1645816972641" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DiseaseOntology$ontology_kaleem.coverage" NAME="ontology_kaleem Coverage Results" MODIFIED="1645383117234" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
