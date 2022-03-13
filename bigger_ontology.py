@@ -21,7 +21,7 @@ def create_ontology_and_rules():
         aux = []
         for word in line:
             if " " in word:
-                word = word.replace(" ","")
+                word = word.replace(" ","_")
             if word == '':
                 word = None
             aux.append(word)
@@ -39,7 +39,7 @@ def create_ontology_and_rules():
             word = word.strip(' ')
             word = word.strip('.')
             if " " in word:
-                word = word.replace(" ","")
+                word = word.replace(" ","_")
             if "False" in word:
                 word = False
             if word == '':
