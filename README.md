@@ -10,4 +10,11 @@ We aim to build an ontology capable of delivering psychiatric diagnoses and pote
 
 ### Ontology creation
 
+XXXX
+
 ### OWL file generation
+
+After having created the ontology, it generates two CSV outputs ```disease_classes``` and ```object_props```. The file ```owl_generation``` have to be executed in the main, which will take the created CSVs and convert them into the OWL file that then will be uploaded to Protege.
+
+
+
