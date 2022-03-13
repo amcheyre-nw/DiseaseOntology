@@ -14,7 +14,7 @@ XXXX
 
 ### OWL file generation
 
-After having created the ontology, it generates two CSV outputs ```disease_classes.csv``` and ```object_props.csv```. The file ```owl_generation.py``` have to be executed in the main, which will take the created CSVs and convert them into the OWL file that then will be uploaded to Protege.
+After having created the ontology, it generates two CSV outputs ```disease_classes.csv``` and ```object_props.csv```. The file ```owl_generation.py``` have to be executed, which will take the created CSVs and convert them into the OWL file that then will be uploaded to Protege.
 
 The output file ```disease_ontology.owl``` is the one that have to be uploaded in Protege to be able to start reasoning with it.
 
